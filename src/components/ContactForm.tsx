@@ -253,7 +253,7 @@ const ContactForm: React.FC = () => {
                 </div>
 
                 {/* Hidden field for Formspree redirect */}
-                <input type="hidden" name="_next" value="https://webdeskai.com/bedankt" />
+                <input type="hidden" name="_next" value="https://webdeskai.com/thankyou" />
 
                 {/* Submit Button */}
                 <button
