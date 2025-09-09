@@ -7,12 +7,13 @@ import Process from '../components/Process';
 import Portfolio from '../components/Portfolio';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import WhatsAppPopup from '../components/WhatsAppPopup';
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <Header />
       <Hero />
       <Services />
