@@ -219,7 +219,7 @@ const Services: React.FC = () => {
                   
                   <div className="relative z-10 flex items-center">
                   <span className="hidden sm:inline">ONTDEK ONZE SERVICES</span>
-                  <span className="sm:hidden">ONTDEK SERVICES</span>
+                  <span className="sm:hidden">SERVICES</span>
                   </div>
                 </Link>
 
