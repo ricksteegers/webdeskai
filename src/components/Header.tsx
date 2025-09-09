@@ -94,6 +94,12 @@ const Header: React.FC = () => {
             <Link 
               to="/contact"
               className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden inline-flex items-center"
+             onClick={(e) => {
+               e.preventDefault();
+               window.scrollTo(0, 0);
+               window.history.pushState({}, '', '/contact');
+               window.location.reload();
+             }}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
