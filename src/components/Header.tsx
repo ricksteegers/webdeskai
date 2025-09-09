@@ -42,8 +42,8 @@ const Header: React.FC = () => {
           {/* Enhanced Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {[
-              { name: 'Tarieven', href: '/tarieven' },
-              { name: 'Diensten', href: '/diensten' },
+              { name: 'Tarieven', href: '/#pricing' },
+              { name: 'Diensten', href: '/#services' },
               { name: 'Over ons', href: '/over-ons' }
             ].map((item, index) => (
               <div key={index} className="relative group">
@@ -102,8 +102,8 @@ const Header: React.FC = () => {
             
             <div className="relative z-10 flex flex-col space-y-6 pt-6">
               {[
-                { name: 'Tarieven', href: '/tarieven' },
-                { name: 'Diensten', href: '/diensten' },
+                { name: 'Tarieven', href: '/#pricing' },
+                { name: 'Diensten', href: '/#services' },
                 { name: 'Over ons', href: '/over-ons' }
               ].map((item, index) => (
                 <Link
