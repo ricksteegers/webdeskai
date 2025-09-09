@@ -90,8 +90,8 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-[#F4C430] mr-3 animate-pulse" />
-                <a href="mailto:hallo@webdeskai.nl" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
-                  hallo@webdeskai.nl
+                <a href="mailto:hallo@webdeskai.com" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                  hallo@webdeskai.com
                 </a>
               </li>
               <li className="flex items-center">
