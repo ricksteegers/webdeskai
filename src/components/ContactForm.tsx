@@ -1,50 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock, Send, User, MessageSquare, Building, Sparkles, CheckCircle, AlertCircle } from 'lucide-react';
 
 const ContactForm: React.FC = () => {
-  const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    phone: '',
-    service: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Simple client-side validation
-    const requiredFields = ['name', 'email', 'company', 'phone', 'message'];
-    let isValid = true;
-    
-    for (const field of requiredFields) {
-      if (!formData[field as keyof typeof formData].trim()) {
-        setSubmitStatus('error');
-        setTimeout(() => setSubmitStatus('idle'), 3000);
-        isValid = false;
-        break;
-      }
-    }
-    
-    if (isValid) {
-      // Let Formspree handle the submission and redirect
-      const form = e.target as HTMLFormElement;
-      form.submit();
-    }
-  };
 
   const services = [
     'Website Ontwikkeling',
@@ -125,7 +82,6 @@ const ContactForm: React.FC = () => {
                 id="contact-form"
                 action="https://formspree.io/f/mblawgvo" 
                 method="POST"
-                onSubmit={handleSubmit} 
                 className="space-y-6"
               >
                 {/* Name and Email Row */}
@@ -140,8 +96,6 @@ const ContactForm: React.FC = () => {
                         type="text"
                         id="name"
                         name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
                         required
                         className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
                         placeholder="Je volledige naam"
@@ -159,8 +113,6 @@ const ContactForm: React.FC = () => {
                         type="email"
                         id="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
                         required
                         className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
                         placeholder="je.email@bedrijf.nl"
@@ -181,9 +133,6 @@ const ContactForm: React.FC = () => {
                         type="text"
                         id="company"
                         name="company"
-                        value={formData.company}
-                        onChange={handleInputChange}
-                        required
                         className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
                         placeholder="Je bedrijfsnaam"
                       />
@@ -200,9 +149,6 @@ const ContactForm: React.FC = () => {
                         type="tel"
                         id="phone"
                         name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        required
                         className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
                         placeholder="+31 6 12345678"
                       />
@@ -220,8 +166,6 @@ const ContactForm: React.FC = () => {
                     <select
                       id="service"
                       name="service"
-                      value={formData.service}
-                      onChange={handleInputChange}
                       className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm appearance-none"
                     >
                       <option value="">Selecteer een service</option>
@@ -242,8 +186,6 @@ const ContactForm: React.FC = () => {
                     <textarea
                       id="message"
                       name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
                       required
                       rows={6}
                       className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm resize-none"
@@ -258,23 +200,13 @@ const ContactForm: React.FC = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  disabled={isSubmitting}
                   className="group w-full bg-transparent border-2 border-[#F4C430] text-gray-800 px-8 py-5 rounded-full font-semibold text-lg hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed backdrop-blur-sm relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
                   <div className="relative z-10 flex items-center justify-center">
-                    {isSubmitting ? (
-                      <>
-                        <div className="w-6 h-6 border-2 border-gray-800 group-hover:border-black border-t-transparent rounded-full animate-spin mr-3"></div>
-                        Verzenden...
-                      </>
-                    ) : (
-                      <>
-                        <Send className="w-6 h-6 mr-3 group-hover:translate-x-1 transition-transform duration-300 text-[#F4C430] group-hover:text-black" />
-                        Verstuur Bericht
-                      </>
-                    )}
+                    <Send className="w-6 h-6 mr-3 group-hover:translate-x-1 transition-transform duration-300 text-[#F4C430] group-hover:text-black" />
+                    Verstuur Bericht
                   </div>
                 </button>
               </form>
