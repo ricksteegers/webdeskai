@@ -201,7 +201,7 @@ if ($mail_sent) {
             </div>
             <div class="footer">
                 <p>WebDesk AI - AI-Gedreven Websites voor Onverslaanbare Prijzen</p>
-                <p>📧 hallo@webdeskai.nl | 📱 +31 6 45830810</p>
+                <p>📧 hallo@webdeskai.com | 📱 +31 6 45830810</p>
             </div>
         </div>
     </body>
