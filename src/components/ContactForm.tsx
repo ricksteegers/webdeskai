@@ -25,36 +25,24 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    try {
-      const response = await fetch('/mail.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
-
-      const result = await response.json();
-
-      if (response.ok && result.success) {
-        setSubmitStatus('success');
-        // Redirect to thank you page after success
-        setTimeout(() => {
-          navigate('/bedankt');
-        }, 2000);
-      } else {
+    
+    // Simple client-side validation
+    const requiredFields = ['name', 'email', 'company', 'phone', 'message'];
+    let isValid = true;
+    
+    for (const field of requiredFields) {
+      if (!formData[field as keyof typeof formData].trim()) {
         setSubmitStatus('error');
-        setTimeout(() => setSubmitStatus('idle'), 5000);
+        setTimeout(() => setSubmitStatus('idle'), 3000);
+        isValid = false;
+        break;
       }
-    } catch (error) {
-      console.error('Form submission error:', error);
-      setSubmitStatus('error');
-      setTimeout(() => setSubmitStatus('idle'), 5000);
-    } finally {
-      setIsSubmitting(false);
+    }
+    
+    if (isValid) {
+      // Let Formspree handle the submission and redirect
+      const form = e.target as HTMLFormElement;
+      form.submit();
     }
   };
 
@@ -133,7 +121,13 @@ const ContactForm: React.FC = () => {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+                id="contact-form"
+                action="https://formspree.io/f/mblawgvo" 
+                method="POST"
+                onSubmit={handleSubmit} 
+                className="space-y-6"
+              >
                 {/* Name and Email Row */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="relative">
@@ -257,6 +251,9 @@ const ContactForm: React.FC = () => {
                     />
                   </div>
                 </div>
+
+                {/* Hidden field for Formspree redirect */}
+                <input type="hidden" name="_next" value="https://webdeskai.com/bedankt" />
 
                 {/* Submit Button */}
                 <button
