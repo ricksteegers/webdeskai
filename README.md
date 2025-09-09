@@ -118,7 +118,7 @@ https://wa.me/31645830810
 
 ### Email
 ```html
-<a href="mailto:hallo@webdeskai.nl">hallo@webdeskai.nl</a>
+<a href="mailto:hallo@webdeskai.nl">hallo@webdeskai.com</a>
 ```
 
 ### Telefoon
