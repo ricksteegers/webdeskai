@@ -55,7 +55,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Email configuration
-$to = 'hallo@webdeskai.nl';
+$to = 'hallo@webdeskai.com';
 $subject = 'Nieuwe contactaanvraag van ' . $name . ' - WebDesk AI';
 
 // Create HTML email body
