@@ -223,13 +223,6 @@ const AboutPage: React.FC = () => {
                 <Link 
                   to="/contact"
                   className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-10 py-5 rounded-full font-semibold text-lg hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 backdrop-blur-sm relative overflow-hidden"
-                 onClick={(e) => {
-                   e.preventDefault();
-                   window.scrollTo(0, 0);
-                   // Use React Router navigation to avoid SPA routing issues
-                   window.history.pushState({}, '', '/contact');
-                   window.location.reload();
-                 }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative z-10">NEEM CONTACT OP</div>
