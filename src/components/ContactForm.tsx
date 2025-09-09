@@ -64,20 +64,6 @@ const ContactForm: React.FC = () => {
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#F4C430] to-orange-500 rounded-t-3xl"></div>
             
             <div className="relative z-10">
-              {submitStatus === 'success' && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-2xl flex items-center">
-                  <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
-                  <span className="text-green-800 font-medium">Bedankt! Uw bericht is verzonden. We nemen snel contact op.</span>
-                </div>
-              )}
-
-              {submitStatus === 'error' && (
-                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-2xl flex items-center">
-                  <AlertCircle className="w-5 h-5 text-red-600 mr-3" />
-                  <span className="text-red-800 font-medium">Er is iets misgegaan. Probeer het opnieuw of neem direct contact op.</span>
-                </div>
-              )}
-
               <form 
                 id="contact-form"
                 action="https://formspree.io/f/mblawgvo" 
