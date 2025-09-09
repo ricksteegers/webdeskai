@@ -134,11 +134,11 @@ const ThankYouPage: React.FC = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-2">E-mail ons</h3>
               <p className="text-gray-600 mb-4">Stuur aanvullende informatie of documenten</p>
               <a 
-                href="mailto:hallo@webdeskai.nl" 
+                href="mailto:hallo@webdeskai.com" 
                 className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 <Mail className="w-5 h-5 mr-2" />
-                hallo@webdeskai.nl
+                hallo@webdeskai.com
               </a>
             </div>
           </div>
