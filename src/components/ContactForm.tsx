@@ -299,7 +299,7 @@ const ContactForm: React.FC = () => {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">E-mail</h3>
                     <p className="text-gray-600 mb-2">Stuur ons een e-mail</p>
-                    <a href="mailto:hallo@webdeskai.nl" className="text-[#F4C430] font-semibold hover:text-orange-500 transition-colors duration-300">
+                    <a href="mailto:hallo@webdeskai.com" className="text-[#F4C430] font-semibold hover:text-orange-500 transition-colors duration-300">
                       hallo@webdeskai.com
                     </a>
                   </div>
