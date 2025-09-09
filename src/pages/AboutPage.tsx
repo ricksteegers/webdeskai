@@ -197,46 +197,8 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* CTA Section - moved directly after Values */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
-              Ons <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500">Team</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ontmoet de AI-experts en creatieve professionals die jouw digitale transformatie mogelijk maken.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 overflow-hidden border border-gray-100">
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#F4C430] transition-colors duration-300">
-                    {member.name}
-                  </h3>
-                  <div className="text-[#F4C430] font-semibold mb-4">{member.role}</div>
-                  <p className="text-gray-600 leading-relaxed">
-                    {member.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="bg-gradient-to-br from-white/95 to-white/80 backdrop-blur-xl rounded-3xl p-12 shadow-2xl border border-white/30 relative overflow-hidden">
             <div className="absolute inset-0 opacity-10">
