@@ -23,10 +23,11 @@ const Header: React.FC = () => {
           {/* Enhanced Logo */}
           <Link to="/" className="flex items-center group">
             <div className="relative">
-              <div className="text-3xl font-bold text-gray-900 group-hover:scale-105 transition-transform duration-300">
-                <span className="text-black">buck</span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse">.design</span>
-              </div>
+              <img 
+                src="/WebDesnk AI.png" 
+                alt="WebDesk AI" 
+                className="h-20 w-auto group-hover:scale-105 transition-transform duration-300"
+              />
               
               {/* Floating sparkle effect */}
               <div className="absolute -top-2 -right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -41,23 +42,49 @@ const Header: React.FC = () => {
           {/* Enhanced Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {[
-              { name: 'Tarieven', href: '#pricing' },
-              { name: 'Diensten', href: '#', hasDropdown: true },
-              { name: 'Over ons', href: '#' }
+              { name: 'Tarieven', href: '#pricing', isAnchor: true },
+              { name: 'Diensten', href: '#services', isAnchor: true },
+              { name: 'Over ons', href: '/over-ons' }
             ].map((item, index) => (
               <div key={index} className="relative group">
-                <a
-                  href={item.name === 'Diensten' ? '#services' : item.href}
-                  className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
-                >
-                  <span className="relative z-10">{item.name}</span>
-                  
-                  {/* Hover background effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                  
-                  {/* Animated underline */}
-                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-300"></div>
-                </a>
+                {item.isAnchor ? (
+                  <a
+                    href={item.href}
+                    className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const targetId = item.href.substring(1);
+                      const element = document.getElementById(targetId);
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      } else {
+                        // If not on homepage, navigate to homepage first
+                        window.location.href = `/${item.href}`;
+                      }
+                    }}
+                  >
+                    <span className="relative z-10">{item.name}</span>
+                    
+                    {/* Hover background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    
+                    {/* Animated underline */}
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-300"></div>
+                  </a>
+                ) : (
+                  <Link
+                    to={item.href}
+                    className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
+                  >
+                    <span className="relative z-10">{item.name}</span>
+                    
+                    {/* Hover background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    
+                    {/* Animated underline */}
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-300"></div>
+                  </Link>
+                )}
               </div>
             ))}
           </nav>
@@ -66,7 +93,7 @@ const Header: React.FC = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <Link 
               to="/contact"
-              className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-8 py-4 rounded-full font-medium hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden inline-flex items-center"
+              className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden inline-flex items-center"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
@@ -101,26 +128,57 @@ const Header: React.FC = () => {
             
             <div className="relative z-10 flex flex-col space-y-6 pt-6">
               {[
-                'Prijzen', 'Mogelijkheden', 'Ons Werk', 'No-Code', 'Over Ons', 'Blog'
+                { name: 'Tarieven', href: '#pricing', isAnchor: true },
+                { name: 'Diensten', href: '#services', isAnchor: true },
+                { name: 'Over ons', href: '/over-ons' }
               ].map((item, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className="group text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden py-2"
-                >
-                  <span className="relative z-10">{item}</span>
-                  
-                  {/* Hover background effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                  
-                  {/* Animated border */}
-                  <div className="absolute left-0 top-0 w-0 h-full border-l-2 border-[#F4C430] group-hover:w-1 transition-all duration-300"></div>
-                </a>
+                <div key={index}>
+                  {item.isAnchor ? (
+                    <a
+                      href={item.href}
+                      className="group text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden py-2 block"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setIsMobileMenuOpen(false);
+                        const targetId = item.href.substring(1);
+                        const element = document.getElementById(targetId);
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                          // If not on homepage, navigate to homepage first
+                          window.location.href = `/${item.href}`;
+                        }
+                      }}
+                    >
+                      <span className="relative z-10">{item.name}</span>
+                      
+                      {/* Hover background effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                      
+                      {/* Animated border */}
+                      <div className="absolute left-0 top-0 w-0 h-full border-l-2 border-[#F4C430] group-hover:w-1 transition-all duration-300"></div>
+                    </a>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className="group text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden py-2 block"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <span className="relative z-10">{item.name}</span>
+                      
+                      {/* Hover background effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                      
+                      {/* Animated border */}
+                      <div className="absolute left-0 top-0 w-0 h-full border-l-2 border-[#F4C430] group-hover:w-1 transition-all duration-300"></div>
+                    </Link>
+                  )}
+                </div>
               ))}
               
               <Link 
-                href={item.name === 'Diensten' ? '#services' : item.href}
-                className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-8 py-4 rounded-full font-medium hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm mt-6 w-full relative overflow-hidden inline-flex items-center justify-center"
+                to="/contact"
+                className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm mt-6 w-full relative overflow-hidden inline-flex items-center justify-center"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 

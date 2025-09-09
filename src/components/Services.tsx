@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Monitor, ShoppingCart, Smartphone, Search, Palette, Zap, Sparkles, ArrowRight, Clock, Target, TrendingUp } from 'lucide-react';
 
 const Services: React.FC = () => {
@@ -27,7 +28,7 @@ const Services: React.FC = () => {
     {
       icon: <Monitor className="w-8 h-8" />,
       title: "Websites",
-      description: "Moderne, responsieve websites die uw merk perfect representeren en bezoekers omzetten.",
+      description: "Moderne, responsieve websites die je merk perfect representeren en bezoekers omzetten.",
       color: "from-blue-500 to-cyan-500",
       features: ["Responsive design", "SEO geoptimaliseerd", "Snelle laadtijden"]
     },
@@ -78,16 +79,6 @@ const Services: React.FC = () => {
         }}></div>
       </div>
 
-      {/* Enhanced Background decorative elements */}
-      <div className="absolute inset-0 opacity-20 z-10">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-[#F4C430] via-orange-400 to-red-400 rounded-full blur-3xl animate-float-gentle"></div>
-        <div className="absolute bottom-20 right-10 w-[32rem] h-[32rem] bg-gradient-to-br from-purple-400 via-pink-400 to-rose-400 rounded-full blur-3xl animate-float-gentle-delayed"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-gradient-to-br from-blue-400 via-cyan-400 to-teal-400 rounded-full blur-3xl animate-drift-left"></div>
-        <div className="absolute top-10 right-1/4 w-80 h-80 bg-gradient-to-br from-emerald-400 via-green-400 to-lime-400 rounded-full blur-3xl animate-drift-right"></div>
-        <div className="absolute bottom-10 left-1/4 w-72 h-72 bg-gradient-to-br from-indigo-400 via-violet-400 to-purple-400 rounded-full blur-3xl animate-float-gentle"></div>
-        <div className="absolute top-1/3 right-20 w-64 h-64 bg-gradient-to-br from-amber-400 via-yellow-400 to-orange-400 rounded-full blur-3xl animate-bounce-slow"></div>
-      </div>
-
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-20 w-2 h-2 bg-[#F4C430] rounded-full animate-ping opacity-60"></div>
@@ -106,7 +97,7 @@ const Services: React.FC = () => {
             <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] animate-pulse"></div>
           </div>
           <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse">AI-gedreven</span> oplossingen
+            AI-gedreven <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse">oplossingen</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Onze AI-expertise stelt ons in staat om premium websites en digitale ervaringen
@@ -114,20 +105,20 @@ const Services: React.FC = () => {
           </p>
           
           {/* Key benefits showcase */}
-          <div className="flex items-center justify-center mt-8 space-x-8">
+          <div className="flex items-center justify-center mt-8 space-x-4 sm:space-x-8">
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#F4C430] animate-pulse">6</div>
-              <div className="text-sm text-gray-600">AI-Services</div>
+              <div className="text-2xl sm:text-3xl font-bold text-[#F4C430] animate-pulse">6</div>
+              <div className="text-xs sm:text-sm text-gray-600">AI-Services</div>
             </div>
             <div className="w-1 h-12 bg-gradient-to-b from-transparent via-[#F4C430] to-transparent"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#F4C430] animate-pulse">100%</div>
-              <div className="text-sm text-gray-600">AI-Gedreven</div>
+              <div className="text-2xl sm:text-3xl font-bold text-[#F4C430] animate-pulse">100%</div>
+              <div className="text-xs sm:text-sm text-gray-600">AI-Gedreven</div>
             </div>
             <div className="w-1 h-12 bg-gradient-to-b from-transparent via-[#F4C430] to-transparent"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#F4C430] animate-pulse">1 week</div>
-              <div className="text-sm text-gray-600">Live</div>
+              <div className="text-2xl sm:text-3xl font-bold text-[#F4C430] animate-pulse">1 week</div>
+              <div className="text-xs sm:text-sm text-gray-600">Live</div>
             </div>
           </div>
         </div>
@@ -209,38 +200,37 @@ const Services: React.FC = () => {
               <div className="flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-[#F4C430] animate-spin-slow mr-3" />
                 <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                  Klaar om je <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500">digitale transformatie</span> te starten?
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500">AI-gedreven</span> websites
                 </h3>
                 <TrendingUp className="w-8 h-8 text-[#F4C430] animate-bounce-slow ml-3" />
               </div>
               
               <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                Laat ons bewijzen hoe onze AI-gedreven services je bedrijf naar het volgende niveau kunnen tillen.
-                Van concept tot live oplossing in slechts 1 week.
+                Steeds meer bedrijven kiezen voor onze AI-gedreven aanpak. Bespaar kosten en ga voor premium design.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <a 
-                  href="https://wa.me/31612345678" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-10 py-5 rounded-full font-medium hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
+                <Link 
+                  to="/contact"
+                  className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
                   <div className="relative z-10 flex items-center">
-                  ONTDEK ONZE SERVICES
+                  <span className="hidden sm:inline">ONTDEK ONZE SERVICES</span>
+                  <span className="sm:hidden">SERVICES</span>
                   </div>
-                </a>
+                </Link>
 
                 <div className="flex items-center space-x-4 text-gray-600">
                   <div className="flex items-center">
                     <Clock className="w-5 h-5 text-[#F4C430] mr-2" />
-                    <span className="font-semibold">In 1 week live</span>
+                    <span className="font-semibold text-xs sm:text-base">In 1 week live</span>
                   </div>
                   <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-[#F4C430]">Geen verplichtingen</span>
+                    <span className="font-semibold text-[#F4C430] text-xs sm:text-base">Geen verplichtingen</span>
                   </div>
                 </div>
               </div>
@@ -261,12 +251,22 @@ const Services: React.FC = () => {
                 </div>
               </div>
 
-              {/* Value proposition */}
-              <div className="mt-8 p-6 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-2xl border border-[#F4C430]/20">
-                <div className="flex items-center justify-center space-x-4 text-gray-700">
-                  <Sparkles className="w-6 h-6 text-[#F4C430]" />
-                  <span className="font-semibold">Alle services onder één dak</span>
-                  <ArrowRight className="w-5 h-5 text-gray-400" />
+              <div className="mt-8">
+                <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 text-gray-600 bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+                  <div className="flex items-center space-x-2">
+                    <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
+                      <div className="text-center sm:text-left">
+                        <div className="text-sm sm:text-base font-semibold mb-1 sm:mb-0 sm:inline">Traditionele bureaus: €2000+ en 4-6 weken</div>
+                        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 mx-auto sm:mx-2 sm:inline" />
+                        <div className="text-sm sm:text-base font-bold text-[#F4C430] sm:inline">WebDesk AI: €695 en 1 week</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Sparkles className="w-6 h-6 text-[#F4C430]" />
+                    <span className="font-semibold">Alle services onder één dak</span>
+                    <ArrowRight className="w-5 h-5 text-gray-400" />
+                  </div>
                 </div>
               </div>
             </div>

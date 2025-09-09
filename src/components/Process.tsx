@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { MessageCircle, Lightbulb, Palette, Rocket, MessageSquare, ArrowRight, Sparkles, Clock } from 'lucide-react';
 
 const Process: React.FC = () => {
@@ -62,7 +63,7 @@ const Process: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9] relative overflow-hidden scroll-animate">
+    <section className="pt-20 pb-32 bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9] relative overflow-hidden scroll-animate">
         {/* Unique triangular transition from Benefits */}
         <div className="absolute top-0 left-0 right-0 -mt-1 z-10 scroll-animate-scale">
           <svg className="w-full h-28 fill-current text-white" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -96,7 +97,7 @@ const Process: React.FC = () => {
               <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] animate-pulse"></div>
             </div>
             <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-              Kopieer jouw <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse">favorieten websites</span> design
+              Binnen <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse">5 stappen</span> live
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Onze AI-gedreven workflow stelt ons in staat om hoogwaardige websites sneller en betaalbaarder te leveren dan traditionele bureaus.
@@ -170,72 +171,6 @@ const Process: React.FC = () => {
             </div>
           </div>
 
-          {/* Impressive CTA Section */}
-          <div className="mt-20 text-center scroll-animate">
-            <div className="bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-lg rounded-3xl p-12 shadow-2xl border border-white/20 relative overflow-hidden">
-              {/* Background pattern */}
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#F4C430] to-orange-400 rounded-3xl transform rotate-1"></div>
-              </div>
-
-              <div className="relative z-10">
-                <div className="flex items-center justify-center mb-6">
-                  <Sparkles className="w-8 h-8 text-[#F4C430] animate-spin-slow mr-3" />
-                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                    Klaar voor de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500">AI-revolutie</span>?
-                  </h3>
-                  <Sparkles className="w-8 h-8 text-[#F4C430] animate-spin-slow ml-3" />
-                </div>
-                
-                <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                  Laat ons bewijzen waarom steeds meer bedrijven kiezen voor onze AI-gedreven aanpak. 
-                  Van concept tot live website - in 1 week live.
-                </p>
-
-                <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                  <a 
-                    href="https://wa.me/31612345678" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-10 py-5 rounded-full font-medium hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    
-                    <div className="relative z-10 flex items-center">
-                    START JOUW PROJECT
-                    </div>
-                  </a>
-
-                  <div className="flex items-center space-x-4 text-gray-600">
-                    <div className="flex items-center">
-                      <Clock className="w-5 h-5 text-[#F4C430] mr-2" />
-                      <span className="font-semibold">In 1 week live</span>
-                    </div>
-                    <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-                    <div className="flex items-center">
-                      <span className="font-semibold text-[#F4C430]">65% goedkoper</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Trust indicators */}
-                <div className="mt-8 flex items-center justify-center space-x-8 text-sm text-gray-500">
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                    <span>Geen vooruitbetaling</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                    <span>Onbeperkte revisies</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                    <span>100% tevredenheidsgarantie</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
     </section>
   );

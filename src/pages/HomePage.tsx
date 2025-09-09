@@ -22,7 +22,6 @@ const HomePage: React.FC = () => {
       <Portfolio />
       <Testimonials />
       <Pricing />
-      <FAQ />
       <Footer />
       <WhatsAppPopup />
     </div>

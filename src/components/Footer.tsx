@@ -32,9 +32,12 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="text-3xl font-bold mb-6 group cursor-pointer">
-              <span className="text-white">buck</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse group-hover:scale-110 transition-transform duration-300">.design</span>
+            <div className="mb-6 group cursor-pointer">
+              <img 
+                src="/WebDesnk AI.png" 
+                alt="WebDesk AI" 
+                className="h-16 w-auto group-hover:scale-110 transition-transform duration-300 filter brightness-0 invert"
+              />
             </div>
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
               AI-gedreven website ontwikkeling tegen onverslaanbare prijzen. Onze expertise in kunstmatige intelligentie 
@@ -57,32 +60,6 @@ const Footer: React.FC = () => {
               </div>
             </div>
             
-            <div className="flex items-center space-x-4">
-              <a
-                href="#"
-                className="group w-12 h-12 bg-gradient-to-br from-gray-800 to-gray-700 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-[#F4C430] hover:to-orange-500 hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-110"
-              >
-                <Facebook className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              </a>
-              <a
-                href="#"
-                className="group w-12 h-12 bg-gradient-to-br from-gray-800 to-gray-700 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-[#F4C430] hover:to-orange-500 hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-110"
-              >
-                <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              </a>
-              <a
-                href="#"
-                className="group w-12 h-12 bg-gradient-to-br from-gray-800 to-gray-700 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-[#F4C430] hover:to-orange-500 hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-110"
-              >
-                <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              </a>
-              <a
-                href="#"
-                className="group w-12 h-12 bg-gradient-to-br from-gray-800 to-gray-700 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-[#F4C430] hover:to-orange-500 hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-110"
-              >
-                <Youtube className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -90,28 +67,18 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">Snelle Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
-                  Prijzen
+                <a href="#pricing" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                  Tarieven
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
-                  Ons Werk
+                <a href="#services" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                  Diensten
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
                   Over Ons
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
-                  Veelgestelde Vragen
                 </a>
               </li>
             </ul>
@@ -123,17 +90,21 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-[#F4C430] mr-3 animate-pulse" />
-                <span className="text-gray-400">hello@buck.design</span>
+                <a href="mailto:hallo@webdeskai.com" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                  hallo@webdeskai.com
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-[#F4C430] mr-3 animate-pulse" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <a href="tel:+31645830810" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                  +31 6 45830810
+                </a>
               </li>
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-[#F4C430] mr-3 mt-1 animate-pulse" />
                 <span className="text-gray-400">
-                  Designstraat 123<br />
-                  Creatieve Wijk, 1234 AB Amsterdam
+                  Verdunplein 17<br />
+                  5627 SZ Eindhoven
                 </span>
               </li>
             </ul>
@@ -143,7 +114,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gradient-to-r from-transparent via-gray-700 to-transparent mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Buck Design. Alle rechten voorbehouden.
+              © 2024 WebDesk AI. Alle rechten voorbehouden.
             </p>
             <div className="flex items-center space-x-6">
               <a href="#" className="text-gray-400 hover:text-[#F4C430] text-sm transition-colors duration-200">
@@ -170,7 +141,7 @@ const Footer: React.FC = () => {
               </div>
               <p className="text-gray-500 text-sm max-w-2xl mx-auto">
                 Gemaakt met ❤️ en AI-technologie in Nederland. 
-                Transformeer uw digitale aanwezigheid met onze revolutionaire aanpak.
+                Transformeer je digitale aanwezigheid met onze revolutionaire aanpak.
               </p>
               
               {/* Trust badges */}

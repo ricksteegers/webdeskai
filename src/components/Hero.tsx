@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
 
   return (
     <>
-    <section className="bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9] min-h-screen relative overflow-visible scroll-animate pt-20">
+    <section className="bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9] min-h-screen relative overflow-visible scroll-animate pt-16 sm:pt-20">
       {/* Enhanced Background decorative elements */}
       <div className="absolute inset-0 opacity-10 scroll-animate-scale">
         <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-[#F4C430] to-orange-400 rounded-full blur-3xl animate-float-gentle"></div>
@@ -138,7 +138,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10 pt-32">
+      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10 pt-24 sm:pt-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 scroll-animate-left">
@@ -168,7 +168,7 @@ const Hero: React.FC = () => {
 
             {/* Enhanced Description */}
             <div className="space-y-4 text-lg text-gray-700 max-w-lg">
-              <p className="font-semibold text-xl text-gray-800">
+              <p className="font-semibold text-lg sm:text-xl text-gray-800">
                 Hoogwaardige websites gemaakt door AI-experts.
               </p>
               <p className="leading-relaxed">
@@ -176,11 +176,11 @@ const Hero: React.FC = () => {
                 <span className="font-bold text-[#F4C430]"> aanzienlijk lagere prijzen</span> dan traditionele bureaus.
               </p>
               <div className="flex items-center space-x-6 text-base">
-                <div className="flex items-center">
+                <div className="flex items-center text-sm sm:text-base">
                   <Clock className="w-5 h-5 text-[#F4C430] mr-2" />
                   <span className="font-semibold">In 1 week live</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center text-sm sm:text-base">
                   <Target className="w-5 h-5 text-[#F4C430] mr-2" />
                   <span className="font-semibold">Geen hoge kosten</span>
                 </div>
@@ -196,7 +196,7 @@ const Hero: React.FC = () => {
               {/* Main CTA */}
               <Link 
                 to="/contact"
-                className="group inline-flex items-center bg-transparent text-gray-800 px-10 py-5 rounded-full font-semibold text-lg border-2 border-[#F4C430] hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 backdrop-blur-sm relative overflow-hidden"
+                className="group inline-flex items-center bg-transparent text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-semibold text-sm sm:text-lg border-2 border-[#F4C430] hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 backdrop-blur-sm relative overflow-hidden"
               >
                 {/* Animated background */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 via-[#F4C430]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -215,7 +215,7 @@ const Hero: React.FC = () => {
               </Link>
 
               {/* Enhanced Pricing Display */}
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-3 md:p-6 shadow-lg border border-white/20 max-w-xs md:max-w-md ml-auto lg:mr-auto lg:ml-0">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-3 md:p-6 shadow-lg border border-white/20 max-w-xs md:max-w-md ml-auto md:ml-0 lg:mr-auto lg:ml-0">
                 <div className="flex items-center justify-between text-sm md:text-base">
                   <div className="flex items-center space-x-4">
                     <div className="relative">
@@ -307,7 +307,8 @@ const Hero: React.FC = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                 <Link 
                   to="/contact"
-                  className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-8 py-4 rounded-full font-medium hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
+                  className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   Gratis adviesgesprek

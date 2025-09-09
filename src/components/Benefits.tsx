@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { Clock, DollarSign, Zap, Shield, Users, Sparkles, HeadphonesIcon, Gauge, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Benefits: React.FC = () => {
   useEffect(() => {
@@ -84,7 +85,7 @@ const Benefits: React.FC = () => {
             <div className="flex items-center justify-center space-x-4 mb-8">
               <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-[#F4C430] animate-pulse"></div>
               <span className="text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-                WAAROM BUCK DESIGN
+                WAAROM WEBDESK AI
               </span>
               <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] animate-pulse"></div>
             </div>
@@ -96,20 +97,20 @@ const Benefits: React.FC = () => {
             </p>
             
             {/* Key stats */}
-            <div className="flex items-center justify-center mt-8 space-x-8">
+            <div className="flex flex-row items-center justify-center mt-8 space-x-4 sm:space-x-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#F4C430] animate-pulse">65%</div>
-                <div className="text-sm text-gray-600">Goedkoper</div>
+                <div className="text-2xl sm:text-3xl font-bold text-[#F4C430] animate-pulse">65%</div>
+                <div className="text-xs sm:text-sm text-gray-600">Goedkoper</div>
               </div>
               <div className="w-1 h-12 bg-gradient-to-b from-transparent via-[#F4C430] to-transparent"></div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#F4C430] animate-pulse">1 week</div>
-                <div className="text-sm text-gray-600">Live</div>
+                <div className="text-2xl sm:text-3xl font-bold text-[#F4C430] animate-pulse">1 week</div>
+                <div className="text-xs sm:text-sm text-gray-600">Live</div>
               </div>
               <div className="w-1 h-12 bg-gradient-to-b from-transparent via-[#F4C430] to-transparent"></div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#F4C430] animate-pulse">100%</div>
-                <div className="text-sm text-gray-600">AI-gedreven</div>
+                <div className="text-2xl sm:text-3xl font-bold text-[#F4C430] animate-pulse">100%</div>
+                <div className="text-xs sm:text-sm text-gray-600">AI-gedreven</div>
               </div>
             </div>
           </div>
@@ -173,22 +174,20 @@ const Benefits: React.FC = () => {
                 <div className="flex items-center justify-center mb-6">
                   <Sparkles className="w-8 h-8 text-[#F4C430] animate-spin-slow mr-3" />
                   <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                    Klaar voor de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500">AI-revolutie</span>?
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500">Start vandaag</span> nog
                   </h3>
                   <Sparkles className="w-8 h-8 text-[#F4C430] animate-spin-slow ml-3" />
                 </div>
                 
                 <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                  Laat ons bewijzen waarom steeds meer bedrijven kiezen voor onze AI-gedreven aanpak. 
-                  Van concept tot live website in slechts 1 week.
+                  Geen limieten in schaalbaarheid, volledig gecodeerd.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                  <a 
-                    href="https://wa.me/31612345678" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-10 py-5 rounded-full font-semibold text-lg hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 flex items-center backdrop-blur-sm relative overflow-hidden"
+                  <Link 
+                    to="/contact"
+                    className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-semibold text-sm sm:text-lg hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 flex items-center backdrop-blur-sm relative overflow-hidden"
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     {/* Animated background */}
                     <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -204,7 +203,7 @@ const Benefits: React.FC = () => {
                       <div className="absolute bottom-2 right-2 w-2 h-2 bg-orange-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
                       <div className="absolute top-1/2 right-4 w-1 h-1 bg-[#F4C430] rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
                     </div>
-                  </a>
+                  </Link>
 
                   <div className="flex items-center space-x-4 text-gray-600">
                     <div className="flex items-center">
@@ -240,7 +239,7 @@ const Benefits: React.FC = () => {
                     <Zap className="w-6 h-6 text-[#F4C430]" />
                     <span className="font-semibold">Traditionele bureaus: €2000+ en 4-6 weken</span>
                     <ArrowRight className="w-5 h-5 text-gray-400" />
-                    <span className="font-bold text-[#F4C430]">Buck Design: €695 en 1 week</span>
+                    <span className="font-bold text-[#F4C430]">WebDesk AI: €695 en 1 week</span>
                     <Sparkles className="w-6 h-6 text-[#F4C430]" />
                   </div>
                 </div>
