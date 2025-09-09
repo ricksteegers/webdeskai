@@ -182,6 +182,8 @@ const ContactForm: React.FC = () => {
 
                 {/* Hidden field for Formspree redirect */}
                 <input type="hidden" name="_next" value="https://webdeskai.com/thankyou" />
+                <input type="hidden" name="_subject" value="Nieuwe contactaanvraag - WebDesk AI" />
+                <input type="hidden" name="_cc" value="hallo@webdeskai.com" />
 
                 {/* Submit Button */}
                 <button
