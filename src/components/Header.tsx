@@ -88,6 +88,19 @@ const Header: React.FC = () => {
               </div>
             ))}
           </nav>
+                  className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
+                >
+                  <span className="relative z-10">{item.name}</span>
+                  
+                  {/* Hover background effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                  
+                  {/* Animated underline */}
+                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-300"></div>
+                </Link>
+              </div>
+            ))}
+          </nav>
 
           {/* Enhanced CTA Button */}
           <div className="hidden lg:flex items-center space-x-4">
