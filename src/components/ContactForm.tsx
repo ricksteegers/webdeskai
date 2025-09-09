@@ -145,13 +145,14 @@ const ContactForm: React.FC = () => {
                 {/* Service Selection */}
                 <div className="relative">
                   <label htmlFor="service" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Gewenste Service
+                    Gewenste Service *
                   </label>
                   <div className="relative">
                     <Sparkles className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                     <select
                       id="service"
                       name="service"
+                      required
                       className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm appearance-none"
                     >
                       <option value="">Selecteer een service</option>
@@ -165,14 +166,13 @@ const ContactForm: React.FC = () => {
                 {/* Message */}
                 <div className="relative">
                   <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Bericht *
+                    Bericht
                   </label>
                   <div className="relative">
                     <MessageSquare className="absolute left-3 top-4 w-5 h-5 text-gray-400" />
                     <textarea
                       id="message"
                       name="message"
-                      required
                       rows={6}
                       className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm resize-none"
                       placeholder="Vertel ons over je project, doelen en hoe we je kunnen helpen..."
@@ -181,7 +181,6 @@ const ContactForm: React.FC = () => {
                 </div>
 
                 {/* Hidden field for Formspree redirect */}
-                <input type="hidden" name="_next" value="https://webdeskai.com/thankyou" />
                 <input type="hidden" name="_subject" value="Nieuwe contactaanvraag - WebDesk AI" />
                 <input type="hidden" name="_cc" value="hallo@webdeskai.com" />
                 <input type="hidden" name="_captcha" value="false" />
