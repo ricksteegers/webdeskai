@@ -168,7 +168,7 @@ const Hero: React.FC = () => {
 
             {/* Enhanced Description */}
             <div className="space-y-4 text-lg text-gray-700 max-w-lg">
-              <p className="font-semibold text-xl text-gray-800">
+              <p className="font-semibold text-lg sm:text-xl text-gray-800">
                 Hoogwaardige websites gemaakt door AI-experts.
               </p>
               <p className="leading-relaxed">
