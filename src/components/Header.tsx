@@ -42,13 +42,52 @@ const Header: React.FC = () => {
           {/* Enhanced Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {[
-              { name: 'Tarieven', href: '/#pricing' },
-              { name: 'Diensten', href: '/#services' },
+              { name: 'Tarieven', href: '#pricing', isAnchor: true },
+              { name: 'Diensten', href: '#services', isAnchor: true },
               { name: 'Over ons', href: '/over-ons' }
             ].map((item, index) => (
               <div key={index} className="relative group">
-                <Link
-                  to={item.href}
+                {item.isAnchor ? (
+                  <a
+                    href={item.href}
+                    className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const targetId = item.href.substring(1);
+                      const element = document.getElementById(targetId);
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      } else {
+                        // If not on homepage, navigate to homepage first
+                        window.location.href = `/${item.href}`;
+                      }
+                    }}
+                  >
+                    <span className="relative z-10">{item.name}</span>
+                    
+                    {/* Hover background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    
+                    {/* Animated underline */}
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-300"></div>
+                  </a>
+                ) : (
+                  <Link
+                    to={item.href}
+                    className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
+                  >
+                    <span className="relative z-10">{item.name}</span>
+                    
+                    {/* Hover background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    
+                    {/* Animated underline */}
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-300"></div>
+                  </Link>
+                )}
+              </div>
+            ))}
+          </nav>
                   className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
                 >
                   <span className="relative z-10">{item.name}</span>
@@ -102,24 +141,52 @@ const Header: React.FC = () => {
             
             <div className="relative z-10 flex flex-col space-y-6 pt-6">
               {[
-                { name: 'Tarieven', href: '/#pricing' },
-                { name: 'Diensten', href: '/#services' },
+                { name: 'Tarieven', href: '#pricing', isAnchor: true },
+                { name: 'Diensten', href: '#services', isAnchor: true },
                 { name: 'Over ons', href: '/over-ons' }
               ].map((item, index) => (
-                <Link
-                  to={item.href}
-                  key={index}
-                  className="group text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <span className="relative z-10">{item.name}</span>
-                  
-                  {/* Hover background effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                  
-                  {/* Animated border */}
-                  <div className="absolute left-0 top-0 w-0 h-full border-l-2 border-[#F4C430] group-hover:w-1 transition-all duration-300"></div>
-                </Link>
+                <div key={index}>
+                  {item.isAnchor ? (
+                    <a
+                      href={item.href}
+                      className="group text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden py-2 block"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setIsMobileMenuOpen(false);
+                        const targetId = item.href.substring(1);
+                        const element = document.getElementById(targetId);
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                          // If not on homepage, navigate to homepage first
+                          window.location.href = `/${item.href}`;
+                        }
+                      }}
+                    >
+                      <span className="relative z-10">{item.name}</span>
+                      
+                      {/* Hover background effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                      
+                      {/* Animated border */}
+                      <div className="absolute left-0 top-0 w-0 h-full border-l-2 border-[#F4C430] group-hover:w-1 transition-all duration-300"></div>
+                    </a>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className="group text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden py-2 block"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <span className="relative z-10">{item.name}</span>
+                      
+                      {/* Hover background effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                      
+                      {/* Animated border */}
+                      <div className="absolute left-0 top-0 w-0 h-full border-l-2 border-[#F4C430] group-hover:w-1 transition-all duration-300"></div>
+                    </Link>
+                  )}
+                </div>
               ))}
               
               <Link 
