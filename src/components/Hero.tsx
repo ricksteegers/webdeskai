@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
 
   return (
     <>
-    <section className="bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9] min-h-screen relative overflow-visible scroll-animate pt-20">
+    <section className="bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9] min-h-screen relative overflow-visible scroll-animate pt-16 sm:pt-20">
       {/* Enhanced Background decorative elements */}
       <div className="absolute inset-0 opacity-10 scroll-animate-scale">
         <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-[#F4C430] to-orange-400 rounded-full blur-3xl animate-float-gentle"></div>
@@ -138,7 +138,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10 pt-32">
+      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10 pt-24 sm:pt-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 scroll-animate-left">
