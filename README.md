@@ -204,7 +204,7 @@ Dit project is gelicenseerd onder de MIT License.
 ## 📞 Support
 
 Voor vragen of ondersteuning:
-- **Email**: hallo@webdeskai.nl
+- **Email**: hallo@webdeskai.com
 - **Telefoon**: +31 6 45830810
 - **WhatsApp**: [Chat starten](https://wa.me/31645830810)
 
