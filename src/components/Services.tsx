@@ -226,11 +226,11 @@ const Services: React.FC = () => {
                 <div className="flex items-center space-x-4 text-gray-600">
                   <div className="flex items-center">
                     <Clock className="w-5 h-5 text-[#F4C430] mr-2" />
-                    <span className="font-semibold">In 1 week live</span>
+                    <span className="font-semibold text-sm sm:text-base">In 1 week live</span>
                   </div>
                   <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-[#F4C430]">Geen verplichtingen</span>
+                    <span className="font-semibold text-[#F4C430] text-sm sm:text-base">Geen verplichtingen</span>
                   </div>
                 </div>
               </div>
