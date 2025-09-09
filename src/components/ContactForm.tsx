@@ -184,6 +184,8 @@ const ContactForm: React.FC = () => {
                 <input type="hidden" name="_next" value="https://webdeskai.com/thankyou" />
                 <input type="hidden" name="_subject" value="Nieuwe contactaanvraag - WebDesk AI" />
                 <input type="hidden" name="_cc" value="hallo@webdeskai.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
 
                 {/* Submit Button */}
                 <button
