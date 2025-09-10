@@ -13,6 +13,35 @@
     <link rel="apple-touch-icon" href="public/Favicon.png">
     <link rel="stylesheet" href="styles.css">
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17305960155"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17305960155');
+      
+      // Track conversion when page loads
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17305960155',
+        'transaction_id': Date.now().toString()
+      });
+      
+      // Also track as a custom event
+      gtag('event', 'form_submit', {
+        'event_category': 'Contact',
+        'event_label': 'Contact Form Submission',
+        'value': 1
+      });
+    
+    // Google Ads Conversie-event
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17305960155/XYZ123',  // Vervang XYZ123 door de juiste conversie-ID uit Google Ads
+        'value': 1.0,
+        'currency': 'EUR'
+    });
+    </script>
 </head>
 <body class="antialiased">
     <!-- Google tag (gtag.js) -->
@@ -23,8 +52,20 @@
       gtag('js', new Date());
 
       gtag('config', 'AW-17305960155');
+      
+      // Track conversion when page loads
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17305960155',
+        'transaction_id': Date.now().toString()
+      });
+      
+      // Also track as a custom event
+      gtag('event', 'form_submit', {
+        'event_category': 'Contact',
+        'event_label': 'Contact Form Submission',
+        'value': 1
+      });
     </script>
-    
     <!-- Header -->
     <header class="header">
         <div class="container">
