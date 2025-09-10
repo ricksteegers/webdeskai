@@ -37,6 +37,28 @@
     </script>
 </head>
 <body class="antialiased">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17305960155"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17305960155');
+      
+      // Track conversion when page loads
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17305960155',
+        'transaction_id': Date.now().toString()
+      });
+      
+      // Also track as a custom event
+      gtag('event', 'form_submit', {
+        'event_category': 'Contact',
+        'event_label': 'Contact Form Submission',
+        'value': 1
+      });
+    </script>
     <!-- Header -->
     <header class="header">
         <div class="container">
