@@ -21,6 +21,19 @@
       gtag('js', new Date());
 
       gtag('config', 'AW-17305960155');
+      
+      // Track conversion when page loads
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17305960155',
+        'transaction_id': Date.now().toString()
+      });
+      
+      // Also track as a custom event
+      gtag('event', 'form_submit', {
+        'event_category': 'Contact',
+        'event_label': 'Contact Form Submission',
+        'value': 1
+      });
     </script>
 </head>
 <body class="antialiased">
