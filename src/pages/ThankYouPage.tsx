@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { CheckCircle, Sparkles, ArrowRight, Clock, Phone, Mail, Calendar, Star, Heart } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -12,6 +13,16 @@ const ThankYouPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9]">
+      <Helmet>
+        <title>Bedankt! - WebDesk AI | Uw Bericht is Ontvangen</title>
+        <meta name="description" content="Bedankt voor uw bericht! We hebben uw contactaanvraag ontvangen en nemen binnen 24 uur contact met u op voor een gratis adviesgesprek." />
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://webdeskai.com/thankyou" />
+        
+        <meta property="og:title" content="Bedankt! - WebDesk AI" />
+        <meta property="og:description" content="Uw bericht is succesvol ontvangen. We nemen binnen 24 uur contact met u op!" />
+        <meta property="og:url" content="https://webdeskai.com/thankyou" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-20 relative overflow-hidden">

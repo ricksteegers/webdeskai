@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://webdeskai.com/sitemap.xml
+
+# Disallow thank you page from search engines
+Disallow: /thankyou
+Disallow: /bedankt
+
+# Allow all other pages
+Allow: /
+Allow: /over-ons
+Allow: /contact
+
+# Crawl delay (optional)
+Crawl-delay: 1

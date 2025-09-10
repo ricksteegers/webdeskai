@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import WhatsAppPopup from '../components/WhatsAppPopup';
@@ -69,6 +70,38 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Over Ons - WebDesk AI | AI-Experts in Website Ontwikkeling</title>
+        <meta name="description" content="Leer meer over WebDesk AI, het team van AI-experts dat premium websites ontwikkelt voor 65% lagere prijzen. Ontdek onze missie, waarden en waarom bedrijven voor ons kiezen." />
+        <meta name="keywords" content="over WebDesk AI, AI website experts, team, missie, waarden, AI ontwikkelaars Nederland" />
+        <link rel="canonical" href="https://webdeskai.com/over-ons" />
+        
+        <meta property="og:title" content="Over Ons - WebDesk AI | AI-Experts in Website Ontwikkeling" />
+        <meta property="og:description" content="Ontdek het verhaal achter WebDesk AI en waarom we de toekomst van webdesign vormgeven met AI-technologie." />
+        <meta property="og:url" content="https://webdeskai.com/over-ons" />
+        
+        <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "Over WebDesk AI",
+          "description": "Leer meer over WebDesk AI, het team van AI-experts in website ontwikkeling",
+          "url": "https://webdeskai.com/over-ons",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "WebDesk AI",
+            "foundingDate": "2024",
+            "description": "AI-gedreven website ontwikkeling tegen onverslaanbare prijzen",
+            "numberOfEmployees": "3-10",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Eindhoven",
+              "addressCountry": "NL"
+            }
+          }
+        })}
+        </script>
+      </Helmet>
       <Header />
       
       {/* Hero Section */}
