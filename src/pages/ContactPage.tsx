@@ -15,12 +15,12 @@ const ContactPage: React.FC = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Contact - WebDesk AI | Gratis Adviesgesprek AI Website Ontwikkeling</title>
+        <title>Contact - WebDesk AI | gratis adviesgesprek AI website ontwikkeling</title>
         <meta name="description" content="Neem contact op met WebDesk AI voor een gratis adviesgesprek. Ontdek hoe onze AI-gedreven websites uw bedrijf kunnen helpen groeien. Reactie binnen 24 uur gegarandeerd!" />
         <meta name="keywords" content="contact WebDesk AI, gratis adviesgesprek, AI website ontwikkeling, offerte aanvragen, website laten maken" />
         <link rel="canonical" href="https://webdeskai.com/contact" />
         
-        <meta property="og:title" content="Contact - WebDesk AI | Gratis Adviesgesprek" />
+        <meta property="og:title" content="Contact - WebDesk AI | gratis adviesgesprek" />
         <meta property="og:description" content="Neem contact op voor een gratis adviesgesprek over AI-gedreven website ontwikkeling. Reactie binnen 24 uur!" />
         <meta property="og:url" content="https://webdeskai.com/contact" />
         

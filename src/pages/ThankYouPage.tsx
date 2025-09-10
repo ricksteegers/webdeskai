@@ -14,7 +14,7 @@ const ThankYouPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9]">
       <Helmet>
-        <title>Bedankt! - WebDesk AI | Uw Bericht is Ontvangen</title>
+        <title>Bedankt! - WebDesk AI | uw bericht is ontvangen</title>
         <meta name="description" content="Bedankt voor uw bericht! We hebben uw contactaanvraag ontvangen en nemen binnen 24 uur contact met u op voor een gratis adviesgesprek." />
         <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://webdeskai.com/thankyou" />
