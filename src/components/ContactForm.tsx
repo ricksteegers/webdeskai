@@ -72,7 +72,7 @@ const ContactForm: React.FC = () => {
               >
                 {/* Web3Forms configuration */}
                 <input type="hidden" name="access_key" value="65891996-5409-46d7-86d9-0501060aa925" />
-                <input type="hidden" name="redirect" value="https://webdeskai.com/bedankt" />
+                <input type="hidden" name="redirect" value="https://webdeskai.com/bedankt.html" />
                 <input type="hidden" name="to" value="hallo@webdeskai.com" />
                 
                 {/* Name and Email Row */}
