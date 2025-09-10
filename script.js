@@ -1,14 +1,16 @@
 // Mobile Menu Toggle
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mobileNav = document.getElementById('mobileNav');
-const menuIcon = mobileMenuBtn.querySelector('.menu-icon');
-const closeIcon = mobileMenuBtn.querySelector('.close-icon');
+const menuIcon = mobileMenuBtn?.querySelector('.menu-icon');
+const closeIcon = mobileMenuBtn?.querySelector('.close-icon');
 
-mobileMenuBtn.addEventListener('click', () => {
-    mobileNav.classList.toggle('hidden');
-    menuIcon.classList.toggle('hidden');
-    closeIcon.classList.toggle('hidden');
-});
+if (mobileMenuBtn && mobileNav && menuIcon && closeIcon) {
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+    });
+}
 
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -21,9 +23,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 block: 'start'
             });
             // Close mobile menu if open
-            mobileNav.classList.add('hidden');
-            menuIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
+            if (mobileNav && menuIcon && closeIcon) {
+                mobileNav.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
         }
     });
 });
@@ -32,19 +36,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const header = document.querySelector('.header');
 let lastScrollY = window.scrollY;
 
-window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-    
-    if (currentScrollY > 100) {
-        header.style.background = 'rgba(255, 255, 255, 0.98)';
-        header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-    } else {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
-        header.style.boxShadow = 'none';
-    }
-    
-    lastScrollY = currentScrollY;
-});
+if (header) {
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > 100) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = 'none';
+        }
+        
+        lastScrollY = currentScrollY;
+    });
+}
 
 // Intersection Observer for Animations
 const observerOptions = {
@@ -70,13 +76,17 @@ const whatsappBtn = document.getElementById('whatsappBtn');
 const whatsappExpanded = document.getElementById('whatsappExpanded');
 const whatsappClose = document.getElementById('whatsappClose');
 
-whatsappBtn.addEventListener('click', () => {
-    whatsappExpanded.classList.toggle('show');
-});
+if (whatsappBtn && whatsappExpanded) {
+    whatsappBtn.addEventListener('click', () => {
+        whatsappExpanded.classList.toggle('show');
+    });
+}
 
-whatsappClose.addEventListener('click', () => {
-    whatsappExpanded.classList.remove('show');
-});
+if (whatsappClose && whatsappExpanded) {
+    whatsappClose.addEventListener('click', () => {
+        whatsappExpanded.classList.remove('show');
+    });
+}
 
 // Contact Form Handling
 const contactForm = document.getElementById('contactForm');
@@ -84,57 +94,63 @@ const submitBtn = document.getElementById('submitBtn');
 const thankYouModal = document.getElementById('thankYouModal');
 const closeModal = document.getElementById('closeModal');
 
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    // Show loading state
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = `
-        <div style="width: 1.5rem; height: 1.5rem; border: 2px solid currentColor; border-top: transparent; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 0.75rem;"></div>
-        Verzenden...
-    `;
-    
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    try {
-        // Simulate form submission (replace with actual endpoint)
-        await new Promise(resolve => setTimeout(resolve, 2000));
+if (contactForm && submitBtn && thankYouModal && closeModal) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
         
-        // Show success modal
-        thankYouModal.classList.remove('hidden');
-        
-        // Reset form
-        contactForm.reset();
-        
-    } catch (error) {
-        console.error('Form submission error:', error);
-        alert('Er is een fout opgetreden. Probeer het opnieuw of neem direct contact op.');
-    } finally {
-        // Reset button
-        submitBtn.disabled = false;
+        // Show loading state
+        submitBtn.disabled = true;
         submitBtn.innerHTML = `
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="22" y1="2" x2="11" y2="13"></line>
-                <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
-            </svg>
-            Verstuur Bericht
+            <div style="width: 1.5rem; height: 1.5rem; border: 2px solid currentColor; border-top: transparent; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 0.75rem;"></div>
+            Verzenden...
         `;
-    }
-});
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
+        
+        try {
+            // Simulate form submission (replace with actual endpoint)
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            
+            // Show success modal
+            thankYouModal.classList.remove('hidden');
+            
+            // Reset form
+            contactForm.reset();
+            
+        } catch (error) {
+            console.error('Form submission error:', error);
+            alert('Er is een fout opgetreden. Probeer het opnieuw of neem direct contact op.');
+        } finally {
+            // Reset button
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                </svg>
+                Verstuur Bericht
+            `;
+        }
+    });
+}
 
 // Close modal
-closeModal.addEventListener('click', () => {
-    thankYouModal.classList.add('hidden');
-});
+if (closeModal && thankYouModal) {
+    closeModal.addEventListener('click', () => {
+        thankYouModal.classList.add('hidden');
+    });
+}
 
 // Close modal when clicking outside
-thankYouModal.addEventListener('click', (e) => {
-    if (e.target === thankYouModal) {
-        thankYouModal.classList.add('hidden');
-    }
-});
+if (thankYouModal) {
+    thankYouModal.addEventListener('click', (e) => {
+        if (e.target === thankYouModal) {
+            thankYouModal.classList.add('hidden');
+        }
+    });
+}
 
 // Add CSS for spin animation
 const style = document.createElement('style');
@@ -212,17 +228,19 @@ function debounce(func, wait) {
 }
 
 // Apply debounce to scroll handler
-window.addEventListener('scroll', debounce(() => {
-    const currentScrollY = window.scrollY;
-    
-    if (currentScrollY > 100) {
-        header.style.background = 'rgba(255, 255, 255, 0.98)';
-        header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-    } else {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
-        header.style.boxShadow = 'none';
-    }
-}, 10));
+if (header) {
+    window.addEventListener('scroll', debounce(() => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > 100) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = 'none';
+        }
+    }, 10));
+}
 
 // Add loading animation for better UX
 window.addEventListener('load', () => {
