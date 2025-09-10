@@ -66,10 +66,15 @@ const ContactForm: React.FC = () => {
             <div className="relative z-10">
               <form 
                 id="contact-form"
-                action="https://formspree.io/f/mblawgvo" 
+                action="https://api.web3forms.com/submit"
                 method="POST"
                 className="space-y-6"
               >
+                {/* Web3Forms configuration */}
+                <input type="hidden" name="access_key" value="65891996-5409-46d7-86d9-0501060aa925" />
+                <input type="hidden" name="redirect" value="https://webdeskai.com/bedankt" />
+                <input type="hidden" name="to" value="hallo@webdeskai.com" />
+                
                 {/* Name and Email Row */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="relative">
@@ -179,12 +184,6 @@ const ContactForm: React.FC = () => {
                     />
                   </div>
                 </div>
-
-                {/* Hidden field for Formspree redirect */}
-                <input type="hidden" name="_subject" value="Nieuwe contactaanvraag - WebDesk AI" />
-                <input type="hidden" name="_cc" value="hallo@webdeskai.com" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
 
                 {/* Submit Button */}
                 <button
