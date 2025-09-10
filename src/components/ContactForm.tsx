@@ -66,8 +66,11 @@ const ContactForm: React.FC = () => {
             <div className="relative z-10">
               <form 
                 id="contact-form"
-                action="https://formspree.io/f/mblawgvo" 
+                name="contact"
                 method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="/thankyou"
                 className="space-y-6"
               >
                 {/* Name and Email Row */}
@@ -181,10 +184,14 @@ const ContactForm: React.FC = () => {
                 </div>
 
                 {/* Hidden field for Formspree redirect */}
-                <input type="hidden" name="_subject" value="Nieuwe contactaanvraag - WebDesk AI" />
-                <input type="hidden" name="_cc" value="hallo@webdeskai.com" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
+                {/* Netlify Forms configuration */}
+                <input type="hidden" name="form-name" value="contact" />
+                <div className="hidden">
+                  <label>
+                    Don't fill this out if you're human: 
+                    <input name="bot-field" />
+                  </label>
+                </div>
 
                 {/* Submit Button */}
                 <button
