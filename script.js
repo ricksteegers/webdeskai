@@ -84,60 +84,57 @@ const submitBtn = document.getElementById('submitBtn');
 const thankYouModal = document.getElementById('thankYouModal');
 const closeModal = document.getElementById('closeModal');
 
-// Only add event listeners if elements exist
-if (contactForm && submitBtn && thankYouModal && closeModal) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `
+        <div style="width: 1.5rem; height: 1.5rem; border: 2px solid currentColor; border-top: transparent; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 0.75rem;"></div>
+        Verzenden...
+    `;
+    
+    // Get form data
+    const formData = new FormData(contactForm);
+    const data = Object.fromEntries(formData);
+    
+    try {
+        // Simulate form submission (replace with actual endpoint)
+        await new Promise(resolve => setTimeout(resolve, 2000));
         
-        // Show loading state
-        submitBtn.disabled = true;
+        // Show success modal
+        thankYouModal.classList.remove('hidden');
+        
+        // Reset form
+        contactForm.reset();
+        
+    } catch (error) {
+        console.error('Form submission error:', error);
+        alert('Er is een fout opgetreden. Probeer het opnieuw of neem direct contact op.');
+    } finally {
+        // Reset button
+        submitBtn.disabled = false;
         submitBtn.innerHTML = `
-            <div style="width: 1.5rem; height: 1.5rem; border: 2px solid currentColor; border-top: transparent; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 0.75rem;"></div>
-            Verzenden...
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+            </svg>
+            Verstuur Bericht
         `;
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        try {
-            // Simulate form submission (replace with actual endpoint)
-            await new Promise(resolve => setTimeout(resolve, 2000));
-            
-            // Show success modal
-            thankYouModal.classList.remove('hidden');
-            
-            // Reset form
-            contactForm.reset();
-            
-        } catch (error) {
-            console.error('Form submission error:', error);
-            alert('Er is een fout opgetreden. Probeer het opnieuw of neem direct contact op.');
-        } finally {
-            // Reset button
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = `
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
-                </svg>
-                Verstuur Bericht
-            `;
-        }
-    });
+    }
+});
 
-    // Close modal
-    closeModal.addEventListener('click', () => {
+// Close modal
+closeModal.addEventListener('click', () => {
+    thankYouModal.classList.add('hidden');
+});
+
+// Close modal when clicking outside
+thankYouModal.addEventListener('click', (e) => {
+    if (e.target === thankYouModal) {
         thankYouModal.classList.add('hidden');
-    });
-
-    // Close modal when clicking outside
-    thankYouModal.addEventListener('click', (e) => {
-        if (e.target === thankYouModal) {
-            thankYouModal.classList.add('hidden');
-        }
-    });
-}
+    }
+});
 
 // Add CSS for spin animation
 const style = document.createElement('style');
