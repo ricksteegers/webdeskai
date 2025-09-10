@@ -16,12 +16,12 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>WebDesk AI - AI-Gedreven Websites voor Onverslaanbare Prijzen | Premium Webdesign vanaf €695</title>
+        <title>WebDesk AI - AI-gedreven websites voor onverslaanbare prijzen | premium webdesign vanaf €695</title>
         <meta name="description" content="Hoogwaardige websites gemaakt door AI-experts. 65% goedkoper dan traditionele bureaus, in 1 week live! Premium webdesign vanaf €695. Gratis adviesgesprek." />
         <meta name="keywords" content="AI website ontwikkeling, goedkope websites, premium webdesign, AI webdesign, website laten maken, webdesign Nederland, AI gedreven websites" />
         <link rel="canonical" href="https://webdeskai.com/" />
         
-        <meta property="og:title" content="WebDesk AI - AI-Gedreven Websites voor Onverslaanbare Prijzen" />
+        <meta property="og:title" content="WebDesk AI - AI-gedreven websites voor onverslaanbare prijzen" />
         <meta property="og:description" content="Premium websites vanaf €695 dankzij AI-technologie. 65% goedkoper dan traditionele bureaus en in 1 week live!" />
         <meta property="og:url" content="https://webdeskai.com/" />
         <meta property="og:type" content="website" />
