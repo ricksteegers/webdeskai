@@ -70,13 +70,17 @@ const whatsappBtn = document.getElementById('whatsappBtn');
 const whatsappExpanded = document.getElementById('whatsappExpanded');
 const whatsappClose = document.getElementById('whatsappClose');
 
-whatsappBtn.addEventListener('click', () => {
-    whatsappExpanded.classList.toggle('show');
-});
+if (whatsappBtn && whatsappExpanded) {
+    whatsappBtn.addEventListener('click', () => {
+        whatsappExpanded.classList.toggle('show');
+    });
+}
 
-whatsappClose.addEventListener('click', () => {
-    whatsappExpanded.classList.remove('show');
-});
+if (whatsappClose && whatsappExpanded) {
+    whatsappClose.addEventListener('click', () => {
+        whatsappExpanded.classList.remove('show');
+    });
+}
 
 // Contact Form Handling
 const contactForm = document.getElementById('contactForm');
