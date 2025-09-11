@@ -197,26 +197,19 @@ const Hero: React.FC = () => {
               {/* Main CTA */}
               <Link 
                 to="/contact"
-                className="group inline-flex items-center bg-transparent text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-semibold text-sm sm:text-lg border-2 border-[#F4C430] hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 backdrop-blur-sm relative overflow-hidden"
+                className="group inline-flex items-center bg-blue-500 text-white px-8 py-4 sm:px-12 sm:py-6 rounded-full font-semibold text-sm sm:text-lg hover:bg-blue-600 transition-all duration-300 shadow-soft hover:shadow-soft-lg transform hover:-translate-y-1 hover:scale-105 relative overflow-hidden"
               >
                 {/* Animated background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 via-[#F4C430]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 <div className="relative z-10 flex items-center">
                 Plan een gesprek
-                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-3 transition-transform duration-500 text-[#F4C430] group-hover:text-black" />
-                </div>
-                
-                {/* Floating particles */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute top-2 left-2 w-1.5 h-1.5 bg-[#F4C430] rounded-full animate-ping"></div>
-                  <div className="absolute bottom-2 right-2 w-2 h-2 bg-[#F4C430] rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                  <div className="absolute top-1/2 right-4 w-1 h-1 bg-[#F4C430] rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
                 </div>
               </Link>
 
               {/* Enhanced Pricing Display */}
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-3 md:p-6 shadow-lg border border-white/20 max-w-xs md:max-w-md ml-auto md:ml-0 lg:mr-auto lg:ml-0">
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 md:p-6 shadow-soft border border-blue-100 max-w-xs md:max-w-md ml-auto md:ml-0 lg:mr-auto lg:ml-0">
                 <div className="flex items-center justify-between text-sm md:text-base">
                   <div className="flex items-center space-x-4">
                     <div className="relative">
@@ -232,23 +225,23 @@ const Hero: React.FC = () => {
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-xs md:text-sm text-gray-500 italic">dankzij AI</div>
+                    <div className="text-xs md:text-sm text-blue-600 italic font-medium">dankzij AI</div>
                     <div className="text-sm md:text-lg font-bold text-green-600">65% besparing</div>
                   </div>
                 </div>
                 
                 {/* Value indicators */}
                 <div className="mt-3 md:mt-4 grid grid-cols-3 gap-1 md:gap-2 text-xs">
-                  <div className="text-center bg-green-50 rounded-lg py-1 md:py-2">
-                    <div className="font-bold text-green-600">Binnen 1 week</div>
+                  <div className="text-center bg-blue-50 rounded-lg py-1 md:py-2 border border-blue-100">
+                    <div className="font-bold text-blue-600">Binnen 1 week</div>
                     <div className="text-gray-600 text-[10px] md:text-xs">live</div>
                   </div>
-                  <div className="text-center bg-blue-50 rounded-lg py-1 md:py-2">
-                    <div className="font-bold text-blue-600">100%</div>
+                  <div className="text-center bg-cyan-50 rounded-lg py-1 md:py-2 border border-cyan-100">
+                    <div className="font-bold text-cyan-600">100%</div>
                     <div className="text-gray-600 text-[10px] md:text-xs">AI-gedreven</div>
                   </div>
-                  <div className="text-center bg-purple-50 rounded-lg py-1 md:py-2">
-                    <div className="font-bold text-purple-600">Premium</div>
+                  <div className="text-center bg-emerald-50 rounded-lg py-1 md:py-2 border border-emerald-100">
+                    <div className="font-bold text-emerald-600">Premium</div>
                     <div className="text-gray-600 text-[10px] md:text-xs">kwaliteit</div>
                   </div>
                 </div>
@@ -256,11 +249,11 @@ const Hero: React.FC = () => {
 
               {/* Trust indicators */}
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
-                <div className="flex items-center bg-white/70 backdrop-blur-sm rounded-full px-3 py-1">
+                <div className="flex items-center bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-card border border-gray-100">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                   <span>Geen vooruitbetaling</span>
                 </div>
-                <div className="flex items-center bg-white/70 backdrop-blur-sm rounded-full px-3 py-1">
+                <div className="flex items-center bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-card border border-gray-100">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                   <span>100% tevredenheidsgarantie</span>
                 </div>
