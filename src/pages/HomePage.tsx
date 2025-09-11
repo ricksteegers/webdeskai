@@ -2,13 +2,13 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import ProblemSolution from '../components/ProblemSolution';
-import KeyBenefits from '../components/KeyBenefits';
-import SocialProof from '../components/SocialProof';
-import ProductHighlight from '../components/ProductHighlight';
-import TrustBuilders from '../components/TrustBuilders';
-import UrgencySection from '../components/UrgencySection';
-import FinalCTA from '../components/FinalCTA';
+import Services from '../components/Services';
+import Benefits from '../components/Benefits';
+import Process from '../components/Process';
+import Portfolio from '../components/Portfolio';
+import Testimonials from '../components/Testimonials';
+import Pricing from '../components/Pricing';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import WhatsAppPopup from '../components/WhatsAppPopup';
 
@@ -48,13 +48,12 @@ const HomePage: React.FC = () => {
       </Helmet>
       <Header />
       <Hero />
-      <ProblemSolution />
-      <KeyBenefits />
-      <SocialProof />
-      <ProductHighlight />
-      <TrustBuilders />
-      <UrgencySection />
-      <FinalCTA />
+      <Services />
+      <Benefits />
+      <Process />
+      <Portfolio />
+      <Testimonials />
+      <Pricing />
       <Footer />
       <WhatsAppPopup />
     </div>

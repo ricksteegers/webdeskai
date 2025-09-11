@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-soft border-b border-blue-100">
+    <header className="absolute top-0 left-0 right-0 z-50 transition-all duration-500">
       {/* Enhanced Background decorative elements */}
 
       <div className="max-w-7xl mx-auto px-6 py-4 relative z-10">
@@ -26,16 +26,16 @@ const Header: React.FC = () => {
               <img 
                 src="/WebDesnk AI.png" 
                 alt="WebDesk AI" 
-                className="h-16 w-auto group-hover:scale-105 transition-transform duration-300"
+                className="h-20 w-auto group-hover:scale-105 transition-transform duration-300"
               />
               
               {/* Floating sparkle effect */}
               <div className="absolute -top-2 -right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Sparkles className="w-4 h-4 text-blue-500 animate-spin-slow" />
+                <Sparkles className="w-4 h-4 text-[#F4C430] animate-spin-slow" />
               </div>
               
               {/* Underline effect */}
-              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 group-hover:w-full transition-all duration-300"></div>
+              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-500"></div>
             </div>
           </Link>
 
@@ -51,7 +51,6 @@ const Header: React.FC = () => {
                   <a
                     href={item.href}
                     className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
-                    className="flex items-center text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium relative overflow-hidden group px-4 py-2 rounded-lg hover:bg-blue-50"
                     onClick={(e) => {
                       e.preventDefault();
                       const targetId = item.href.substring(1);
@@ -66,18 +65,24 @@ const Header: React.FC = () => {
                   >
                     <span className="relative z-10">{item.name}</span>
                     
+                    {/* Hover background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    
                     {/* Animated underline */}
-                    <div className="absolute bottom-1 left-4 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 group-hover:w-8 transition-all duration-300"></div>
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-300"></div>
                   </a>
                 ) : (
                   <Link
                     to={item.href}
-                    className="flex items-center text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium relative overflow-hidden group px-4 py-2 rounded-lg hover:bg-blue-50"
+                    className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
                   >
                     <span className="relative z-10">{item.name}</span>
                     
+                    {/* Hover background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    
                     {/* Animated underline */}
-                    <div className="absolute bottom-1 left-4 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 group-hover:w-8 transition-all duration-300"></div>
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-300"></div>
                   </Link>
                 )}
               </div>
@@ -88,11 +93,13 @@ const Header: React.FC = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <Link 
               to="/contact"
-              className="group bg-blue-500 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-blue-600 transition-all duration-300 shadow-soft hover:shadow-soft-lg transform hover:-translate-y-1 inline-flex items-center"
+              className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden inline-flex items-center"
             >
+              <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
               {/* Content */}
               <div className="relative z-10 flex items-center">
-                <Zap className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
+                <Zap className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-500 text-[#F4C430] group-hover:text-black" />
                 <span>Contact</span>
               </div>
             </Link>
@@ -100,7 +107,7 @@ const Header: React.FC = () => {
 
           {/* Enhanced Mobile menu button */}
           <button
-            className="lg:hidden relative group text-gray-700 hover:text-blue-500 p-2 rounded-full hover:bg-blue-50 transition-all duration-300"
+            className="lg:hidden relative group text-gray-700 hover:text-[#F4C430] p-2 rounded-full hover:bg-[#F4C430]/10 transition-all duration-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <div className="relative">
@@ -115,9 +122,9 @@ const Header: React.FC = () => {
 
         {/* Enhanced Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-6 pb-6 border-t border-blue-100 relative">
+          <div className="lg:hidden mt-6 pb-6 border-t border-gray-200/50 relative">
             {/* Background blur effect */}
-            <div className="absolute inset-0 bg-white/95 backdrop-blur-sm rounded-2xl -m-4 shadow-soft"></div>
+            <div className="absolute inset-0 bg-white/80 backdrop-blur-sm rounded-2xl -m-4"></div>
             
             <div className="relative z-10 flex flex-col space-y-6 pt-6">
               {[
@@ -129,7 +136,7 @@ const Header: React.FC = () => {
                   {item.isAnchor ? (
                     <a
                       href={item.href}
-                      className="group text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium relative overflow-hidden py-3 px-4 block rounded-lg hover:bg-blue-50"
+                      className="group text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden py-2 block"
                       onClick={(e) => {
                         e.preventDefault();
                         setIsMobileMenuOpen(false);
@@ -145,19 +152,25 @@ const Header: React.FC = () => {
                     >
                       <span className="relative z-10">{item.name}</span>
                       
+                      {/* Hover background effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                      
                       {/* Animated border */}
-                      <div className="absolute left-0 top-0 w-0 h-full border-l-3 border-blue-500 group-hover:w-1 transition-all duration-300"></div>
+                      <div className="absolute left-0 top-0 w-0 h-full border-l-2 border-[#F4C430] group-hover:w-1 transition-all duration-300"></div>
                     </a>
                   ) : (
                     <Link
                       to={item.href}
-                      className="group text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium relative overflow-hidden py-3 px-4 block rounded-lg hover:bg-blue-50"
+                      className="group text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden py-2 block"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       <span className="relative z-10">{item.name}</span>
                       
+                      {/* Hover background effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                      
                       {/* Animated border */}
-                      <div className="absolute left-0 top-0 w-0 h-full border-l-3 border-blue-500 group-hover:w-1 transition-all duration-300"></div>
+                      <div className="absolute left-0 top-0 w-0 h-full border-l-2 border-[#F4C430] group-hover:w-1 transition-all duration-300"></div>
                     </Link>
                   )}
                 </div>
@@ -165,11 +178,13 @@ const Header: React.FC = () => {
               
               <Link 
                 to="/contact"
-                className="group bg-blue-500 text-white px-8 py-4 rounded-full font-medium text-base hover:bg-blue-600 transition-all duration-300 shadow-soft hover:shadow-soft-lg mt-6 w-full inline-flex items-center justify-center"
+                className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm mt-6 w-full relative overflow-hidden inline-flex items-center justify-center"
               >
+                <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
                 {/* Content */}
                 <div className="relative z-10 flex items-center justify-center">
-                  <Zap className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
+                  <Zap className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-500 text-[#F4C430] group-hover:text-black" />
                   <span>Contact</span>
                 </div>
               </Link>
