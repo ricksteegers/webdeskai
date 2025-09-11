@@ -49,9 +49,6 @@ const SocialProof: React.FC = () => {
   ];
 
   const partnerLogos = [
-    { name: "BouwGarant", logo: "/Bouwgarant new.PNG" },
-    { name: "BDO", logo: "/BDO new.PNG" },
-    { name: "Juridisch Loket", logo: "/Juridisch Loket new.PNG" },
     { name: "Melis Logistics", logo: "/15.png" },
     { name: "Chapeau", logo: "/23.png" },
     { name: "Quote", logo: "/28.png" }
@@ -272,7 +269,7 @@ const SocialProof: React.FC = () => {
           
           <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8 items-center">
-              {partnerLogos.map((partner, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center">
                 <div
                   key={index}
                   className="flex items-center justify-center p-3 sm:p-4 md:p-6 grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-110"
