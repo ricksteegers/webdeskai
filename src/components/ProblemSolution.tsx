@@ -88,24 +88,28 @@ const ProblemSolution: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 pb-32 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section className="py-20 pb-32 bg-white relative overflow-hidden">
       {/* Enhanced animated background */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-15">
         <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full blur-3xl animate-float-gentle"></div>
         <div className="absolute bottom-20 right-10 w-[32rem] h-[32rem] bg-gradient-to-br from-purple-400 to-pink-400 rounded-full blur-3xl animate-float-gentle-delayed"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-gradient-to-br from-green-400 to-emerald-400 rounded-full blur-3xl animate-drift-left"></div>
       </div>
 
       {/* Floating geometric shapes */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
         <div className="absolute top-32 left-20 w-4 h-4 bg-blue-400 rounded-full animate-ping opacity-60"></div>
         <div className="absolute top-48 right-32 w-6 h-6 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce opacity-40"></div>
         <div className="absolute bottom-40 left-16 w-3 h-3 bg-green-400 rounded-full animate-pulse opacity-50"></div>
         <div className="absolute bottom-32 right-20 w-8 h-8 bg-gradient-to-r from-orange-400 to-red-400 rounded-full animate-spin-slow opacity-30"></div>
         
         {/* Animated lines */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-0.5 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse opacity-30 transform rotate-45"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-24 h-0.5 bg-gradient-to-r from-transparent via-purple-400 to-transparent animate-pulse opacity-30 transform -rotate-45"></div>
+        <div className="absolute top-1/4 left-1/4 w-32 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse opacity-60 transform rotate-45"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-24 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent animate-pulse opacity-60 transform -rotate-45"></div>
+        <div className="absolute top-1/3 right-1/4 w-28 h-0.5 bg-gradient-to-r from-transparent via-green-400 to-transparent animate-pulse opacity-50 transform rotate-90"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-20 h-0.5 bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-pulse opacity-50 transform -rotate-30"></div>
+        <div className="absolute top-2/3 left-1/5 w-36 h-0.5 bg-gradient-to-r from-transparent via-pink-400 to-transparent animate-pulse opacity-40 transform rotate-60"></div>
+        <div className="absolute bottom-2/3 right-1/5 w-30 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse opacity-55 transform -rotate-75"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
