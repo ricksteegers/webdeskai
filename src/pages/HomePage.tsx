@@ -6,7 +6,6 @@ import ProblemSolution from '../components/ProblemSolution';
 import SocialProof from '../components/SocialProof';
 import ProductHighlight from '../components/ProductHighlight';
 import TrustBuilders from '../components/TrustBuilders';
-import UrgencySection from '../components/UrgencySection';
 import FinalCTA from '../components/FinalCTA';
 import Footer from '../components/Footer';
 import WhatsAppPopup from '../components/WhatsAppPopup';
@@ -51,7 +50,6 @@ const HomePage: React.FC = () => {
       <SocialProof />
       <ProductHighlight />
       <TrustBuilders />
-      <UrgencySection />
       <FinalCTA />
       <Footer />
       <WhatsAppPopup />
