@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CheckCircle, Zap, Clock, DollarSign, TrendingUp, ArrowRight, Sparkles, Target, Users, Award, Shield, TrendingDown, AlertTriangle, Euro } from 'lucide-react';
+import { CheckCircle, Zap, Clock, TrendingUp, ArrowRight, Sparkles, Target, Users, Award, Shield, TrendingDown, AlertTriangle, Euro } from 'lucide-react';
 
 const ProblemSolution: React.FC = () => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -28,7 +28,7 @@ const ProblemSolution: React.FC = () => {
 
   const problems = [
     {
-      icon: <DollarSign className="w-8 h-8" />,
+      icon: <Euro className="w-8 h-8" />,
       title: "Hoge kosten",
       description: "Traditionele webdesign bureaus vragen €2000-€5000+ voor een website",
       color: "from-red-500 to-pink-500",
