@@ -94,10 +94,141 @@ const TrustBuilders: React.FC = () => {
 
   return (
     <section id="pricing" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full blur-3xl animate-float-gentle"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full blur-3xl animate-float-gentle-delayed"></div>
+      {/* Ultra Creative Background Elements */}
+      <div className="absolute inset-0 opacity-20">
+        {/* Massive floating orbs with complex gradients */}
+        <div className="absolute top-10 left-5 w-[40rem] h-[40rem] bg-gradient-to-br from-blue-400 via-cyan-400 via-teal-400 to-emerald-400 rounded-full blur-3xl animate-float-gentle transform rotate-45"></div>
+        <div className="absolute bottom-10 right-5 w-[50rem] h-[50rem] bg-gradient-to-br from-purple-400 via-pink-400 via-rose-400 to-red-400 rounded-full blur-3xl animate-float-gentle-delayed transform -rotate-30"></div>
+        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-[60rem] h-[60rem] bg-gradient-to-br from-indigo-400 via-blue-400 via-cyan-400 to-teal-400 rounded-full blur-3xl animate-drift-left transform rotate-90"></div>
+        <div className="absolute top-5 right-1/3 w-[30rem] h-[30rem] bg-gradient-to-br from-emerald-400 via-green-400 via-lime-400 to-yellow-400 rounded-full blur-3xl animate-drift-right transform rotate-180"></div>
+        <div className="absolute bottom-5 left-1/3 w-[35rem] h-[35rem] bg-gradient-to-br from-orange-400 via-red-400 via-pink-400 to-purple-400 rounded-full blur-3xl animate-float-gentle transform -rotate-60"></div>
+        <div className="absolute top-2/3 right-1/4 w-[25rem] h-[25rem] bg-gradient-to-br from-violet-400 via-purple-400 via-indigo-400 to-blue-400 rounded-full blur-3xl animate-bounce-slow transform rotate-120"></div>
+      </div>
+
+      {/* Animated geometric patterns */}
+      <div className="absolute inset-0 opacity-15">
+        {/* Multi-layer grid patterns */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: `
+            radial-gradient(circle at 4px 4px, #F4C430 4px, transparent 0), 
+            radial-gradient(circle at 2px 2px, #3B82F6 2px, transparent 0),
+            radial-gradient(circle at 3px 3px, #8B5CF6 3px, transparent 0),
+            radial-gradient(circle at 1px 1px, #10B981 1px, transparent 0)
+          `,
+          backgroundSize: '100px 100px, 80px 80px, 120px 120px, 60px 60px',
+          backgroundPosition: '0 0, 40px 40px, 80px 80px, 20px 20px'
+        }}></div>
+        
+        {/* Complex diagonal line patterns */}
+        <div className="absolute top-0 left-0 w-full h-full" style={{
+          backgroundImage: `
+            linear-gradient(45deg, transparent 47%, #F4C430 49%, #F4C430 51%, transparent 53%),
+            linear-gradient(-45deg, transparent 47%, #3B82F6 49%, #3B82F6 51%, transparent 53%),
+            linear-gradient(135deg, transparent 47%, #8B5CF6 49%, #8B5CF6 51%, transparent 53%),
+            linear-gradient(225deg, transparent 47%, #10B981 49%, #10B981 51%, transparent 53%),
+            linear-gradient(315deg, transparent 47%, #F59E0B 49%, #F59E0B 51%, transparent 53%)
+          `,
+          backgroundSize: '200px 200px, 150px 150px, 250px 250px, 180px 180px, 220px 220px',
+          backgroundPosition: '0 0, 75px 75px, 150px 150px, 100px 100px, 200px 200px',
+          opacity: 0.6
+        }}></div>
+        
+        {/* Enhanced hexagon patterns */}
+        <div className="absolute top-1/4 right-1/4 w-[30rem] h-[30rem] opacity-40" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233B82F6' fill-opacity='0.6'%3E%3Cpath d='m40 40v-8h-4v8h-8v4h8v8h4v-8h8v-4h-8zm0-60V0h-4v8h-8v4h8v8h4V12h8V8h-8zM8 40v-8H4v8H0v4h4v8h4v-8h8v-4H8zM8 8V0H4v8H0v4h4v8h4V12h8V8H8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: '80px 80px',
+          transform: 'rotate(25deg)',
+          animation: 'spin-slow 25s linear infinite'
+        }}></div>
+        
+        <div className="absolute bottom-1/4 left-1/4 w-[25rem] h-[25rem] opacity-35" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F4C430' fill-opacity='0.7'%3E%3Cpath d='M30 30c0 16.5-13.5 30-30 30s-30-13.5-30-30 13.5-30 30-30 30 13.5 30 30zm-15 0c0-8.25-6.75-15-15-15s-15 6.75-15 15 6.75 15 15 15 15-6.75 15-15z'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: '60px 60px',
+          transform: 'rotate(-45deg)',
+          animation: 'spin-slow 35s linear infinite reverse'
+        }}></div>
+      </div>
+
+      {/* Ultra Enhanced floating particles and shapes */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-25">
+        {/* Enhanced animated particles with gradients */}
+        <div className="absolute top-20 left-20 w-8 h-8 bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 rounded-full animate-ping opacity-80 shadow-2xl"></div>
+        <div className="absolute top-40 right-32 w-6 h-6 bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-400 rounded-full animate-ping opacity-70 shadow-xl" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-32 left-16 w-7 h-7 bg-gradient-to-r from-purple-400 via-violet-400 to-indigo-400 rounded-full animate-ping opacity-75 shadow-xl" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-20 w-10 h-10 bg-gradient-to-r from-pink-400 via-rose-400 to-red-400 rounded-full animate-ping opacity-60 shadow-2xl" style={{ animationDelay: '0.5s' }}></div>
+        
+        {/* Complex floating geometric shapes */}
+        <div className="absolute top-1/4 left-8 w-16 h-16 bg-gradient-to-br from-orange-400 via-red-400 to-pink-400 transform rotate-45 animate-float-gentle opacity-50 shadow-xl" style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}></div>
+        <div className="absolute top-3/4 right-8 w-20 h-20 bg-gradient-to-br from-green-400 via-emerald-400 to-teal-400 rounded-full animate-bounce-slow opacity-45 shadow-2xl"></div>
+        <div className="absolute bottom-1/4 left-1/5 w-14 h-14 bg-gradient-to-br from-indigo-400 via-purple-400 to-violet-400 transform rotate-12 animate-drift-left opacity-55 shadow-lg" style={{ clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)' }}></div>
+        <div className="absolute top-1/5 left-1/2 w-12 h-12 bg-gradient-to-br from-cyan-400 via-blue-400 to-indigo-400 transform rotate-60 animate-float-gentle-delayed opacity-50 shadow-md" style={{ clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)' }}></div>
+        
+        {/* Floating trust icons */}
+        <div className="absolute top-16 right-16 opacity-20 animate-float-gentle">
+          <div className="w-20 h-20 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-3xl flex items-center justify-center backdrop-blur-md border border-white/40 shadow-2xl">
+            <Shield className="w-10 h-10 text-blue-500" />
+          </div>
+        </div>
+        <div className="absolute bottom-16 left-16 opacity-20 animate-float-gentle-delayed">
+          <div className="w-18 h-18 bg-gradient-to-br from-green-500/30 to-emerald-500/30 rounded-3xl flex items-center justify-center backdrop-blur-md border border-white/40 shadow-xl">
+            <Award className="w-9 h-9 text-green-500" />
+          </div>
+        </div>
+        <div className="absolute top-1/2 right-8 opacity-20 animate-bounce-slow">
+          <div className="w-16 h-16 bg-gradient-to-br from-purple-500/30 to-indigo-500/30 rounded-3xl flex items-center justify-center backdrop-blur-md border border-white/40 shadow-lg">
+            <Clock className="w-8 h-8 text-purple-500" />
+          </div>
+        </div>
+        <div className="absolute top-1/3 left-8 opacity-20 animate-drift-right">
+          <div className="w-22 h-22 bg-gradient-to-br from-orange-500/30 to-red-500/30 rounded-3xl flex items-center justify-center backdrop-blur-md border border-white/40 shadow-xl">
+            <Users className="w-11 h-11 text-orange-500" />
+          </div>
+        </div>
+        
+        {/* Enhanced constellation effect */}
+        <div className="absolute top-1/4 left-1/4 w-6 h-6 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-pulse opacity-80 shadow-xl"></div>
+        <div className="absolute top-1/3 left-1/3 w-5 h-5 bg-gradient-to-r from-purple-400 to-violet-400 rounded-full animate-pulse opacity-70 shadow-lg" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-gradient-to-r from-cyan-400 to-sky-400 rounded-full animate-pulse opacity-85 shadow-lg" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-2/3 left-2/3 w-7 h-7 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full animate-pulse opacity-75 shadow-xl" style={{ animationDelay: '1.5s' }}></div>
+        
+        {/* Connect the dots with animated lines */}
+        <svg className="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] opacity-30" viewBox="0 0 100 100">
+          <line x1="15" y1="15" x2="35" y2="35" stroke="#3B82F6" strokeWidth="2" strokeDasharray="5,5" className="animate-pulse drop-shadow-md" />
+          <line x1="35" y1="35" x2="65" y2="35" stroke="#8B5CF6" strokeWidth="2" strokeDasharray="5,5" className="animate-pulse drop-shadow-md" style={{ animationDelay: '0.5s' }} />
+          <line x1="65" y1="35" x2="85" y2="65" stroke="#06B6D4" strokeWidth="2" strokeDasharray="5,5" className="animate-pulse drop-shadow-md" style={{ animationDelay: '1s' }} />
+          <line x1="85" y1="65" x2="65" y2="85" stroke="#F4C430" strokeWidth="2" strokeDasharray="5,5" className="animate-pulse drop-shadow-md" style={{ animationDelay: '1.5s' }} />
+          <line x1="65" y1="85" x2="35" y2="85" stroke="#10B981" strokeWidth="2" strokeDasharray="5,5" className="animate-pulse drop-shadow-md" style={{ animationDelay: '2s' }} />
+          <line x1="35" y1="85" x2="15" y2="65" stroke="#EC4899" strokeWidth="2" strokeDasharray="5,5" className="animate-pulse drop-shadow-md" style={{ animationDelay: '2.5s' }} />
+          <line x1="15" y1="65" x2="15" y2="15" stroke="#F59E0B" strokeWidth="2" strokeDasharray="5,5" className="animate-pulse drop-shadow-md" style={{ animationDelay: '3s' }} />
+          
+          {/* Curved connections */}
+          <path d="M15,15 Q50,5 85,25 Q90,50 75,85" stroke="#8B5CF6" strokeWidth="2.5" fill="none" strokeDasharray="6,6" className="animate-pulse drop-shadow-lg" style={{ animationDelay: '3.5s' }} />
+          <path d="M25,85 Q60,90 85,65 Q90,35 55,20" stroke="#F59E0B" strokeWidth="2" fill="none" strokeDasharray="5,5" className="animate-pulse drop-shadow-md" style={{ animationDelay: '4s' }} />
+        </svg>
+        
+        {/* Floating question mark and check icons */}
+        <div className="absolute top-12 left-12 opacity-15 animate-float-gentle transform rotate-15">
+          <div className="w-24 h-24 bg-gradient-to-br from-blue-500/25 to-cyan-500/25 rounded-full flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl">
+            <span className="text-4xl font-bold text-blue-500">?</span>
+          </div>
+        </div>
+        <div className="absolute bottom-12 right-12 opacity-15 animate-bounce-slow transform -rotate-15">
+          <div className="w-28 h-28 bg-gradient-to-br from-green-500/25 to-emerald-500/25 rounded-full flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl">
+            <CheckCircle className="w-16 h-16 text-green-500" />
+          </div>
+        </div>
+        
+        {/* Floating percentage symbols */}
+        <div className="absolute top-1/3 right-12 opacity-12 animate-drift-left transform rotate-30">
+          <div className="w-20 h-20 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-xl">
+            <span className="text-2xl font-bold text-purple-500">%</span>
+          </div>
+        </div>
+        <div className="absolute bottom-1/3 left-12 opacity-12 animate-float-gentle transform -rotate-30">
+          <div className="w-18 h-18 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-lg">
+            <Star className="w-10 h-10 text-orange-500" />
+          </div>
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
