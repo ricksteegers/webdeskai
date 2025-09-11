@@ -232,16 +232,16 @@ const Hero: React.FC = () => {
                 
                 {/* Value indicators */}
                 <div className="mt-3 md:mt-4 grid grid-cols-3 gap-1 md:gap-2 text-xs">
-                  <div className="text-center bg-blue-50 rounded-lg py-1 md:py-2 border border-blue-100">
-                    <div className="font-bold text-blue-600">Binnen 1 week</div>
+                  <div className="text-center bg-green-50 rounded-lg py-1 md:py-2">
+                    <div className="font-bold text-green-600">Binnen 1 week</div>
                     <div className="text-gray-600 text-[10px] md:text-xs">live</div>
                   </div>
-                  <div className="text-center bg-cyan-50 rounded-lg py-1 md:py-2 border border-cyan-100">
-                    <div className="font-bold text-cyan-600">100%</div>
+                  <div className="text-center bg-blue-50 rounded-lg py-1 md:py-2">
+                    <div className="font-bold text-blue-600">100%</div>
                     <div className="text-gray-600 text-[10px] md:text-xs">AI-gedreven</div>
                   </div>
-                  <div className="text-center bg-emerald-50 rounded-lg py-1 md:py-2 border border-emerald-100">
-                    <div className="font-bold text-emerald-600">Premium</div>
+                  <div className="text-center bg-purple-50 rounded-lg py-1 md:py-2">
+                    <div className="font-bold text-purple-600">Premium</div>
                     <div className="text-gray-600 text-[10px] md:text-xs">kwaliteit</div>
                   </div>
                 </div>
@@ -249,11 +249,11 @@ const Hero: React.FC = () => {
 
               {/* Trust indicators */}
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
-                <div className="flex items-center bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-card border border-gray-100">
+                <div className="flex items-center bg-white/70 backdrop-blur-sm rounded-full px-3 py-1">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                   <span>Geen vooruitbetaling</span>
                 </div>
-                <div className="flex items-center bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-card border border-gray-100">
+                <div className="flex items-center bg-white/70 backdrop-blur-sm rounded-full px-3 py-1">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                   <span>100% tevredenheidsgarantie</span>
                 </div>
@@ -279,19 +279,19 @@ const Hero: React.FC = () => {
 
         {/* Bottom CTA Section */}
         <div className="mt-16 text-center scroll-animate">
-          <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-8 shadow-soft-lg border border-blue-100 relative overflow-hidden max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-white/90 to-white/70 backdrop-blur-lg rounded-3xl p-8 shadow-2xl border border-white/20 relative overflow-hidden max-w-4xl mx-auto">
             {/* Background pattern */}
-            <div className="absolute inset-0 opacity-5">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-200 to-cyan-200 rounded-3xl transform rotate-1"></div>
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#F4C430] to-orange-400 rounded-3xl transform rotate-1"></div>
             </div>
 
             <div className="relative z-10">
               <div className="flex items-center justify-center mb-4">
-                <Sparkles className="w-6 h-6 text-blue-500 animate-spin-slow mr-2" />
+                <Sparkles className="w-6 h-6 text-[#F4C430] animate-spin-slow mr-2" />
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-900">
-                  Klaar voor de <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">AI-revolutie</span>?
+                  Klaar voor de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500">AI-revolutie</span>?
                 </h3>
-                <Sparkles className="w-6 h-6 text-blue-500 animate-spin-slow ml-2" />
+                <Sparkles className="w-6 h-6 text-[#F4C430] animate-spin-slow ml-2" />
               </div>
               
               <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
