@@ -109,7 +109,6 @@ const ThankYouPage: React.FC = () => {
               {/* Step 3 */}
               <div className="text-center group">
                 <div className="w-20 h-20 bg-gradient-to-br from-[#F4C430] to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   <Star className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">In 1 week live</h3>
