@@ -171,7 +171,7 @@ const SocialProof: React.FC = () => {
           <div className="flex items-center justify-center space-x-4 mb-8">
             <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-500 animate-pulse"></div>
             <span className="text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
-              SOCIALE BEWIJSKRACHT
+              REVIEWS
             </span>
             <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-500 animate-pulse"></div>
           </div>
