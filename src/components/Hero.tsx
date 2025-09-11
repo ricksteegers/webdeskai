@@ -301,20 +301,21 @@ const Hero: React.FC = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                 <Link 
                   to="/contact"
-                  className="group bg-blue-500 text-white px-8 py-4 rounded-full font-medium text-sm sm:text-base hover:bg-blue-600 transition-all duration-300 shadow-soft hover:shadow-soft-lg transform hover:-translate-y-1"
+                  className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
                   onClick={() => window.scrollTo(0, 0)}
                 >
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   Gratis adviesgesprek
                 </Link>
 
                 <div className="flex items-center space-x-4 text-gray-600">
                   <div className="flex items-center">
-                    <Clock className="w-4 h-4 text-blue-500 mr-2" />
+                    <Clock className="w-4 h-4 text-[#F4C430] mr-2" />
                     <span className="font-semibold text-sm">In 1 week live</span>
                   </div>
                   <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-blue-500 text-sm">65% goedkoper</span>
+                    <span className="font-semibold text-[#F4C430] text-sm">65% goedkoper</span>
                   </div>
                 </div>
               </div>
