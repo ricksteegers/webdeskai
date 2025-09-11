@@ -30,21 +30,24 @@ const SocialProof: React.FC = () => {
       position: "Ondernemer",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
       content: "WebDesk AI heeft onze website volledig getransformeerd! De AI-gedreven aanpak leverde een design op dat perfect aansluit bij onze merkidentiteit. Het proces was snel, professioneel en het resultaat overtrof onze verwachtingen.",
-      location: "Amsterdam, Nederland"
+      location: "Amsterdam, Nederland",
+      rating: 5
     },
     {
       name: "Michael",
       position: "Oprichter",
       image: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=400",
       content: "Ongelooflijk wat ze hebben bereikt met AI-technologie. Onze nieuwe website genereert 3x meer leads dan voorheen. De combinatie van creatief design en technische excellentie is indrukwekkend.",
-      location: "Rotterdam, Nederland"
+      location: "Rotterdam, Nederland",
+      rating: 5
     },
     {
       name: "Emma",
       position: "Marketing Manager",
       image: "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=400",
       content: "Het design dat ze voor ons maakten is absoluut prachtig. Gebruikersbetrokkenheid steeg met 40% na het herontwerp. WebDesk AI weet echt hoe gebruikersgerichte ontwerpen te maken.",
-      location: "Utrecht, Nederland"
+      location: "Utrecht, Nederland",
+      rating: 5
     }
   ];
 
@@ -268,8 +271,8 @@ const SocialProof: React.FC = () => {
           </div>
           
           <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8 items-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center">
+              {partnerLogos.map((partner, index) => (
                 <div
                   key={index}
                   className="flex items-center justify-center p-3 sm:p-4 md:p-6 grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-110"
