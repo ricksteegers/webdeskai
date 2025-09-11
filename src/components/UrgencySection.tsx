@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, Zap, ArrowRight, AlertTriangle, Gift } from 'lucide-react';
+import { Clock, Zap, ArrowRight, AlertTriangle, Gift, Star } from 'lucide-react';
 
 const UrgencySection: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({
