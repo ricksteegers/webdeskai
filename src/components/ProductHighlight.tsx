@@ -194,7 +194,57 @@ const ProductHighlight: React.FC = () => {
                 alt="AI Website Design Showcase" 
                 className="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
+              <div className="absolute inset-0 rounded-3xl overflow-hidden">
+                {/* Multi-layer creative overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-purple-500/10 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-500/10"></div>
+                
+                {/* Animated scan lines */}
+                <div className="absolute inset-0 opacity-30">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse"></div>
+                  <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
+                </div>
+                
+                {/* Floating particles */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute top-8 left-8 w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-60"></div>
+                  <div className="absolute top-12 right-12 w-2 h-2 bg-cyan-400 rounded-full animate-ping opacity-40" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute bottom-8 left-12 w-2.5 h-2.5 bg-purple-400 rounded-full animate-ping opacity-50" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute bottom-12 right-8 w-4 h-4 bg-pink-400 rounded-full animate-ping opacity-30" style={{ animationDelay: '1.5s' }}></div>
+                </div>
+                
+                {/* Corner accents */}
+                <div className="absolute top-4 left-4 w-8 h-8 border-2 border-blue-400/50 rounded-full animate-spin-slow"></div>
+                <div className="absolute top-4 right-4 w-6 h-6 border-2 border-cyan-400/50 rounded-full animate-spin-slow" style={{ animationDirection: 'reverse' }}></div>
+                <div className="absolute bottom-4 left-4 w-10 h-10 border-2 border-purple-400/50 rounded-full animate-pulse"></div>
+                <div className="absolute bottom-4 right-4 w-7 h-7 border-2 border-pink-400/50 rounded-full animate-bounce"></div>
+                
+                {/* AI Badge */}
+                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-xl animate-pulse border-2 border-white/30">
+                  <span className="flex items-center">
+                    <Zap className="w-4 h-4 mr-2 animate-bounce" />
+                    AI-GEDREVEN
+                  </span>
+                </div>
+                
+                {/* Floating tech icons */}
+                <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-white/50 animate-float-gentle">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                      <span className="text-white text-xs font-bold">AI</span>
+                    </div>
+                    <span className="text-xs font-semibold text-gray-700">Powered</span>
+                  </div>
+                </div>
+                
+                {/* Performance indicators */}
+                <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-white/50 animate-float-gentle-delayed">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-ping"></div>
+                    <span className="text-xs font-semibold text-gray-700">Live in 1 week</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
