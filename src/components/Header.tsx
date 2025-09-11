@@ -42,15 +42,15 @@ const Header: React.FC = () => {
           {/* Enhanced Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {[
-              { name: 'Tarieven', href: '#pricing', isAnchor: true },
-              { name: 'Diensten', href: '#services', isAnchor: true },
+              { name: 'Tarieven', href: '#pricing' },
+              { name: 'Diensten', href: '#services' },
               { name: 'Over ons', href: '/over-ons' }
             ].map((item, index) => (
               <div key={index} className="relative group">
-                {item.isAnchor ? (
+                {item.href.startsWith('#') ? (
                   <a
                     href={item.href}
-                    className="flex items-center text-gray-700 hover:text-[#F4C430] transition-all duration-300 font-medium relative overflow-hidden group"
+                    className="flex items-center text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium relative overflow-hidden group"
                     onClick={(e) => {
                       e.preventDefault();
                       const targetId = item.href.substring(1);
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
                       if (element) {
                         element.scrollIntoView({ behavior: 'smooth' });
                       } else {
-                        // If not on homepage, navigate to homepage first
+                        // If not on homepage, navigate to homepage with hash
                         window.location.href = `/${item.href}`;
                       }
                     }}
@@ -128,15 +128,15 @@ const Header: React.FC = () => {
             
             <div className="relative z-10 flex flex-col space-y-6 pt-6">
               {[
-                { name: 'Tarieven', href: '#pricing', isAnchor: true },
-                { name: 'Diensten', href: '#services', isAnchor: true },
+                { name: 'Tarieven', href: '#pricing' },
+                { name: 'Diensten', href: '#services' },
                 { name: 'Over ons', href: '/over-ons' }
               ].map((item, index) => (
                 <div key={index}>
-                  {item.isAnchor ? (
+                  {item.href.startsWith('#') ? (
                     <a
                       href={item.href}
-                      className="flex items-center text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium relative overflow-hidden group py-2 block"
+                      className="text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium relative overflow-hidden group py-2 block"
                       onClick={(e) => {
                         e.preventDefault();
                         setIsMobileMenuOpen(false);
@@ -145,7 +145,7 @@ const Header: React.FC = () => {
                         if (element) {
                           element.scrollIntoView({ behavior: 'smooth' });
                         } else {
-                          // If not on homepage, navigate to homepage first
+                          // If not on homepage, navigate to homepage with hash
                           window.location.href = `/${item.href}`;
                         }
                       }}
