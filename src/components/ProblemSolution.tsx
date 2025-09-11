@@ -173,7 +173,7 @@ const ProblemSolution: React.FC = () => {
                 
                 {/* Floating warning icons */}
                 <div className="absolute top-4 right-4 opacity-20">
-                  <AlertTriangle className="w-16 h-16 text-red-500 animate-bounce" />
+                  <Clock className="w-16 h-16 text-orange-500 animate-bounce" />
                 </div>
                 
                 <div className="flex items-center mb-8 relative z-10">
