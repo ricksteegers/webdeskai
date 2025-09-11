@@ -13,7 +13,22 @@ const ContactPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-blue-400 via-cyan-400 to-teal-400 rounded-full blur-3xl animate-float-gentle"></div>
+        <div className="absolute bottom-20 right-10 w-[32rem] h-[32rem] bg-gradient-to-br from-purple-400 via-pink-400 to-rose-400 rounded-full blur-3xl animate-float-gentle-delayed"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-gradient-to-br from-indigo-400 via-blue-400 to-cyan-400 rounded-full blur-3xl animate-drift-left"></div>
+      </div>
+
+      {/* Animated grid pattern */}
+      <div className="absolute inset-0 opacity-3">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, #3B82F6 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+      </div>
+
       <Helmet>
         <title>Contact - WebDesk AI | gratis adviesgesprek AI website ontwikkeling</title>
         <meta name="description" content="Neem contact op met WebDesk AI voor een gratis adviesgesprek. Ontdek hoe onze AI-gedreven websites uw bedrijf kunnen helpen groeien. Reactie binnen 24 uur gegarandeerd!" />
@@ -47,10 +62,12 @@ const ContactPage: React.FC = () => {
         })}
         </script>
       </Helmet>
-      <Header />
-      <ContactForm />
-      <Footer />
-      <WhatsAppPopup />
+      <div className="relative z-10">
+        <Header />
+        <ContactForm />
+        <Footer />
+        <WhatsAppPopup />
+      </div>
     </div>
   );
 };
