@@ -149,7 +149,6 @@ const Services: React.FC = () => {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#F4C430] transition-colors duration-300">
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-500 transition-colors duration-300">
                 {service.title}
               </h3>
@@ -219,8 +218,8 @@ const Services: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
                   <div className="relative z-10 flex items-center">
-                  <span className="hidden sm:inline">ONTDEK ONZE SERVICES</span>
-                  <span className="sm:hidden">SERVICES</span>
+                    <span className="hidden sm:inline">ONTDEK ONZE SERVICES</span>
+                    <span className="sm:hidden">SERVICES</span>
                   </div>
                 </Link>
 
