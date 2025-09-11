@@ -53,7 +53,8 @@ const SocialProof: React.FC = () => {
     { name: "BDO", logo: "/BDO new.PNG" },
     { name: "Juridisch Loket", logo: "/Juridisch Loket new.PNG" },
     { name: "Melis Logistics", logo: "/15.png" },
-    { name: "Chapeau", logo: "/23.png" }
+    { name: "Chapeau", logo: "/23.png" },
+    { name: "Quote", logo: "/28.png" }
   ];
 
   const nextTestimonial = () => {
@@ -274,12 +275,12 @@ const SocialProof: React.FC = () => {
               {partnerLogos.map((partner, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center p-4 sm:p-6 grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-110"
+                  className="flex items-center justify-center p-3 sm:p-4 md:p-6 grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-110"
                 >
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="max-h-12 sm:max-h-16 w-auto object-contain"
+                    className="max-h-8 sm:max-h-12 md:max-h-16 w-auto object-contain"
                   />
                 </div>
               ))}
