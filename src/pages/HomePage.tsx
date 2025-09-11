@@ -2,6 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import Services from '../components/Services';
+import Pricing from '../components/Pricing';
 import ProblemSolution from '../components/ProblemSolution';
 import KeyBenefits from '../components/KeyBenefits';
 import SocialProof from '../components/SocialProof';
@@ -48,6 +50,8 @@ const HomePage: React.FC = () => {
       </Helmet>
       <Header />
       <Hero />
+      <Services />
+      <Pricing />
       <ProblemSolution />
       <KeyBenefits />
       <SocialProof />

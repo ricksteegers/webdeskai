@@ -141,13 +141,12 @@ const Header: React.FC = () => {
                         e.preventDefault();
                         setIsMobileMenuOpen(false);
                         const targetId = item.href.substring(1);
-                        const element = document.getElementById(targetId);
-                        if (element) {
-                          element.scrollIntoView({ behavior: 'smooth' });
-                        } else {
-                          // If not on homepage, navigate to homepage with hash
-                          window.location.href = `/${item.href}`;
-                        }
+                        setTimeout(() => {
+                          const element = document.getElementById(targetId);
+                          if (element) {
+                            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                          }
+                        }, 100);
                       }}
                     >
                       <span className="relative z-10">{item.name}</span>
