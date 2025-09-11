@@ -90,14 +90,14 @@ const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-20">
         <div className="text-center mb-20 scroll-animate">
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-[#F4C430] animate-pulse"></div>
+            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-500 animate-pulse"></div>
             <span className="text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
               ONZE DIENSTEN
             </span>
-            <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] animate-pulse"></div>
+            <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-500 animate-pulse"></div>
           </div>
           <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-            AI-gedreven <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse">oplossingen</span>
+            AI-gedreven <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse">oplossingen</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Onze AI-expertise stelt ons in staat om premium websites en digitale ervaringen
@@ -107,17 +107,17 @@ const Services: React.FC = () => {
           {/* Key benefits showcase */}
           <div className="flex items-center justify-center mt-8 space-x-4 sm:space-x-8">
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-[#F4C430] animate-pulse">6</div>
+              <div className="text-2xl sm:text-3xl font-bold text-blue-500 animate-pulse">6</div>
               <div className="text-xs sm:text-sm text-gray-600">AI-Services</div>
             </div>
-            <div className="w-1 h-12 bg-gradient-to-b from-transparent via-[#F4C430] to-transparent"></div>
+            <div className="w-1 h-12 bg-gradient-to-b from-transparent via-blue-500 to-transparent"></div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-[#F4C430] animate-pulse">100%</div>
+              <div className="text-2xl sm:text-3xl font-bold text-blue-500 animate-pulse">100%</div>
               <div className="text-xs sm:text-sm text-gray-600">AI-Gedreven</div>
             </div>
-            <div className="w-1 h-12 bg-gradient-to-b from-transparent via-[#F4C430] to-transparent"></div>
+            <div className="w-1 h-12 bg-gradient-to-b from-transparent via-blue-500 to-transparent"></div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-[#F4C430] animate-pulse">1 week</div>
+              <div className="text-2xl sm:text-3xl font-bold text-blue-500 animate-pulse">1 week</div>
               <div className="text-xs sm:text-sm text-gray-600">Live</div>
             </div>
           </div>
@@ -150,6 +150,7 @@ const Services: React.FC = () => {
               </div>
 
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#F4C430] transition-colors duration-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-500 transition-colors duration-300">
                 {service.title}
               </h3>
               
@@ -212,10 +213,10 @@ const Services: React.FC = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                 <Link 
                   to="/contact"
-                  className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
+                  className="group bg-transparent border-2 border-blue-500 text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-medium text-sm sm:text-base hover:bg-blue-500 hover:text-white transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
                   onClick={() => window.scrollTo(0, 0)}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
                   <div className="relative z-10 flex items-center">
                   <span className="hidden sm:inline">ONTDEK ONZE SERVICES</span>
@@ -225,12 +226,12 @@ const Services: React.FC = () => {
 
                 <div className="flex items-center space-x-4 text-gray-600">
                   <div className="flex items-center">
-                    <Clock className="w-5 h-5 text-[#F4C430] mr-2" />
+                    <Clock className="w-5 h-5 text-blue-500 mr-2" />
                     <span className="font-semibold text-xs sm:text-base">In 1 week live</span>
                   </div>
                   <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-[#F4C430] text-xs sm:text-base">Geen verplichtingen</span>
+                    <span className="font-semibold text-blue-500 text-xs sm:text-base">Geen verplichtingen</span>
                   </div>
                 </div>
               </div>
@@ -238,15 +239,15 @@ const Services: React.FC = () => {
               {/* Service highlights */}
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
                 <div className="flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-full px-4 py-2">
-                  <Monitor className="w-5 h-5 text-[#F4C430] mr-2" />
+                  <Monitor className="w-5 h-5 text-blue-500 mr-2" />
                   <span className="text-sm font-medium text-gray-700">Websites & Webshops</span>
                 </div>
                 <div className="flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-full px-4 py-2">
-                  <Palette className="w-5 h-5 text-[#F4C430] mr-2" />
+                  <Palette className="w-5 h-5 text-blue-500 mr-2" />
                   <span className="text-sm font-medium text-gray-700">AI Design & Marketing</span>
                 </div>
                 <div className="flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-full px-4 py-2">
-                  <Smartphone className="w-5 h-5 text-[#F4C430] mr-2" />
+                  <Smartphone className="w-5 h-5 text-blue-500 mr-2" />
                   <span className="text-sm font-medium text-gray-700">Custom Webapps</span>
                 </div>
               </div>
@@ -258,12 +259,12 @@ const Services: React.FC = () => {
                       <div className="text-center sm:text-left">
                         <div className="text-sm sm:text-base font-semibold mb-1 sm:mb-0 sm:inline">Traditionele bureaus: €2000+ en 4-6 weken</div>
                         <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 mx-auto sm:mx-2 sm:inline" />
-                        <div className="text-sm sm:text-base font-bold text-[#F4C430] sm:inline">WebDesk AI: €695 en 1 week</div>
+                        <div className="text-sm sm:text-base font-bold text-blue-500 sm:inline">WebDesk AI: €695 en 1 week</div>
                       </div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Sparkles className="w-6 h-6 text-[#F4C430]" />
+                    <Sparkles className="w-6 h-6 text-blue-500" />
                     <span className="font-semibold">Alle services onder één dak</span>
                     <ArrowRight className="w-5 h-5 text-gray-400" />
                   </div>

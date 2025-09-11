@@ -90,14 +90,14 @@ const Process: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-20 scroll-animate">
             <div className="flex items-center justify-center space-x-4 mb-8">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-[#F4C430] animate-pulse"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-500 animate-pulse"></div>
               <span className="text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
                 HOE WE WERKEN
               </span>
-              <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] animate-pulse"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-500 animate-pulse"></div>
             </div>
             <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-              Binnen <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse">5 stappen</span> live
+              Binnen <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse">5 stappen</span> live
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Onze AI-gedreven workflow stelt ons in staat om hoogwaardige websites sneller en betaalbaarder te leveren dan traditionele bureaus.
@@ -105,16 +105,16 @@ const Process: React.FC = () => {
             
             {/* Timeline indicator */}
             <div className="flex items-center justify-center mt-8 space-x-4">
-              <Clock className="w-6 h-6 text-[#F4C430]" />
+              <Clock className="w-6 h-6 text-blue-500" />
               <span className="text-lg font-semibold text-gray-700">Van idee tot live website - in 1 week live</span>
-              <Sparkles className="w-6 h-6 text-[#F4C430] animate-pulse" />
+              <Sparkles className="w-6 h-6 text-blue-500 animate-pulse" />
             </div>
           </div>
 
           {/* Process Steps */}
           <div className="relative scroll-animate">
             {/* Connection line */}
-            <div className="hidden lg:block absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-[#F4C430]/20 via-[#F4C430] to-[#F4C430]/20"></div>
+            <div className="hidden lg:block absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500/20 via-blue-500 to-blue-500/20"></div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4">
               {steps.map((step, index) => (
@@ -122,7 +122,7 @@ const Process: React.FC = () => {
                   {/* Step connector arrow (desktop only) */}
                   {index < steps.length - 1 && (
                     <div className="hidden lg:block absolute top-12 -right-8 z-20">
-                      <ArrowRight className="w-6 h-6 text-[#F4C430] animate-pulse" />
+                      <ArrowRight className="w-6 h-6 text-blue-500 animate-pulse" />
                     </div>
                   )}
 
@@ -139,20 +139,20 @@ const Process: React.FC = () => {
                     </div>
                     
                     {/* Step number badge */}
-                    <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br from-[#F4C430] to-orange-500 rounded-full flex items-center justify-center text-black font-bold text-sm shadow-lg group-hover:scale-125 transition-transform duration-300 animate-bounce-slow">
+                    <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-125 transition-transform duration-300 animate-bounce-slow">
                       {step.number}
                     </div>
 
                     {/* Floating particles */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div className="absolute top-2 left-2 w-2 h-2 bg-[#F4C430] rounded-full animate-ping"></div>
+                      <div className="absolute top-2 left-2 w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
                       <div className="absolute bottom-2 right-2 w-1.5 h-1.5 bg-orange-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
                       <div className="absolute top-1/2 left-0 w-1 h-1 bg-pink-400 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
                     </div>
                   </div>
 
                   <div className="space-y-4 group-hover:transform group-hover:-translate-y-2 transition-transform duration-300">
-                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#F4C430] transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-500 transition-colors duration-300">
                       {step.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-sm lg:text-base px-2">
