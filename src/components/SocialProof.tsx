@@ -262,7 +262,7 @@ const SocialProof: React.FC = () => {
         {/* Partner Logos */}
         <div className="scroll-animate">
           <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl text-gray-900 mb-4">
               Deze bedrijven passen AI al toe.
             </h3>
           </div>
