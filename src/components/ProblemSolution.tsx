@@ -158,12 +158,12 @@ const ProblemSolution: React.FC = () => {
         <div className="relative mb-20">
           {/* VS Badge */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <div className="bg-gradient-to-r from-red-500 via-orange-500 to-blue-500 text-white px-8 py-4 rounded-full font-bold text-2xl shadow-2xl animate-pulse border-4 border-white relative overflow-hidden">
+            <div className="bg-gradient-to-r from-red-500 via-orange-500 to-blue-500 text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-bold text-lg sm:text-xl md:text-2xl shadow-2xl animate-pulse border-2 sm:border-4 border-white relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 animate-pulse opacity-50"></div>
               <span className="relative z-10 flex items-center">
-                <Target className="w-6 h-6 mr-2 animate-spin-slow" />
+                <Target className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-1 sm:mr-2 animate-spin-slow" />
                 VS
-                <Zap className="w-6 h-6 ml-2 animate-bounce" />
+                <Zap className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ml-1 sm:ml-2 animate-bounce" />
               </span>
             </div>
           </div>
@@ -181,14 +181,14 @@ const ProblemSolution: React.FC = () => {
                 </div>
                 
                 <div className="flex items-center mb-8 relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-2xl flex items-center justify-center mr-6 shadow-xl animate-pulse">
-                    <Clock className="w-8 h-8 text-white animate-bounce" />
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl sm:rounded-2xl flex items-center justify-center mr-3 sm:mr-4 md:mr-6 shadow-xl animate-pulse">
+                    <Clock className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white animate-bounce" />
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-2">Traditionele Bureaus</h3>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">Traditionele Bureaus</h3>
                     <p className="text-red-600 font-semibold flex items-center">
-                      <span className="w-3 h-3 bg-red-500 rounded-full mr-2 animate-ping"></span>
-                      Duur, traag & complex
+                      <span className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full mr-2 animate-ping"></span>
+                      <span className="text-sm sm:text-base">Duur, traag & complex</span>
                     </p>
                   </div>
                 </div>
@@ -205,164 +205,4 @@ const ProblemSolution: React.FC = () => {
                       {/* Animated background */}
                       <div className={`absolute inset-0 bg-gradient-to-r ${problem.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
                       
-                      <div className={`w-12 h-12 bg-gradient-to-br ${problem.color} rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300 relative z-10`}>
-                        <div className="text-white">
-                          {problem.icon}
-                        </div>
-                      </div>
-                      <div className="relative z-10">
-                        <h4 className="font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-300">{problem.title}</h4>
-                        <p className="text-gray-600 text-sm leading-relaxed">{problem.description}</p>
-                      </div>
-                      
-                      {/* Hover effect particles */}
-                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <div className="absolute top-2 right-2 w-2 h-2 bg-red-400 rounded-full animate-ping"></div>
-                        <div className="absolute bottom-2 left-2 w-1.5 h-1.5 bg-orange-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Solutions Side */}
-            <div className="scroll-animate-right relative">
-              <div className="bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50 rounded-3xl p-8 border-2 border-green-200 relative overflow-hidden shadow-2xl min-h-[600px] flex flex-col">
-                {/* Animated success pattern */}
-                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-500 via-blue-500 to-cyan-500 animate-pulse"></div>
-                
-                {/* Floating success icons */}
-                <div className="absolute top-4 right-4 opacity-20">
-                  <CheckCircle className="w-16 h-16 text-green-500 animate-bounce" />
-                </div>
-                
-                <div className="flex items-center mb-8 relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-cyan-500 rounded-2xl flex items-center justify-center mr-6 shadow-xl animate-pulse">
-                    <CheckCircle className="w-8 h-8 text-white animate-bounce" />
-                  </div>
-                  <div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-2">WebDesk AI</h3>
-                    <p className="text-green-600 font-semibold flex items-center">
-                      <span className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-ping"></span>
-                      Snel, betaalbaar & simpel
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="space-y-6 relative z-10 flex-1 flex flex-col justify-center">
-                  {solutions.map((solution, index) => (
-                    <div 
-                      key={index} 
-                      className={`flex items-start space-x-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer relative overflow-hidden group`}
-                      style={{ animationDelay: `${solution.delay}ms` }}
-                      onMouseEnter={() => setActiveCard(index + 10)}
-                      onMouseLeave={() => setActiveCard(null)}
-                    >
-                      {/* Animated background */}
-                      <div className={`absolute inset-0 bg-gradient-to-r ${solution.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
-                      
-                      <div className={`w-12 h-12 bg-gradient-to-br ${solution.color} rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300 relative z-10`}>
-                        <div className="text-white">
-                          {solution.icon}
-                        </div>
-                      </div>
-                      <div className="relative z-10">
-                        <h4 className="font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">{solution.title}</h4>
-                        <p className="text-gray-600 text-sm leading-relaxed">{solution.description}</p>
-                      </div>
-                      
-                      {/* Hover effect particles */}
-                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <div className="absolute top-2 right-2 w-2 h-2 bg-green-400 rounded-full animate-ping"></div>
-                        <div className="absolute bottom-2 left-2 w-1.5 h-1.5 bg-blue-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Enhanced Comparison Stats */}
-        <div className="scroll-animate-scale">
-          <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 rounded-3xl p-8 text-white text-center relative overflow-hidden shadow-2xl">
-            {/* Animated background pattern */}
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse"></div>
-            </div>
-            
-            {/* Floating elements */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <div className="absolute top-4 left-4 w-6 h-6 bg-white/20 rounded-full animate-float-gentle"></div>
-              <div className="absolute top-8 right-8 w-4 h-4 bg-white/20 rounded-full animate-float-gentle-delayed"></div>
-              <div className="absolute bottom-4 left-8 w-3 h-3 bg-white/20 rounded-full animate-drift-left"></div>
-              <div className="absolute bottom-8 right-4 w-8 h-8 bg-white/20 rounded-full animate-drift-right"></div>
-            </div>
-            
-            <div className="relative z-10">
-              <div className="flex items-center justify-center mb-6">
-                <Award className="w-8 h-8 mr-3 animate-spin-slow" />
-                <h3 className="text-3xl font-bold">Het Verschil in Cijfers</h3>
-                <Shield className="w-8 h-8 ml-3 animate-bounce" />
-              </div>
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {stats.map((stat, index) => (
-                  <div 
-                    key={index} 
-                    className="text-center group cursor-pointer transform hover:scale-110 transition-all duration-300 relative"
-                    style={{ animationDelay: `${index * 200}ms` }}
-                  >
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 relative overflow-hidden">
-                      {/* Icon */}
-                      <div className={`w-12 h-12 mx-auto mb-4 ${stat.color} bg-white/20 rounded-full flex items-center justify-center group-hover:scale-125 transition-transform duration-300`}>
-                        {stat.icon}
-                      </div>
-                      
-                      {/* Number */}
-                      <div className="text-4xl font-bold mb-2 group-hover:scale-125 transition-transform duration-300 relative">
-                        {isVisible && (
-                          <span className="animate-pulse">{stat.number}</span>
-                        )}
-                        <div className="absolute inset-0 text-4xl font-bold text-white blur-sm opacity-30 animate-pulse"></div>
-                      </div>
-                      
-                      {/* Label */}
-                      <div className="text-white/80 font-medium group-hover:text-white transition-colors duration-300">
-                        {stat.label}
-                      </div>
-                      
-                      {/* Hover particles */}
-                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <div className="absolute top-2 right-2 w-1.5 h-1.5 bg-white rounded-full animate-ping"></div>
-                        <div className="absolute bottom-2 left-2 w-1 h-1 bg-white rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              {/* Call to action */}
-              <div className="mt-8 flex items-center justify-center space-x-4">
-                <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
-                  <Sparkles className="w-5 h-5 mr-2 animate-spin-slow" />
-                  <span className="font-semibold">Traditionele bureaus: €2000+ en 4-6 weken</span>
-                </div>
-                <ArrowRight className="w-6 h-6 animate-pulse" />
-                <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 border border-white/30">
-                  <Zap className="w-5 h-5 mr-2 animate-bounce" />
-                  <span className="font-bold">WebDesk AI: €695 en 1 week</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default ProblemSolution;
+                      <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${problem.color} rounded-lg
