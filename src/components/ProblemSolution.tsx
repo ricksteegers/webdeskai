@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CheckCircle, Zap, Clock, DollarSign, TrendingUp, ArrowRight, Sparkles, Target, Users, Award, Shield, TrendingDown, AlertTriangle } from 'lucide-react';
+import { CheckCircle, Zap, Clock, DollarSign, TrendingUp, ArrowRight, Sparkles, Target, Users, Award, Shield, TrendingDown, AlertTriangle, Euro } from 'lucide-react';
 
 const ProblemSolution: React.FC = () => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -81,7 +81,7 @@ const ProblemSolution: React.FC = () => {
   ];
 
   const stats = [
-    { number: "65%", label: "Goedkoper", icon: <DollarSign className="w-6 h-6" />, color: "text-green-500" },
+    { number: "65%", label: "Goedkoper", icon: <Euro className="w-6 h-6" />, color: "text-green-500" },
     { number: "5x", label: "Sneller", icon: <Zap className="w-6 h-6" />, color: "text-blue-500" },
     { number: "100%", label: "AI-gedreven", icon: <Sparkles className="w-6 h-6" />, color: "text-purple-500" },
     { number: "50+", label: "Tevreden klanten", icon: <Users className="w-6 h-6" />, color: "text-orange-500" }
