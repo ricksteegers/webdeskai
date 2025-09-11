@@ -246,7 +246,7 @@ const Testimonials: React.FC = () => {
               {/* Review highlights */}
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
                 <div className="flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-full px-4 py-2">
-                <Star className="w-5 h-5 text-blue-500 mr-2" />
+                  <Star className="w-5 h-5 text-blue-500 mr-2" />
                   <span className="text-sm font-medium text-gray-700">4.9/5 sterren</span>
                 </div>
                 <div className="flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-full px-4 py-2">
@@ -254,10 +254,10 @@ const Testimonials: React.FC = () => {
                   <span className="text-sm font-medium text-gray-700">In 1 week live</span>
                 </div>
                 <div className="flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-full px-4 py-2">
-                  <TrendingUp className="w-5 h-5 text-[#F4C430] mr-2" />
-                <Clock className="w-5 h-5 text-blue-500 mr-2" />
+                  <TrendingUp className="w-5 h-5 text-blue-500 mr-2" />
+                  <span className="text-sm font-medium text-gray-700">100% tevreden</span>
                 </div>
-                <TrendingUp className="w-5 h-5 text-blue-500 mr-2" />
+              </div>
 
               {/* Google Reviews badge */}
             </div>
