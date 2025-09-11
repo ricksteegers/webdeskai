@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CheckCircle, Zap, Clock, DollarSign, TrendingUp, ArrowRight, Sparkles, Target, Users, Award, Shield, TrendingDown } from 'lucide-react';
+import { CheckCircle, Zap, Clock, DollarSign, TrendingUp, ArrowRight, Sparkles, Target, Users, Award, Shield, TrendingDown, AlertTriangle } from 'lucide-react';
 
 const ProblemSolution: React.FC = () => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
