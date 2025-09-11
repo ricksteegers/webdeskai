@@ -93,7 +93,7 @@ const TrustBuilders: React.FC = () => {
   };
 
   return (
-    <section id="pricing" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section id="pricing" className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
       {/* White flow transition from previous section */}
       <div className="absolute top-0 left-0 right-0 -mt-1 z-10">
         <svg className="w-full h-20 fill-current text-white" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -102,18 +102,15 @@ const TrustBuilders: React.FC = () => {
       </div>
 
       {/* Ultra Creative Background Elements */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-5">
         {/* Massive floating orbs with complex gradients */}
-        <div className="absolute top-10 left-5 w-[40rem] h-[40rem] bg-gradient-to-br from-blue-400 via-cyan-400 via-teal-400 to-emerald-400 rounded-full blur-3xl animate-float-gentle transform rotate-45"></div>
-        <div className="absolute bottom-10 right-5 w-[50rem] h-[50rem] bg-gradient-to-br from-purple-400 via-pink-400 via-rose-400 to-red-400 rounded-full blur-3xl animate-float-gentle-delayed transform -rotate-30"></div>
-        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-[60rem] h-[60rem] bg-gradient-to-br from-indigo-400 via-blue-400 via-cyan-400 to-teal-400 rounded-full blur-3xl animate-drift-left transform rotate-90"></div>
-        <div className="absolute top-5 right-1/3 w-[30rem] h-[30rem] bg-gradient-to-br from-emerald-400 via-green-400 via-lime-400 to-yellow-400 rounded-full blur-3xl animate-drift-right transform rotate-180"></div>
-        <div className="absolute bottom-5 left-1/3 w-[35rem] h-[35rem] bg-gradient-to-br from-orange-400 via-red-400 via-pink-400 to-purple-400 rounded-full blur-3xl animate-float-gentle transform -rotate-60"></div>
-        <div className="absolute top-2/3 right-1/4 w-[25rem] h-[25rem] bg-gradient-to-br from-violet-400 via-purple-400 via-indigo-400 to-blue-400 rounded-full blur-3xl animate-bounce-slow transform rotate-120"></div>
+        <div className="absolute top-10 left-5 w-[40rem] h-[40rem] bg-gradient-to-br from-blue-200 via-cyan-200 via-teal-200 to-emerald-200 rounded-full blur-3xl animate-float-gentle transform rotate-45"></div>
+        <div className="absolute bottom-10 right-5 w-[50rem] h-[50rem] bg-gradient-to-br from-purple-200 via-pink-200 via-rose-200 to-red-200 rounded-full blur-3xl animate-float-gentle-delayed transform -rotate-30"></div>
+        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-[60rem] h-[60rem] bg-gradient-to-br from-indigo-200 via-blue-200 via-cyan-200 to-teal-200 rounded-full blur-3xl animate-drift-left transform rotate-90"></div>
       </div>
 
       {/* Animated geometric patterns */}
-      <div className="absolute inset-0 opacity-15">
+      <div className="absolute inset-0 opacity-3">
         {/* Multi-layer grid patterns */}
         <div className="absolute inset-0" style={{
           backgroundImage: `
@@ -129,15 +126,12 @@ const TrustBuilders: React.FC = () => {
         {/* Complex diagonal line patterns */}
         <div className="absolute top-0 left-0 w-full h-full" style={{
           backgroundImage: `
-            linear-gradient(45deg, transparent 47%, #F4C430 49%, #F4C430 51%, transparent 53%),
-            linear-gradient(-45deg, transparent 47%, #3B82F6 49%, #3B82F6 51%, transparent 53%),
-            linear-gradient(135deg, transparent 47%, #8B5CF6 49%, #8B5CF6 51%, transparent 53%),
-            linear-gradient(225deg, transparent 47%, #10B981 49%, #10B981 51%, transparent 53%),
-            linear-gradient(315deg, transparent 47%, #F59E0B 49%, #F59E0B 51%, transparent 53%)
+            linear-gradient(45deg, transparent 48%, rgba(244, 196, 48, 0.1) 49%, rgba(244, 196, 48, 0.1) 51%, transparent 52%),
+            linear-gradient(-45deg, transparent 48%, rgba(59, 130, 246, 0.1) 49%, rgba(59, 130, 246, 0.1) 51%, transparent 52%)
           `,
-          backgroundSize: '200px 200px, 150px 150px, 250px 250px, 180px 180px, 220px 220px',
-          backgroundPosition: '0 0, 75px 75px, 150px 150px, 100px 100px, 200px 200px',
-          opacity: 0.6
+          backgroundSize: '200px 200px, 150px 150px',
+          backgroundPosition: '0 0, 75px 75px',
+          opacity: 0.3
         }}></div>
         
         {/* Enhanced hexagon patterns */}
