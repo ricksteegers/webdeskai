@@ -129,9 +129,6 @@ const SocialProof: React.FC = () => {
                     <div className="text-gray-600">
                       {testimonials[currentTestimonial].position}
                     </div>
-                    <div className="text-blue-500 font-semibold text-sm">
-                      {testimonials[currentTestimonial].company}
-                    </div>
                   </div>
                 </div>
               </div>
