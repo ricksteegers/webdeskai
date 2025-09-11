@@ -436,13 +436,6 @@ const Services: React.FC = () => {
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-300" />
                     <span className="font-bold text-cyan-400 text-sm sm:text-base">WebDesk AI: €695 en 1 week</span>
                     <Sparkles className="w-5 h-5 text-cyan-400" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
