@@ -418,12 +418,12 @@ const Services: React.FC = () => {
                   <span className="text-sm font-medium text-white">Websites & Webshops</span>
                 </div>
                 <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
-                  <Palette className="w-5 h-5 text-cyan-400 mr-2" />
-                  <span className="text-sm font-medium text-white">AI Design & Marketing</span>
+                  <Palette className="w-5 h-5 text-purple-400 mr-2" />
+                  <span className="text-sm font-medium text-white">AI Design</span>
                 </div>
                 <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
-                  <Smartphone className="w-5 h-5 text-cyan-400 mr-2" />
-                  <span className="text-sm font-medium text-white">Webapps & Automatisering</span>
+                  <Zap className="w-5 h-5 text-yellow-400 mr-2" />
+                  <span className="text-sm font-medium text-white">Automatisering</span>
                 </div>
               </div>
             </div>
