@@ -423,12 +423,6 @@ const Services: React.FC = () => {
                 </div>
                 <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
                   <Smartphone className="w-5 h-5 text-cyan-400 mr-2" />
-                  <span className="text-sm font-medium text-white">Custom Webapps</span>
-                </div>
-              </div>
-
-              {/* Enhanced comparison section */}
-              <div className="mt-8 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-2xl p-4 border border-cyan-400/30 backdrop-blur-sm">
     </section>
   );
 };
