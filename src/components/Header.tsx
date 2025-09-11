@@ -24,7 +24,7 @@ const Header: React.FC = () => {
           <Link to="/" className="flex items-center group">
             <div className="relative">
               <img 
-                src="/WebDesnk AI.png" 
+                src="/1.png" 
                 alt="WebDesk AI" 
                 className="h-20 w-auto group-hover:scale-105 transition-transform duration-300"
               />

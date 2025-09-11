@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="mb-6 group cursor-pointer">
               <img 
-                src="/WebDesnk AI.png" 
+                src="/1.png" 
                 alt="WebDesk AI" 
                 className="h-16 w-auto group-hover:scale-110 transition-transform duration-300 filter brightness-0 invert"
               />
