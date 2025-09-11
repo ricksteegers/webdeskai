@@ -52,7 +52,7 @@ const SocialProof: React.FC = () => {
   ];
 
   const partnerLogos = [
-    { name: "Melis Logistics", logo: "/15.png" },
+    { name: "Bouwgarant", logo: "/Bouwgarant logo.png" },
     { name: "Chapeau", logo: "/23.png" },
     { name: "Quote", logo: "/28.png" }
   ];
