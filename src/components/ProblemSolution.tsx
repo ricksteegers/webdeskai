@@ -224,7 +224,7 @@ const ProblemSolution: React.FC = () => {
 
             {/* Solutions Side */}
             <div className="scroll-animate-right relative">
-              <div className="bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50 rounded-3xl p-8 border-2 border-green-200 relative overflow-hidden shadow-2xl">
+              <div className="bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50 rounded-3xl p-8 border-2 border-green-200 relative overflow-hidden shadow-2xl min-h-[600px] flex flex-col">
                 {/* Animated success pattern */}
                 <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-500 via-blue-500 to-cyan-500 animate-pulse"></div>
                 
@@ -246,7 +246,7 @@ const ProblemSolution: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-6 relative z-10">
+                <div className="space-y-6 relative z-10 flex-1 flex flex-col justify-center">
                   {solutions.map((solution, index) => (
                     <div 
                       key={index} 
