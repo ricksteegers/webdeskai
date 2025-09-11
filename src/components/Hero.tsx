@@ -178,16 +178,16 @@ const Hero: React.FC = () => {
               </p>
               <div className="flex items-center space-x-6 text-base">
                 <div className="flex items-center text-sm sm:text-base">
-                  <Clock className="w-5 h-5 text-[#F4C430] mr-2" />
+                  <Clock className="w-5 h-5 text-blue-500 mr-2" />
                   <span className="font-semibold">In 1 week live</span>
                 </div>
                 <div className="flex items-center text-sm sm:text-base">
-                  <Target className="w-5 h-5 text-[#F4C430] mr-2" />
+                  <Target className="w-5 h-5 text-blue-500 mr-2" />
                   <span className="font-semibold">Geen hoge kosten</span>
                 </div>
               </div>
               <p className="font-semibold text-gray-800">
-                <TrendingUp className="w-5 h-5 text-[#F4C430] inline mr-2" />
+                <TrendingUp className="w-5 h-5 text-blue-500 inline mr-2" />
                 Geen compromissen op kwaliteit.
               </p>
             </div>
@@ -197,21 +197,14 @@ const Hero: React.FC = () => {
               {/* Main CTA */}
               <Link 
                 to="/contact"
-                className="group inline-flex items-center bg-transparent text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-semibold text-sm sm:text-lg border-2 border-[#F4C430] hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 backdrop-blur-sm relative overflow-hidden"
+                className="group inline-flex items-center bg-blue-500 text-white px-8 py-4 sm:px-12 sm:py-6 rounded-full font-semibold text-sm sm:text-lg hover:bg-blue-600 transition-all duration-300 shadow-soft hover:shadow-soft-lg transform hover:-translate-y-1 hover:scale-105 relative overflow-hidden"
               >
                 {/* Animated background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 via-[#F4C430]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 <div className="relative z-10 flex items-center">
                 Plan een gesprek
-                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-3 transition-transform duration-500 text-[#F4C430] group-hover:text-black" />
-                </div>
-                
-                {/* Floating particles */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute top-2 left-2 w-1.5 h-1.5 bg-[#F4C430] rounded-full animate-ping"></div>
-                  <div className="absolute bottom-2 right-2 w-2 h-2 bg-[#F4C430] rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                  <div className="absolute top-1/2 right-4 w-1 h-1 bg-[#F4C430] rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
                 </div>
               </Link>
 
