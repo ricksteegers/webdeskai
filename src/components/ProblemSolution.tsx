@@ -205,4 +205,166 @@ const ProblemSolution: React.FC = () => {
                       {/* Animated background */}
                       <div className={`absolute inset-0 bg-gradient-to-r ${problem.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
                       
-                      <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${problem.color} rounded-lg
+                      <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${problem.color} rounded-lg flex items-center justify-center shadow-xl animate-pulse relative z-10`}>
+                        <div className="text-white">
+                          {problem.icon}
+                        </div>
+                      </div>
+                      
+                      <div className="flex-1 relative z-10">
+                        <h4 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-1 sm:mb-2">{problem.title}</h4>
+                        <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">{problem.description}</p>
+                      </div>
+                      
+                      {/* Hover indicator */}
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10">
+                        <AlertTriangle className="w-4 h-4 sm:w-5 sm:h-5 text-red-500 animate-bounce" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Solutions Side */}
+            <div className="scroll-animate-right relative">
+              <div className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 rounded-3xl p-6 sm:p-8 border-2 border-green-200 relative overflow-hidden shadow-2xl min-h-[600px] flex flex-col">
+                {/* Animated success pattern */}
+                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 animate-pulse"></div>
+                
+                {/* Floating success icons */}
+                <div className="absolute top-4 right-4 opacity-20">
+                  <Zap className="w-12 h-12 sm:w-16 sm:h-16 text-blue-500 animate-bounce" />
+                </div>
+                
+                <div className="flex items-center mb-6 sm:mb-8 relative z-10">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-xl sm:rounded-2xl flex items-center justify-center mr-3 sm:mr-4 md:mr-6 shadow-xl animate-pulse">
+                    <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white animate-spin-slow" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">WebDesk AI</h3>
+                    <p className="text-green-600 font-semibold flex items-center">
+                      <span className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full mr-2 animate-ping"></span>
+                      <span className="text-sm sm:text-base">Slim, snel & betaalbaar</span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-4 sm:space-y-6 relative z-10 flex-1 flex flex-col justify-center">
+                  {solutions.map((solution, index) => (
+                    <div 
+                      key={index} 
+                      className={`flex items-start space-x-3 sm:space-x-4 p-4 sm:p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer relative overflow-hidden group`}
+                      style={{ animationDelay: `${solution.delay}ms` }}
+                      onMouseEnter={() => setActiveCard(index + 10)}
+                      onMouseLeave={() => setActiveCard(null)}
+                    >
+                      {/* Animated background */}
+                      <div className={`absolute inset-0 bg-gradient-to-r ${solution.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                      
+                      <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${solution.color} rounded-lg flex items-center justify-center shadow-xl animate-pulse relative z-10`}>
+                        <div className="text-white">
+                          {solution.icon}
+                        </div>
+                      </div>
+                      
+                      <div className="flex-1 relative z-10">
+                        <h4 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-1 sm:mb-2">{solution.title}</h4>
+                        <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">{solution.description}</p>
+                      </div>
+                      
+                      {/* Hover indicator */}
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10">
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 animate-bounce" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Enhanced Statistics Section */}
+        <div className="scroll-animate-scale mb-16 sm:mb-20">
+          <div className="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 rounded-3xl p-6 sm:p-8 md:p-12 border-2 border-blue-200 relative overflow-hidden shadow-2xl">
+            {/* Animated background elements */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-pulse"></div>
+            
+            <div className="text-center mb-8 sm:mb-12">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+                Waarom <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">WebDesk AI</span> de slimme keuze is
+              </h3>
+              <p className="text-base sm:text-lg text-gray-600">Bewezen resultaten die spreken voor zich</p>
+            </div>
+            
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+              {stats.map((stat, index) => (
+                <div 
+                  key={index} 
+                  className="text-center p-4 sm:p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer relative overflow-hidden group"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  {/* Animated background */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  <div className="relative z-10">
+                    <div className={`w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 sm:mb-4 ${stat.color} bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center shadow-lg`}>
+                      {stat.icon}
+                    </div>
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-1 sm:mb-2">{stat.number}</div>
+                    <div className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">{stat.label}</div>
+                  </div>
+                  
+                  {/* Hover effect */}
+                  <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-ping"></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Enhanced Call to Action */}
+        <div className="text-center scroll-animate relative">
+          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl p-6 sm:p-8 md:p-12 text-white relative overflow-hidden shadow-2xl">
+            {/* Animated background patterns */}
+            <div className="absolute inset-0 opacity-20">
+              <div className="absolute top-10 left-10 w-20 h-20 bg-white rounded-full animate-ping"></div>
+              <div className="absolute bottom-10 right-10 w-16 h-16 bg-white rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white rounded-full animate-pulse opacity-10"></div>
+            </div>
+            
+            <div className="relative z-10">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
+                Klaar om te starten met jouw 
+                <span className="block mt-2">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-300">AI-gedreven website</span>?
+                </span>
+              </h3>
+              
+              <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 max-w-3xl mx-auto">
+                Sluit je aan bij 50+ tevreden ondernemers die al kozen voor de toekomst van webdesign
+              </p>
+              
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <button className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center space-x-2 group w-full sm:w-auto justify-center">
+                  <span>Start Nu - Gratis Consult</span>
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </button>
+                
+                <div className="flex items-center space-x-2 text-white/80">
+                  <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <span className="text-sm sm:text-base">100% Tevredenheidsgarantie</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProblemSolution;
