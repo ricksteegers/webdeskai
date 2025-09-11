@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import ProblemSolution from '../components/ProblemSolution';
-import KeyBenefits from '../components/KeyBenefits';
 import SocialProof from '../components/SocialProof';
 import ProductHighlight from '../components/ProductHighlight';
 import TrustBuilders from '../components/TrustBuilders';
@@ -49,7 +48,6 @@ const HomePage: React.FC = () => {
       <Header />
       <Hero />
       <ProblemSolution />
-      <KeyBenefits />
       <SocialProof />
       <ProductHighlight />
       <TrustBuilders />
