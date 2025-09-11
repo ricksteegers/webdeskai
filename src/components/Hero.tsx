@@ -138,7 +138,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10 pt-24 sm:pt-32">
+      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10 pt-32 sm:pt-40 lg:pt-44">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 scroll-animate-left">
