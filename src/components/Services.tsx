@@ -71,12 +71,15 @@ const Services: React.FC = () => {
 
   return (
     <section id="services" className="py-20 bg-white relative overflow-hidden">
-      {/* Ultra Creative Background */}
+      {/* Ultra Creative Background with massive floating elements */}
       <div className="absolute inset-0 opacity-8">
         {/* Massive floating orbs with complex gradients */}
         <div className="absolute top-10 left-5 w-[32rem] h-[32rem] bg-gradient-to-br from-blue-400 via-cyan-400 via-teal-400 to-emerald-400 rounded-full blur-3xl animate-float-gentle transform rotate-45"></div>
         <div className="absolute bottom-10 right-5 w-[40rem] h-[40rem] bg-gradient-to-br from-purple-400 via-pink-400 via-rose-400 to-red-400 rounded-full blur-3xl animate-float-gentle-delayed transform -rotate-30"></div>
         <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-[48rem] h-[48rem] bg-gradient-to-br from-indigo-400 via-blue-400 via-cyan-400 to-teal-400 rounded-full blur-3xl animate-drift-left transform rotate-90"></div>
+        <div className="absolute top-5 right-1/3 w-[24rem] h-[24rem] bg-gradient-to-br from-emerald-400 via-green-400 via-lime-400 to-yellow-400 rounded-full blur-3xl animate-drift-right transform rotate-180"></div>
+        <div className="absolute bottom-5 left-1/3 w-[28rem] h-[28rem] bg-gradient-to-br from-orange-400 via-red-400 via-pink-400 to-purple-400 rounded-full blur-3xl animate-float-gentle transform -rotate-60"></div>
+        <div className="absolute top-2/3 right-1/4 w-[20rem] h-[20rem] bg-gradient-to-br from-violet-400 via-purple-400 via-indigo-400 to-blue-400 rounded-full blur-3xl animate-bounce-slow transform rotate-120"></div>
         <div className="absolute top-5 right-1/3 w-[24rem] h-[24rem] bg-gradient-to-br from-emerald-400 via-green-400 via-lime-400 to-yellow-400 rounded-full blur-3xl animate-drift-right transform rotate-180"></div>
         <div className="absolute bottom-5 left-1/3 w-[28rem] h-[28rem] bg-gradient-to-br from-orange-400 via-red-400 via-pink-400 to-purple-400 rounded-full blur-3xl animate-float-gentle transform -rotate-60"></div>
         <div className="absolute top-2/3 right-1/4 w-[20rem] h-[20rem] bg-gradient-to-br from-violet-400 via-purple-400 via-indigo-400 to-blue-400 rounded-full blur-3xl animate-bounce-slow transform rotate-120"></div>
@@ -89,6 +92,22 @@ const Services: React.FC = () => {
         <div className="absolute top-1/2 left-8 w-56 h-56 bg-gradient-to-br from-cyan-400 via-sky-400 via-blue-400 to-indigo-400 rounded-full blur-2xl animate-float-gentle-delayed opacity-50 transform rotate-30"></div>
         <div className="absolute top-1/2 right-8 w-68 h-68 bg-gradient-to-br from-lime-400 via-green-400 via-emerald-400 to-teal-400 rounded-full blur-2xl animate-drift-right opacity-55 transform -rotate-90"></div>
         
+        {/* Small accent orbs with micro animations */}
+        <div className="absolute top-12 left-1/4 w-48 h-48 bg-gradient-to-br from-pink-400 via-rose-400 via-red-400 to-orange-400 rounded-full blur-xl animate-bounce-slow opacity-45 transform rotate-135"></div>
+        <div className="absolute bottom-12 right-1/4 w-52 h-52 bg-gradient-to-br from-cyan-400 via-sky-400 via-blue-400 to-purple-400 rounded-full blur-xl animate-float-gentle-delayed opacity-50 transform -rotate-75"></div>
+        <div className="absolute top-3/4 left-6 w-44 h-44 bg-gradient-to-br from-lime-400 via-green-400 via-emerald-400 to-cyan-400 rounded-full blur-xl animate-drift-right opacity-40 transform rotate-225"></div>
+        <div className="absolute top-1/4 right-6 w-60 h-60 bg-gradient-to-br from-amber-400 via-orange-400 via-red-400 to-pink-400 rounded-full blur-xl animate-float-gentle opacity-45 transform rotate-45"></div>
+        <div className="absolute bottom-1/2 left-1/4 w-40 h-40 bg-gradient-to-br from-indigo-400 via-purple-400 via-violet-400 to-fuchsia-400 rounded-full blur-xl animate-bounce-slow opacity-50 transform -rotate-150"></div>
+        <div className="absolute top-1/6 right-1/3 w-36 h-36 bg-gradient-to-br from-teal-400 via-cyan-400 via-sky-400 to-blue-400 rounded-full blur-lg animate-drift-left opacity-45 transform rotate-270"></div>
+        
+        {/* Medium floating shapes with enhanced effects */}
+        <div className="absolute top-24 right-24 w-80 h-80 bg-gradient-to-br from-emerald-400 via-teal-400 via-cyan-400 to-blue-400 rounded-full blur-2xl animate-drift-right opacity-70 transform rotate-45"></div>
+        <div className="absolute bottom-24 left-24 w-88 h-88 bg-gradient-to-br from-orange-400 via-amber-400 via-yellow-400 to-lime-400 rounded-full blur-2xl animate-float-gentle opacity-65 transform -rotate-60"></div>
+        <div className="absolute top-1/5 right-1/2 w-72 h-72 bg-gradient-to-br from-violet-400 via-purple-400 via-fuchsia-400 to-pink-400 rounded-full blur-2xl animate-bounce-slow opacity-55 transform rotate-90"></div>
+        <div className="absolute bottom-1/5 left-1/2 w-64 h-64 bg-gradient-to-br from-rose-400 via-pink-400 via-red-400 to-orange-400 rounded-full blur-2xl animate-drift-left opacity-60 transform -rotate-120"></div>
+        <div className="absolute top-1/2 left-8 w-56 h-56 bg-gradient-to-br from-cyan-400 via-sky-400 via-blue-400 to-indigo-400 rounded-full blur-2xl animate-float-gentle-delayed opacity-50 transform rotate-30"></div>
+        <div className="absolute top-1/2 right-8 w-68 h-68 bg-gradient-to-br from-lime-400 via-green-400 via-emerald-400 to-teal-400 rounded-full blur-2xl animate-drift-right opacity-55 transform -rotate-90"></div>
+        <div className="absolute top-1/2 left-12 w-16 h-16 bg-gradient-to-br from-green-300 via-emerald-300 to-teal-300 rounded-full blur-md animate-pulse opacity-45" style={{ animationDelay: '2s' }}></div>
         {/* Small accent orbs with micro animations */}
         <div className="absolute top-12 left-1/4 w-48 h-48 bg-gradient-to-br from-pink-400 via-rose-400 via-red-400 to-orange-400 rounded-full blur-xl animate-bounce-slow opacity-45 transform rotate-135"></div>
         <div className="absolute bottom-12 right-1/4 w-52 h-52 bg-gradient-to-br from-cyan-400 via-sky-400 via-blue-400 to-purple-400 rounded-full blur-xl animate-float-gentle-delayed opacity-50 transform -rotate-75"></div>
@@ -115,12 +134,24 @@ const Services: React.FC = () => {
             radial-gradient(circle at 1px 1px, #F4C430 1px, transparent 0),
             radial-gradient(circle at 1.5px 1.5px, #8B5CF6 1.5px, transparent 0)
           `,
+          backgroundImage: `
+            radial-gradient(circle at 2px 2px, #3B82F6 2px, transparent 0), 
+            radial-gradient(circle at 1px 1px, #F4C430 1px, transparent 0),
+            radial-gradient(circle at 1.5px 1.5px, #8B5CF6 1.5px, transparent 0)
+          `,
           backgroundSize: '60px 60px, 40px 40px, 80px 80px',
           backgroundPosition: '0 0, 20px 20px, 40px 40px'
         }}></div>
         
         {/* Complex diagonal line patterns */}
         <div className="absolute top-0 left-0 w-full h-full" style={{
+          backgroundImage: `
+            linear-gradient(45deg, transparent 48%, #F4C430 49%, #F4C430 51%, transparent 52%),
+            linear-gradient(-45deg, transparent 48%, #3B82F6 49%, #3B82F6 51%, transparent 52%),
+            linear-gradient(135deg, transparent 48%, #8B5CF6 49%, #8B5CF6 51%, transparent 52%),
+            linear-gradient(225deg, transparent 48%, #10B981 49%, #10B981 51%, transparent 52%),
+            linear-gradient(315deg, transparent 48%, #F59E0B 49%, #F59E0B 51%, transparent 52%)
+          `,
           backgroundImage: `
             linear-gradient(45deg, transparent 48%, #F4C430 49%, #F4C430 51%, transparent 52%),
             linear-gradient(-45deg, transparent 48%, #3B82F6 49%, #3B82F6 51%, transparent 52%),
@@ -138,6 +169,26 @@ const Services: React.FC = () => {
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233B82F6' fill-opacity='0.4'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           backgroundSize: '80px 80px',
           transform: 'rotate(15deg)',
+          animation: 'spin-slow 20s linear infinite'
+        }}></div>
+        
+        <div className="absolute bottom-1/6 left-1/6 w-80 h-80 opacity-25" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F4C430' fill-opacity='0.5'%3E%3Cpath d='M20 20c0 11-9 20-20 20s-20-9-20-20 9-20 20-20 20 9 20 20zm-10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: '40px 40px',
+          transform: 'rotate(-30deg)',
+          animation: 'spin-slow 30s linear infinite reverse'
+        }}></div>
+        
+        {/* Enhanced wave patterns */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-18" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%238B5CF6' fill-opacity='0.5'/%3E%3C/svg%3E")`,
+          backgroundSize: '100px 20px',
+          animation: 'drift-left 6s ease-in-out infinite'
+        }}></div>
+        
+        <div className="absolute top-0 left-0 w-full h-full opacity-16" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='120' height='30' viewBox='0 0 120 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,15 Q30,5 60,15 T120,15' stroke='%2310B981' strokeWidth='2' fill='none' stroke-dasharray='4,4'/%3E%3Cpath d='M0,20 Q40,10 80,20 T160,20' stroke='%23F59E0B' strokeWidth='1.5' fill='none' stroke-dasharray='3,3'/%3E%3C/svg%3E")`,
+          backgroundSize: '120px 30px',
           animation: 'spin-slow 20s linear infinite'
         }}></div>
         
@@ -223,6 +274,67 @@ const Services: React.FC = () => {
         </div>
         <div className="absolute bottom-8 left-8 opacity-15 animate-drift-right transform rotate-30">
           <div className="w-24 h-24 bg-gradient-to-br from-purple-500/25 via-indigo-500/20 to-violet-500/25 rounded-3xl flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl hover:scale-125 transition-transform duration-500">
+      {/* Ultra Enhanced floating particles and shapes */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-85">
+        {/* Enhanced animated particles with gradients */}
+        <div className="absolute top-16 left-16 w-5 h-5 bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 rounded-full animate-ping opacity-75 shadow-2xl"></div>
+        <div className="absolute top-32 right-24 w-4 h-4 bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-400 rounded-full animate-ping opacity-60 shadow-xl" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-24 left-12 w-4.5 h-4.5 bg-gradient-to-r from-purple-400 via-violet-400 to-indigo-400 rounded-full animate-ping opacity-70 shadow-xl" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-16 right-16 w-6 h-6 bg-gradient-to-r from-pink-400 via-rose-400 to-red-400 rounded-full animate-ping opacity-50 shadow-2xl" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/4 left-1/5 w-3.5 h-3.5 bg-gradient-to-r from-emerald-400 via-green-400 to-lime-400 rounded-full animate-ping opacity-75 shadow-lg" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-1/4 right-1/5 w-5.5 h-5.5 bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-400 rounded-full animate-ping opacity-55 shadow-xl" style={{ animationDelay: '2.5s' }}></div>
+        <div className="absolute top-2/3 left-1/3 w-3 h-3 bg-gradient-to-r from-violet-400 via-purple-400 to-fuchsia-400 rounded-full animate-ping opacity-65 shadow-md" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-2/3 right-1/3 w-4 h-4 bg-gradient-to-r from-rose-400 via-pink-400 to-red-400 rounded-full animate-ping opacity-60 shadow-lg" style={{ animationDelay: '3.5s' }}></div>
+        </div>
+        {/* Complex floating geometric shapes with clip-paths */}
+        <div className="absolute top-1/4 left-6 w-10 h-10 bg-gradient-to-br from-orange-400 via-red-400 via-pink-400 to-purple-400 transform rotate-45 animate-float-gentle opacity-45 shadow-xl" style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}></div>
+        <div className="absolute top-3/4 right-6 w-12 h-12 bg-gradient-to-br from-green-400 via-emerald-400 via-teal-400 to-cyan-400 rounded-full animate-bounce-slow opacity-40 shadow-2xl"></div>
+        <div className="absolute bottom-1/4 left-1/5 w-9 h-9 bg-gradient-to-br from-indigo-400 via-purple-400 via-violet-400 to-fuchsia-400 transform rotate-12 animate-drift-left opacity-50 shadow-lg" style={{ clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)' }}></div>
+        <div className="absolute top-1/5 left-1/2 w-8 h-8 bg-gradient-to-br from-cyan-400 via-blue-400 via-indigo-400 to-purple-400 transform rotate-60 animate-float-gentle-delayed opacity-45 shadow-md" style={{ clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)' }}></div>
+        <div className="absolute bottom-1/5 right-1/2 w-11 h-11 bg-gradient-to-br from-yellow-400 via-orange-400 via-red-400 to-pink-400 rounded-full animate-drift-right opacity-40 shadow-lg"></div>
+        <div className="absolute top-1/2 left-1/6 w-7 h-7 bg-gradient-to-br from-lime-400 via-green-400 via-emerald-400 to-teal-400 transform rotate-90 animate-bounce-slow opacity-50 shadow-md" style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)' }}></div>
+        <div className="absolute top-1/2 right-1/6 w-13 h-13 bg-gradient-to-br from-rose-400 via-pink-400 via-fuchsia-400 to-purple-400 transform rotate-135 animate-float-gentle opacity-45 shadow-xl" style={{ clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)' }}></div>
+        </div>
+        {/* Enhanced animated lines and curves */}
+        <div className="absolute top-1/5 right-1/5 w-48 h-1.5 bg-gradient-to-r from-transparent via-blue-400 via-cyan-400 to-transparent animate-pulse opacity-45 transform rotate-45 shadow-lg"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-40 h-1 bg-gradient-to-r from-transparent via-purple-400 via-pink-400 to-transparent animate-pulse opacity-45 transform -rotate-45 shadow-lg"></div>
+        <div className="absolute top-1/2 left-1/5 w-36 h-0.5 bg-gradient-to-r from-transparent via-green-400 via-emerald-400 to-transparent animate-pulse opacity-40 transform rotate-90 shadow-md" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/2 right-1/5 w-44 h-0.5 bg-gradient-to-r from-transparent via-orange-400 via-red-400 to-transparent animate-pulse opacity-40 transform -rotate-30 shadow-md" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-1/3 left-1/3 w-32 h-1 bg-gradient-to-r from-transparent via-violet-400 via-purple-400 to-transparent animate-pulse opacity-35 transform rotate-60 shadow-sm" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-1/3 right-1/3 w-38 h-0.5 bg-gradient-to-r from-transparent via-rose-400 via-pink-400 to-transparent animate-pulse opacity-35 transform -rotate-60 shadow-sm" style={{ animationDelay: '2.5s' }}></div>
+          </div>
+        {/* Enhanced curved lines with multiple paths */}
+        <div className="absolute top-1/4 left-1/2 w-56 h-56 opacity-30 animate-spin-slow" style={{ animationDuration: '35s' }}>
+          <svg className="w-full h-full" viewBox="0 0 100 100">
+            <path d="M10,50 Q50,10 90,50 Q50,90 10,50" stroke="#F4C430" strokeWidth="2.5" fill="none" strokeDasharray="6,6" className="animate-pulse drop-shadow-sm" />
+            <path d="M20,50 Q50,20 80,50 Q50,80 20,50" stroke="#3B82F6" strokeWidth="2" fill="none" strokeDasharray="4,4" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '0.5s' }} />
+            <path d="M30,50 Q50,30 70,50 Q50,70 30,50" stroke="#8B5CF6" strokeWidth="1.5" fill="none" strokeDasharray="3,3" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '1s' }} />
+          </svg>
+        <div className="absolute top-1/6 left-1/6 w-4 h-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 rounded-full animate-pulse opacity-80 shadow-xl"></div>
+        
+        <div className="absolute bottom-1/4 right-1/2 w-48 h-48 opacity-25 animate-spin-slow" style={{ animationDuration: '45s', animationDirection: 'reverse' }}>
+          <svg className="w-full h-full" viewBox="0 0 100 100">
+            <path d="M15,15 Q85,25 85,85 Q25,75 15,15" stroke="#10B981" strokeWidth="2" fill="none" strokeDasharray="5,5" className="animate-pulse drop-shadow-sm" />
+            <path d="M25,25 Q75,35 75,75 Q35,65 25,25" stroke="#F59E0B" strokeWidth="1.5" fill="none" strokeDasharray="4,4" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '1s' }} />
+          </svg>
+        <div className="absolute top-1/2 left-1/2 w-4.5 h-4.5 bg-gradient-to-r from-emerald-400 via-green-400 to-lime-400 rounded-full animate-pulse opacity-75 shadow-xl" style={{ animationDelay: '1.5s' }}></div>
+      </div>
+
+      {/* Ultra Enhanced floating particles and shapes */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-90">
+        {/* Enhanced floating service icons with glassmorphism */}
+        <div className="absolute top-8 left-8 opacity-15 animate-float-gentle transform rotate-15">
+          <div className="w-24 h-24 bg-gradient-to-br from-blue-500/25 via-cyan-500/20 to-teal-500/25 rounded-3xl flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl hover:scale-125 transition-transform duration-500">
+            <Monitor className="w-12 h-12 text-blue-500 drop-shadow-lg" />
+          </div>
+        </div>
+        <div className="absolute top-8 right-8 opacity-15 animate-float-gentle-delayed transform -rotate-15">
+          <div className="w-24 h-24 bg-gradient-to-br from-green-500/25 via-emerald-500/20 to-teal-500/25 rounded-3xl flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl hover:scale-125 transition-transform duration-500">
+            <ShoppingCart className="w-12 h-12 text-green-500 drop-shadow-lg" />
+          </div>
+        </div>
+        <div className="absolute bottom-8 left-8 opacity-15 animate-drift-right transform rotate-30">
+          <div className="w-24 h-24 bg-gradient-to-br from-purple-500/25 via-indigo-500/20 to-violet-500/25 rounded-3xl flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl hover:scale-125 transition-transform duration-500">
             <Smartphone className="w-12 h-12 text-purple-500 drop-shadow-lg" />
           </div>
         </div>
@@ -240,8 +352,8 @@ const Services: React.FC = () => {
           <div className="w-24 h-24 bg-gradient-to-br from-yellow-500/25 via-amber-500/20 to-orange-500/25 rounded-3xl flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl hover:scale-125 transition-transform duration-500">
             <Zap className="w-12 h-12 text-yellow-500 drop-shadow-lg" />
           </div>
-        </div>
-        
+        <div className="absolute top-1/8 right-1/8 w-3.5 h-3.5 bg-gradient-to-r from-rose-400 via-pink-400 to-red-400 rounded-full animate-pulse opacity-75 shadow-lg" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-1/8 left-1/8 w-4 h-4 bg-gradient-to-r from-teal-400 via-cyan-400 to-sky-400 rounded-full animate-pulse opacity-65 shadow-xl" style={{ animationDelay: '3.5s' }}></div>
         {/* Enhanced constellation effect with more connections */}
         <div className="absolute top-1/6 left-1/6 w-4 h-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 rounded-full animate-pulse opacity-80 shadow-xl"></div>
         <div className="absolute top-1/4 left-1/4 w-3.5 h-3.5 bg-gradient-to-r from-purple-400 via-violet-400 to-indigo-400 rounded-full animate-pulse opacity-70 shadow-lg" style={{ animationDelay: '0.5s' }}></div>
@@ -305,8 +417,9 @@ const Services: React.FC = () => {
               <div className="text-xs sm:text-sm text-gray-600">Live</div>
             </div>
           </div>
-        </div>
-
+          <line x1="50" y1="33" x2="75" y2="25" stroke="#06B6D4" strokeWidth="1.5" strokeDasharray="4,4" className="animate-pulse drop-shadow-md" style={{ animationDelay: '1s' }} />
+          <line x1="75" y1="25" x2="85" y2="50" stroke="#F4C430" strokeWidth="1.5" strokeDasharray="4,4" className="animate-pulse drop-shadow-md" style={{ animationDelay: '1.5s' }} />
+      </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
@@ -435,21 +548,15 @@ const Services: React.FC = () => {
                 </div>
               </div>
 
-              <div className="mt-8">
-                <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 text-gray-600 bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+              {/* Enhanced comparison section */}
+              <div className="mt-8 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl p-4 border border-blue-500/20">
+                <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 text-gray-600">
                   <div className="flex items-center space-x-2">
-                    <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
-                      <div className="text-center sm:text-left">
-                        <div className="text-sm sm:text-base font-semibold mb-1 sm:mb-0 sm:inline">Traditionele bureaus: €2000+ en 4-6 weken</div>
-                        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 mx-auto sm:mx-2 sm:inline" />
-                        <div className="text-sm sm:text-base font-bold text-blue-500 sm:inline">WebDesk AI: €695 en 1 week</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Sparkles className="w-6 h-6 text-blue-500" />
-                    <span className="font-semibold">Alle services onder één dak</span>
-                    <ArrowRight className="w-5 h-5 text-gray-400" />
+                    <Zap className="w-5 h-5 text-blue-500" />
+                    <span className="font-semibold text-sm sm:text-base">Traditionele bureaus: €2000+ en 4-6 weken</span>
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
+                    <span className="font-bold text-blue-500 text-sm sm:text-base">WebDesk AI: €695 en 1 week</span>
+                    <Sparkles className="w-5 h-5 text-blue-500" />
                   </div>
                 </div>
               </div>
