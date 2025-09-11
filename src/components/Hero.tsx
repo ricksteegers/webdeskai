@@ -27,17 +27,16 @@ const Hero: React.FC = () => {
 
   return (
     <>
-    <section className="bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9] min-h-screen relative overflow-visible scroll-animate pt-16 sm:pt-20">
-    <section className="bg-gradient-to-br from-blue-50 via-white to-cyan-50 min-h-screen relative overflow-visible scroll-animate pt-16 sm:pt-20">
+    <section className="bg-gradient-to-br from-blue-50 via-white to-cyan-50 min-h-screen relative overflow-visible scroll-animate pt-0">
       {/* Enhanced Background decorative elements */}
-      <div className="absolute inset-0 opacity-5 scroll-animate-scale">
+      <div className="absolute inset-0 opacity-3 scroll-animate-scale">
         <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-blue-200 to-cyan-200 rounded-full blur-3xl animate-float-gentle"></div>
         <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-br from-emerald-200 to-teal-200 rounded-full blur-3xl animate-float-gentle-delayed"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-indigo-200 to-blue-200 rounded-full blur-3xl animate-drift-left"></div>
       </div>
 
       {/* Animated grid pattern */}
-      <div className="absolute inset-0 opacity-3 scroll-animate-rotate">
+      <div className="absolute inset-0 opacity-5 scroll-animate-rotate">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, #3B82F6 1px, transparent 0)`,
           backgroundSize: '40px 40px'
