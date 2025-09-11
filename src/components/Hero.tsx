@@ -28,27 +28,28 @@ const Hero: React.FC = () => {
   return (
     <>
     <section className="bg-gradient-to-br from-[#F7F3E9] via-white to-[#F7F3E9] min-h-screen relative overflow-visible scroll-animate pt-16 sm:pt-20">
+    <section className="bg-gradient-to-br from-blue-50 via-white to-cyan-50 min-h-screen relative overflow-visible scroll-animate pt-16 sm:pt-20">
       {/* Enhanced Background decorative elements */}
-      <div className="absolute inset-0 opacity-10 scroll-animate-scale">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-[#F4C430] to-orange-400 rounded-full blur-3xl animate-float-gentle"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full blur-3xl animate-float-gentle-delayed"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full blur-3xl animate-drift-left"></div>
+      <div className="absolute inset-0 opacity-5 scroll-animate-scale">
+        <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-blue-200 to-cyan-200 rounded-full blur-3xl animate-float-gentle"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-br from-emerald-200 to-teal-200 rounded-full blur-3xl animate-float-gentle-delayed"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-indigo-200 to-blue-200 rounded-full blur-3xl animate-drift-left"></div>
       </div>
 
       {/* Animated grid pattern */}
-      <div className="absolute inset-0 opacity-5 scroll-animate-rotate">
+      <div className="absolute inset-0 opacity-3 scroll-animate-rotate">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, #F4C430 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 1px 1px, #3B82F6 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }}></div>
       </div>
 
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none scroll-animate">
-        <div className="absolute top-20 left-20 w-2 h-2 bg-[#F4C430] rounded-full animate-ping opacity-60"></div>
-        <div className="absolute top-40 right-32 w-1.5 h-1.5 bg-orange-400 rounded-full animate-ping opacity-40" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-32 left-16 w-1 h-1 bg-purple-400 rounded-full animate-ping opacity-50" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 right-20 w-2.5 h-2.5 bg-pink-400 rounded-full animate-ping opacity-30" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-20 left-20 w-2 h-2 bg-blue-400 rounded-full animate-ping opacity-40"></div>
+        <div className="absolute top-40 right-32 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-ping opacity-30" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-32 left-16 w-1 h-1 bg-emerald-400 rounded-full animate-ping opacity-35" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-20 w-2.5 h-2.5 bg-indigo-400 rounded-full animate-ping opacity-25" style={{ animationDelay: '0.5s' }}></div>
       </div>
 
       {/* Floating AI Tools spread across homepage */}
@@ -144,11 +145,11 @@ const Hero: React.FC = () => {
           <div className="space-y-8 scroll-animate-left">
             {/* Enhanced Tagline */}
             <div className="flex items-center space-x-4 group justify-center lg:justify-start mx-auto lg:mx-0 max-w-fit">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-[#F4C430] group-hover:from-[#F4C430] transition-all duration-500 animate-pulse"></div>
-              <span className="text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300 text-center">
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-400 group-hover:from-blue-400 transition-all duration-500 animate-pulse"></div>
+              <span className="text-sm font-bold text-blue-600 tracking-wider uppercase bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-soft group-hover:shadow-soft-lg transition-all duration-300 text-center border border-blue-100">
                 Jouw AI partner voor de toekomst
               </span>
-              <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] group-hover:from-[#F4C430] transition-all duration-500 animate-pulse"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-400 group-hover:from-blue-400 transition-all duration-500 animate-pulse"></div>
             </div>
 
             {/* Enhanced Main Headline */}
@@ -159,9 +160,9 @@ const Hero: React.FC = () => {
                 </span>
                 <br />
                 <span className="relative">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500">Websites</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">Websites</span>
                   {/* Decorative underline */}
-                  <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#F4C430] to-orange-500 rounded-full opacity-30 animate-pulse"></div>
+                  <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full opacity-40 animate-pulse"></div>
                 </span>
               </h1>
             </div>
@@ -177,16 +178,16 @@ const Hero: React.FC = () => {
               </p>
               <div className="flex items-center space-x-6 text-base">
                 <div className="flex items-center text-sm sm:text-base">
-                  <Clock className="w-5 h-5 text-[#F4C430] mr-2" />
+                  <Clock className="w-5 h-5 text-blue-500 mr-2" />
                   <span className="font-semibold">In 1 week live</span>
                 </div>
                 <div className="flex items-center text-sm sm:text-base">
-                  <Target className="w-5 h-5 text-[#F4C430] mr-2" />
+                  <Target className="w-5 h-5 text-blue-500 mr-2" />
                   <span className="font-semibold">Geen hoge kosten</span>
                 </div>
               </div>
               <p className="font-semibold text-gray-800">
-                <TrendingUp className="w-5 h-5 text-[#F4C430] inline mr-2" />
+                <TrendingUp className="w-5 h-5 text-blue-500 inline mr-2" />
                 Geen compromissen op kwaliteit.
               </p>
             </div>
@@ -196,26 +197,19 @@ const Hero: React.FC = () => {
               {/* Main CTA */}
               <Link 
                 to="/contact"
-                className="group inline-flex items-center bg-transparent text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-semibold text-sm sm:text-lg border-2 border-[#F4C430] hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 backdrop-blur-sm relative overflow-hidden"
+                className="group inline-flex items-center bg-blue-500 text-white px-8 py-4 sm:px-12 sm:py-6 rounded-full font-semibold text-sm sm:text-lg hover:bg-blue-600 transition-all duration-300 shadow-soft hover:shadow-soft-lg transform hover:-translate-y-1 hover:scale-105 relative overflow-hidden"
               >
                 {/* Animated background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 via-[#F4C430]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 <div className="relative z-10 flex items-center">
                 Plan een gesprek
-                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-3 transition-transform duration-500 text-[#F4C430] group-hover:text-black" />
-                </div>
-                
-                {/* Floating particles */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute top-2 left-2 w-1.5 h-1.5 bg-[#F4C430] rounded-full animate-ping"></div>
-                  <div className="absolute bottom-2 right-2 w-2 h-2 bg-[#F4C430] rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                  <div className="absolute top-1/2 right-4 w-1 h-1 bg-[#F4C430] rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
                 </div>
               </Link>
 
               {/* Enhanced Pricing Display */}
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-3 md:p-6 shadow-lg border border-white/20 max-w-xs md:max-w-md ml-auto md:ml-0 lg:mr-auto lg:ml-0">
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 md:p-6 shadow-soft border border-blue-100 max-w-xs md:max-w-md ml-auto md:ml-0 lg:mr-auto lg:ml-0">
                 <div className="flex items-center justify-between text-sm md:text-base">
                   <div className="flex items-center space-x-4">
                     <div className="relative">
@@ -231,7 +225,7 @@ const Hero: React.FC = () => {
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-xs md:text-sm text-gray-500 italic">dankzij AI</div>
+                    <div className="text-xs md:text-sm text-blue-600 italic font-medium">dankzij AI</div>
                     <div className="text-sm md:text-lg font-bold text-green-600">65% besparing</div>
                   </div>
                 </div>
@@ -337,6 +331,7 @@ const Hero: React.FC = () => {
         </svg>
       </div>
 
+    </section>
     </section>
     </>
   );
