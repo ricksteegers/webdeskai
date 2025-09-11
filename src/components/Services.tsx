@@ -396,33 +396,7 @@ const Services: React.FC = () => {
                   className="group bg-gradient-to-r from-cyan-400/20 to-purple-400/20 border-2 border-cyan-400 text-white px-8 py-4 sm:px-12 sm:py-6 rounded-full font-bold text-sm sm:text-lg hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-400 hover:text-black transition-all duration-700 shadow-2xl hover:shadow-3xl transform hover:-translate-y-4 hover:scale-110 backdrop-blur-xl relative overflow-hidden animate-pulse"
                   onClick={() => window.scrollTo(0, 0)}
                 >
-                  {/* Animated background layers */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/30 to-purple-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-pink-500/20 animate-pulse"></div>
-                  
-                  {/* Floating particles */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="absolute top-2 left-2 w-2 h-2 bg-white rounded-full animate-ping"></div>
-                    <div className="absolute bottom-2 right-2 w-2 h-2 bg-white rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                    <div className="absolute top-1/2 right-4 w-1.5 h-1.5 bg-white rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-                    <div className="absolute top-2 right-8 w-1 h-1 bg-cyan-300 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
-                  </div>
-                  
-                  {/* Glow effect */}
-                  <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full opacity-0 group-hover:opacity-30 blur-xl transition-all duration-700"></div>
-                  
-                  <div className="relative z-10 flex items-center">
-                    <span className="hidden sm:inline flex items-center">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></span>
-                      ONTDEK ONZE SERVICES
-                      <span className="w-2 h-2 bg-purple-400 rounded-full ml-3 animate-pulse"></span>
-                    </span>
-                    <span className="sm:hidden flex items-center">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full mr-2 animate-pulse"></span>
-                      SERVICES
-                      <span className="w-2 h-2 bg-purple-400 rounded-full ml-2 animate-pulse"></span>
-                    </span>
-                  </div>
+                  ONTDEK ONZE SERVICES
                 </Link>
 
                 <div className="flex items-center space-x-4 text-cyan-200">

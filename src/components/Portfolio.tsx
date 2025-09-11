@@ -139,6 +139,32 @@ const Portfolio: React.FC = () => {
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-pulse"></div>
               <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-0.5 bg-gradient-to-r from-transparent via-orange-500 to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
             </h2>
+            
+            {/* Creative Advice Button */}
+            <div className="flex justify-center mb-8">
+              <Link 
+                to="/contact"
+                className="group bg-white border-2 border-blue-500 text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-500 hover:text-white transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 relative overflow-hidden backdrop-blur-sm"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                {/* Animated background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Floating particles */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute top-2 left-2 w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
+                  <div className="absolute bottom-2 right-2 w-2 h-2 bg-cyan-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute top-1/2 right-4 w-1.5 h-1.5 bg-blue-400 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+                </div>
+                
+                <div className="relative z-10 flex items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse group-hover:bg-white"></span>
+                  Vraag gratis advies
+                  <span className="w-2 h-2 bg-blue-500 rounded-full ml-3 animate-pulse group-hover:bg-white"></span>
+                </div>
+              </Link>
+            </div>
+            
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed relative">
               Deze bedrijven passen AI al succesvol toe om hun merk en digitale aanwezigheid te versterken.
               <span className="inline-block ml-2 animate-bounce">🎯</span>
