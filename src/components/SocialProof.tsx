@@ -263,11 +263,8 @@ const SocialProof: React.FC = () => {
         <div className="scroll-animate">
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Vertrouwd door deze bedrijven
+              Deze bedrijven passen AI al toe.
             </h3>
-            <p className="text-gray-600">
-              Deze bedrijven passen AI al succesvol toe
-            </p>
           </div>
           
           <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
