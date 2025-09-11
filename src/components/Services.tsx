@@ -72,7 +72,7 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-20 bg-white relative overflow-hidden">
       {/* Ultra Creative Background with massive floating elements */}
-      <div className="absolute inset-0 opacity-8">
+      <div className="absolute inset-0 opacity-30">
         {/* Massive floating orbs with complex gradients */}
         <div className="absolute top-10 left-5 w-[32rem] h-[32rem] bg-gradient-to-br from-blue-400 via-cyan-400 via-teal-400 to-emerald-400 rounded-full blur-3xl animate-float-gentle transform rotate-45"></div>
         <div className="absolute bottom-10 right-5 w-[40rem] h-[40rem] bg-gradient-to-br from-purple-400 via-pink-400 via-rose-400 to-red-400 rounded-full blur-3xl animate-float-gentle-delayed transform -rotate-30"></div>
@@ -130,26 +130,29 @@ const Services: React.FC = () => {
         {/* Multi-layer grid patterns */}
         <div className="absolute inset-0" style={{
           backgroundImage: `
-            radial-gradient(circle at 2px 2px, #3B82F6 2px, transparent 0), 
-            radial-gradient(circle at 1px 1px, #F4C430 1px, transparent 0),
-            radial-gradient(circle at 1.5px 1.5px, #8B5CF6 1.5px, transparent 0)
+            radial-gradient(circle at 4px 4px, #F4C430 4px, transparent 0), 
+            radial-gradient(circle at 2px 2px, #3B82F6 2px, transparent 0),
+            radial-gradient(circle at 3px 3px, #8B5CF6 3px, transparent 0),
+            radial-gradient(circle at 1px 1px, #10B981 1px, transparent 0)
           `,
-          backgroundSize: '60px 60px, 40px 40px, 80px 80px',
-          backgroundPosition: '0 0, 20px 20px, 40px 40px'
+          backgroundSize: '80px 80px, 60px 60px, 100px 100px, 40px 40px',
+          backgroundPosition: '0 0, 30px 30px, 60px 60px, 15px 15px'
         }}></div>
         
         {/* Complex diagonal line patterns */}
         <div className="absolute top-0 left-0 w-full h-full" style={{
           backgroundImage: `
-            linear-gradient(45deg, transparent 48%, #F4C430 49%, #F4C430 51%, transparent 52%),
-            linear-gradient(-45deg, transparent 48%, #3B82F6 49%, #3B82F6 51%, transparent 52%),
-            linear-gradient(135deg, transparent 48%, #8B5CF6 49%, #8B5CF6 51%, transparent 52%),
-            linear-gradient(225deg, transparent 48%, #10B981 49%, #10B981 51%, transparent 52%),
-            linear-gradient(315deg, transparent 48%, #F59E0B 49%, #F59E0B 51%, transparent 52%)
+            linear-gradient(45deg, transparent 45%, #F4C430 47%, #F4C430 53%, transparent 55%),
+            linear-gradient(-45deg, transparent 45%, #3B82F6 47%, #3B82F6 53%, transparent 55%),
+            linear-gradient(135deg, transparent 45%, #8B5CF6 47%, #8B5CF6 53%, transparent 55%),
+            linear-gradient(225deg, transparent 45%, #10B981 47%, #10B981 53%, transparent 55%),
+            linear-gradient(315deg, transparent 45%, #F59E0B 47%, #F59E0B 53%, transparent 55%),
+            linear-gradient(90deg, transparent 45%, #EC4899 47%, #EC4899 53%, transparent 55%),
+            linear-gradient(180deg, transparent 45%, #06B6D4 47%, #06B6D4 53%, transparent 55%)
           `,
-          backgroundSize: '120px 120px, 80px 80px, 160px 160px, 100px 100px, 140px 140px',
-          backgroundPosition: '0 0, 40px 40px, 80px 80px, 60px 60px, 100px 100px',
-          opacity: 0.2
+          backgroundSize: '150px 150px, 100px 100px, 200px 200px, 120px 120px, 180px 180px, 90px 90px, 110px 110px',
+          backgroundPosition: '0 0, 50px 50px, 100px 100px, 75px 75px, 125px 125px, 25px 25px, 150px 150px',
+          opacity: 0.4
         }}></div>
         
         {/* Enhanced hexagon and polygon patterns */}
