@@ -26,28 +26,25 @@ const SocialProof: React.FC = () => {
 
   const testimonials = [
     {
-      name: "Sarah van der Berg",
-      position: "CEO, TechStart",
+      name: "Sarah",
+      position: "Ondernemer",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
       content: "WebDesk AI heeft onze website volledig getransformeerd! De AI-gedreven aanpak leverde een design op dat perfect aansluit bij onze merkidentiteit. Het proces was snel, professioneel en het resultaat overtrof onze verwachtingen.",
-      rating: 5,
-      company: "TechStart"
+      location: "Amsterdam, Nederland"
     },
     {
-      name: "Michael Jansen",
-      position: "Oprichter, InnovateLab",
+      name: "Michael",
+      position: "Oprichter",
       image: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=400",
       content: "Ongelooflijk wat ze hebben bereikt met AI-technologie. Onze nieuwe website genereert 3x meer leads dan voorheen. De combinatie van creatief design en technische excellentie is indrukwekkend.",
-      rating: 5,
-      company: "InnovateLab"
+      location: "Rotterdam, Nederland"
     },
     {
-      name: "Emma de Vries",
-      position: "Marketing Directeur, GrowthCo",
+      name: "Emma",
+      position: "Marketing Manager",
       image: "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=400",
       content: "Het design dat ze voor ons maakten is absoluut prachtig. Gebruikersbetrokkenheid steeg met 40% na het herontwerp. WebDesk AI weet echt hoe gebruikersgerichte ontwerpen te maken.",
-      rating: 5,
-      company: "GrowthCo"
+      location: "Utrecht, Nederland"
     }
   ];
 
