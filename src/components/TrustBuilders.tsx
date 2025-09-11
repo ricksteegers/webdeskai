@@ -93,7 +93,7 @@ const TrustBuilders: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section id="pricing" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full blur-3xl animate-float-gentle"></div>
@@ -119,6 +119,25 @@ const TrustBuilders: React.FC = () => {
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-100">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+                  Onze <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">Tarieven</span>
+                </h2>
+                
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  <div className="text-center bg-blue-50 rounded-2xl p-6">
+                    <div className="text-2xl font-bold text-blue-600 mb-2">€695</div>
+                    <div className="text-gray-600 text-sm">Starter</div>
+                  </div>
+                  <div className="text-center bg-blue-50 rounded-2xl p-6 ring-2 ring-blue-500">
+                    <div className="text-2xl font-bold text-blue-600 mb-2">€895</div>
+                    <div className="text-gray-600 text-sm">Professioneel</div>
+                  </div>
+                  <div className="text-center bg-blue-50 rounded-2xl p-6">
+                    <div className="text-2xl font-bold text-blue-600 mb-2">€1195</div>
+                    <div className="text-gray-600 text-sm">Enterprise</div>
+                  </div>
+                </div>
+                
                 <div className="flex items-center mb-6">
                   <img 
                     src={caseStudy.image}

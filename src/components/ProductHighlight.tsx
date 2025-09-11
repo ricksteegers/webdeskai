@@ -94,7 +94,7 @@ const ProductHighlight: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section id="services" className="py-20 bg-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full blur-3xl animate-float-gentle"></div>
