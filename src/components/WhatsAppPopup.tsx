@@ -87,9 +87,10 @@ const WhatsAppPopup: React.FC = () => {
         {/* Floating particles */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-2 left-2 w-1 h-1 bg-green-300 rounded-full animate-ping opacity-60"></div>
-        <div className="absolute top-2 left-2 w-1 h-1 bg-blue-300 rounded-full animate-ping opacity-60"></div>
+          <div className="absolute top-2 left-2 w-1 h-1 bg-blue-300 rounded-full animate-ping opacity-60"></div>
           <div className="absolute top-1/2 left-0 w-1 h-1 bg-green-300 rounded-full animate-ping opacity-50" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-0 w-1 h-1 bg-blue-300 rounded-full animate-ping opacity-50" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-0 w-1 h-1 bg-blue-300 rounded-full animate-ping opacity-50" style={{ animationDelay: '1s' }}></div>
+        </div>
       </div>
     </div>
   );
