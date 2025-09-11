@@ -122,7 +122,7 @@ const ProblemSolution: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <span className="relative z-10 flex items-center">
                 <Clock className="w-4 h-4 mr-2 text-orange-500 animate-pulse" />
-                HET PROBLEEM & ONZE OPLOSSING
+                ONZE OPLOSSING
                 <Sparkles className="w-4 h-4 ml-2 text-blue-500 animate-spin-slow" />
               </span>
             </span>
