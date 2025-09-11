@@ -429,13 +429,6 @@ const Services: React.FC = () => {
 
               {/* Enhanced comparison section */}
               <div className="mt-8 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-2xl p-4 border border-cyan-400/30 backdrop-blur-sm">
-                <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 text-cyan-100">
-                  <div className="flex items-center space-x-2">
-                    <Zap className="w-5 h-5 text-cyan-400" />
-                    <span className="font-semibold text-sm sm:text-base">Traditionele bureaus: €2000+ en 4-6 weken</span>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-300" />
-                    <span className="font-bold text-cyan-400 text-sm sm:text-base">WebDesk AI: €695 en 1 week</span>
-                    <Sparkles className="w-5 h-5 text-cyan-400" />
     </section>
   );
 };
