@@ -220,7 +220,7 @@ const ProductHighlight: React.FC = () => {
               >
                 {pkg.popular && (
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
-                    <span className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-xl">
+                    <span className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-xl">
                       MEEST POPULAIR
                     </span>
                   </div>
