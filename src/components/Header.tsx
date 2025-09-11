@@ -136,7 +136,7 @@ const Header: React.FC = () => {
                   {item.isAnchor ? (
                     <a
                       href={item.href}
-                      className="flex items-center text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium relative overflow-hidden group"
+                      className="flex items-center text-gray-700 hover:text-blue-500 transition-all duration-300 font-medium relative overflow-hidden group py-2 block"
                       onClick={(e) => {
                         e.preventDefault();
                         setIsMobileMenuOpen(false);
@@ -152,7 +152,7 @@ const Header: React.FC = () => {
                     >
                       <span className="relative z-10">{item.name}</span>
                       
-                      {/* Hover background effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                       
                       {/* Animated border */}
