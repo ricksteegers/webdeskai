@@ -88,7 +88,7 @@ const ProblemSolution: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section className="py-20 pb-32 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Enhanced animated background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full blur-3xl animate-float-gentle"></div>
