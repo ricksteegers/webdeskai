@@ -93,7 +93,7 @@ const TrustBuilders: React.FC = () => {
   };
 
   return (
-    <section id="pricing" className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+    <section id="pricing" className="py-20 bg-gradient-to-t from-white via-blue-50 to-blue-100 relative overflow-hidden">
       {/* White flow transition from previous section */}
       <div className="absolute top-0 left-0 right-0 -mt-1 z-10">
         <svg className="w-full h-20 fill-current text-white" viewBox="0 0 1200 120" preserveAspectRatio="none">
