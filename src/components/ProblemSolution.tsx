@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { AlertTriangle, CheckCircle, Zap, Clock, DollarSign, TrendingUp, ArrowRight, Sparkles, Target, Users, Award, Shield } from 'lucide-react';
+import { CheckCircle, Zap, Clock, DollarSign, TrendingUp, ArrowRight, Sparkles, Target, Users, Award, Shield, TrendingDown } from 'lucide-react';
 
 const ProblemSolution: React.FC = () => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -44,7 +44,7 @@ const ProblemSolution: React.FC = () => {
       delay: 200
     },
     {
-      icon: <AlertTriangle className="w-8 h-8" />,
+      icon: <TrendingDown className="w-8 h-8" />,
       title: "Complexe processen",
       description: "Eindeloze meetings, revisies en technische problemen",
       color: "from-yellow-500 to-orange-500",
@@ -117,7 +117,7 @@ const ProblemSolution: React.FC = () => {
             <span className="text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-xl border-2 border-blue-500/20 hover:border-blue-500/50 hover:scale-110 transition-all duration-300 cursor-pointer relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <span className="relative z-10 flex items-center">
-                <AlertTriangle className="w-4 h-4 mr-2 text-red-500 animate-pulse" />
+                <Clock className="w-4 h-4 mr-2 text-orange-500 animate-pulse" />
                 HET PROBLEEM & ONZE OPLOSSING
                 <Sparkles className="w-4 h-4 ml-2 text-blue-500 animate-spin-slow" />
               </span>
