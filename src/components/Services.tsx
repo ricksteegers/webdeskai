@@ -72,91 +72,197 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-20 bg-white relative overflow-hidden">
       {/* Enhanced Creative Background */}
-      <div className="absolute inset-0 opacity-8">
+      <div className="absolute inset-0 opacity-12">
         {/* Large floating orbs */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-blue-400 via-cyan-400 to-teal-400 rounded-full blur-3xl animate-float-gentle"></div>
-        <div className="absolute bottom-20 right-10 w-[32rem] h-[32rem] bg-gradient-to-br from-purple-400 via-pink-400 to-rose-400 rounded-full blur-3xl animate-float-gentle-delayed"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-gradient-to-br from-indigo-400 via-blue-400 to-cyan-400 rounded-full blur-3xl animate-drift-left"></div>
+        <div className="absolute top-20 left-10 w-[28rem] h-[28rem] bg-gradient-to-br from-blue-400 via-cyan-400 to-teal-400 rounded-full blur-3xl animate-float-gentle transform rotate-45"></div>
+        <div className="absolute bottom-20 right-10 w-[36rem] h-[36rem] bg-gradient-to-br from-purple-400 via-pink-400 to-rose-400 rounded-full blur-3xl animate-float-gentle-delayed transform -rotate-12"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[44rem] h-[44rem] bg-gradient-to-br from-indigo-400 via-blue-400 to-cyan-400 rounded-full blur-3xl animate-drift-left"></div>
+        <div className="absolute top-10 right-1/4 w-[20rem] h-[20rem] bg-gradient-to-br from-emerald-400 via-green-400 to-lime-400 rounded-full blur-3xl animate-drift-right transform rotate-90"></div>
+        <div className="absolute bottom-10 left-1/4 w-[24rem] h-[24rem] bg-gradient-to-br from-orange-400 via-red-400 to-pink-400 rounded-full blur-3xl animate-float-gentle transform -rotate-45"></div>
         
         {/* Medium floating shapes */}
-        <div className="absolute top-32 right-32 w-48 h-48 bg-gradient-to-br from-emerald-400 to-green-400 rounded-full blur-2xl animate-drift-right opacity-60"></div>
-        <div className="absolute bottom-32 left-32 w-56 h-56 bg-gradient-to-br from-orange-400 to-yellow-400 rounded-full blur-2xl animate-float-gentle opacity-50"></div>
+        <div className="absolute top-32 right-32 w-64 h-64 bg-gradient-to-br from-emerald-400 via-teal-400 to-green-400 rounded-full blur-2xl animate-drift-right opacity-70 transform rotate-12"></div>
+        <div className="absolute bottom-32 left-32 w-72 h-72 bg-gradient-to-br from-orange-400 via-amber-400 to-yellow-400 rounded-full blur-2xl animate-float-gentle opacity-60 transform -rotate-30"></div>
+        <div className="absolute top-1/4 right-1/3 w-56 h-56 bg-gradient-to-br from-violet-400 via-purple-400 to-indigo-400 rounded-full blur-2xl animate-bounce-slow opacity-50 transform rotate-45"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-60 h-60 bg-gradient-to-br from-rose-400 via-pink-400 to-red-400 rounded-full blur-2xl animate-drift-left opacity-55 transform -rotate-60"></div>
         
         {/* Small accent orbs */}
-        <div className="absolute top-16 left-1/3 w-32 h-32 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full blur-xl animate-bounce-slow opacity-40"></div>
-        <div className="absolute bottom-16 right-1/3 w-40 h-40 bg-gradient-to-br from-cyan-400 to-blue-400 rounded-full blur-xl animate-float-gentle-delayed opacity-45"></div>
+        <div className="absolute top-16 left-1/3 w-40 h-40 bg-gradient-to-br from-pink-400 via-rose-400 to-purple-400 rounded-full blur-xl animate-bounce-slow opacity-45 transform rotate-90"></div>
+        <div className="absolute bottom-16 right-1/3 w-48 h-48 bg-gradient-to-br from-cyan-400 via-sky-400 to-blue-400 rounded-full blur-xl animate-float-gentle-delayed opacity-50 transform -rotate-45"></div>
+        <div className="absolute top-2/3 left-8 w-36 h-36 bg-gradient-to-br from-lime-400 via-green-400 to-emerald-400 rounded-full blur-xl animate-drift-right opacity-40 transform rotate-180"></div>
+        <div className="absolute top-1/3 right-8 w-44 h-44 bg-gradient-to-br from-amber-400 via-orange-400 to-red-400 rounded-full blur-xl animate-float-gentle opacity-45 transform rotate-30"></div>
+        
+        {/* Micro accent dots */}
+        <div className="absolute top-24 left-1/2 w-16 h-16 bg-gradient-to-br from-blue-300 to-cyan-300 rounded-full blur-lg animate-pulse opacity-30"></div>
+        <div className="absolute bottom-24 right-1/2 w-20 h-20 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full blur-lg animate-pulse opacity-35" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-16 w-12 h-12 bg-gradient-to-br from-green-300 to-teal-300 rounded-full blur-md animate-pulse opacity-40" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 right-16 w-24 h-24 bg-gradient-to-br from-orange-300 to-yellow-300 rounded-full blur-lg animate-pulse opacity-30" style={{ animationDelay: '0.5s' }}></div>
       </div>
 
       {/* Animated geometric patterns */}
-      <div className="absolute inset-0 opacity-8">
+      <div className="absolute inset-0 opacity-12">
         {/* Grid pattern */}
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, #3B82F6 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
+          backgroundImage: `radial-gradient(circle at 2px 2px, #3B82F6 2px, transparent 0), radial-gradient(circle at 1px 1px, #F4C430 1px, transparent 0)`,
+          backgroundSize: '60px 60px, 40px 40px',
+          backgroundPosition: '0 0, 20px 20px'
         }}></div>
         
-        {/* Diagonal lines */}
+        {/* Enhanced diagonal lines */}
         <div className="absolute top-0 left-0 w-full h-full" style={{
-          backgroundImage: `linear-gradient(45deg, transparent 48%, #F4C430 49%, #F4C430 51%, transparent 52%)`,
-          backgroundSize: '100px 100px',
-          opacity: 0.1
+          backgroundImage: `
+            linear-gradient(45deg, transparent 48%, #F4C430 49%, #F4C430 51%, transparent 52%),
+            linear-gradient(-45deg, transparent 48%, #3B82F6 49%, #3B82F6 51%, transparent 52%),
+            linear-gradient(135deg, transparent 48%, #8B5CF6 49%, #8B5CF6 51%, transparent 52%)
+          `,
+          backgroundSize: '120px 120px, 80px 80px, 160px 160px',
+          backgroundPosition: '0 0, 40px 40px, 80px 80px',
+          opacity: 0.15
         }}></div>
         
-        {/* Hexagon pattern */}
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 opacity-20" style={{
+        {/* Enhanced hexagon pattern */}
+        <div className="absolute top-1/4 right-1/4 w-80 h-80 opacity-25" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233B82F6' fill-opacity='0.3'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          backgroundSize: '60px 60px',
+          backgroundSize: '80px 80px',
           transform: 'rotate(15deg)',
-          animation: 'spin-slow 30s linear infinite'
+          animation: 'spin-slow 25s linear infinite'
+        }}></div>
+        
+        {/* Additional pattern overlays */}
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 opacity-20" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F4C430' fill-opacity='0.4'%3E%3Cpath d='M20 20c0 11-9 20-20 20s-20-9-20-20 9-20 20-20 20 9 20 20zm-10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: '40px 40px',
+          transform: 'rotate(-25deg)',
+          animation: 'spin-slow 35s linear infinite reverse'
+        }}></div>
+        
+        {/* Wave patterns */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-15" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%238B5CF6' fill-opacity='0.4'/%3E%3C/svg%3E")`,
+          backgroundSize: '100px 20px',
+          animation: 'drift-left 8s ease-in-out infinite'
         }}></div>
       </div>
 
       {/* Floating particles and shapes */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-80">
         {/* Animated particles */}
-        <div className="absolute top-20 left-20 w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-60 shadow-lg"></div>
-        <div className="absolute top-40 right-32 w-2 h-2 bg-cyan-400 rounded-full animate-ping opacity-40" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-32 left-16 w-2.5 h-2.5 bg-purple-400 rounded-full animate-ping opacity-50" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 right-20 w-4 h-4 bg-pink-400 rounded-full animate-ping opacity-30" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-20 left-20 w-4 h-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-ping opacity-70 shadow-2xl"></div>
+        <div className="absolute top-40 right-32 w-3 h-3 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-full animate-ping opacity-50 shadow-xl" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-32 left-16 w-3.5 h-3.5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-ping opacity-60 shadow-xl" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-20 w-5 h-5 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full animate-ping opacity-40 shadow-2xl" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/3 left-1/4 w-2.5 h-2.5 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full animate-ping opacity-65 shadow-lg" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-1/3 right-1/4 w-4.5 h-4.5 bg-gradient-to-r from-orange-400 to-red-400 rounded-full animate-ping opacity-45 shadow-xl" style={{ animationDelay: '2.5s' }}></div>
         
         {/* Floating geometric shapes */}
-        <div className="absolute top-1/3 left-8 w-6 h-6 bg-gradient-to-br from-orange-400 to-red-400 transform rotate-45 animate-float-gentle opacity-30"></div>
-        <div className="absolute top-2/3 right-8 w-8 h-8 bg-gradient-to-br from-green-400 to-emerald-400 rounded-full animate-bounce-slow opacity-25"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-5 h-5 bg-gradient-to-br from-indigo-400 to-purple-400 transform rotate-12 animate-drift-left opacity-35"></div>
+        <div className="absolute top-1/3 left-8 w-8 h-8 bg-gradient-to-br from-orange-400 via-red-400 to-pink-400 transform rotate-45 animate-float-gentle opacity-40 shadow-lg"></div>
+        <div className="absolute top-2/3 right-8 w-10 h-10 bg-gradient-to-br from-green-400 via-emerald-400 to-teal-400 rounded-full animate-bounce-slow opacity-35 shadow-xl"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-7 h-7 bg-gradient-to-br from-indigo-400 via-purple-400 to-violet-400 transform rotate-12 animate-drift-left opacity-45 shadow-lg"></div>
+        <div className="absolute top-1/4 left-1/2 w-6 h-6 bg-gradient-to-br from-cyan-400 via-blue-400 to-indigo-400 transform rotate-60 animate-float-gentle-delayed opacity-40 shadow-md"></div>
+        <div className="absolute bottom-1/4 right-1/2 w-9 h-9 bg-gradient-to-br from-yellow-400 via-orange-400 to-red-400 rounded-full animate-drift-right opacity-35 shadow-lg"></div>
+        
+        {/* Complex geometric shapes */}
+        <div className="absolute top-16 right-1/4 w-12 h-12 bg-gradient-to-br from-violet-400 to-purple-400 transform rotate-45 animate-spin-slow opacity-30 shadow-lg" style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}></div>
+        <div className="absolute bottom-16 left-1/4 w-14 h-14 bg-gradient-to-br from-emerald-400 to-cyan-400 transform rotate-30 animate-bounce-slow opacity-35 shadow-xl" style={{ clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)' }}></div>
+        <div className="absolute top-1/2 left-8 w-10 h-10 bg-gradient-to-br from-pink-400 to-rose-400 transform rotate-90 animate-float-gentle opacity-40 shadow-lg" style={{ clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)' }}></div>
+        <div className="absolute top-1/2 right-8 w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-400 transform rotate-15 animate-drift-left opacity-30 shadow-xl" style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)' }}></div>
         
         {/* Animated lines and curves */}
-        <div className="absolute top-1/4 right-1/4 w-32 h-0.5 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse opacity-30 transform rotate-45"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-24 h-0.5 bg-gradient-to-r from-transparent via-purple-400 to-transparent animate-pulse opacity-30 transform -rotate-45"></div>
+        <div className="absolute top-1/4 right-1/4 w-40 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse opacity-40 transform rotate-45 shadow-lg"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-32 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent animate-pulse opacity-40 transform -rotate-45 shadow-lg"></div>
+        <div className="absolute top-1/2 left-1/4 w-28 h-0.5 bg-gradient-to-r from-transparent via-green-400 to-transparent animate-pulse opacity-35 transform rotate-90 shadow-md" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/2 right-1/4 w-36 h-0.5 bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-pulse opacity-35 transform -rotate-30 shadow-md" style={{ animationDelay: '1.5s' }}></div>
+        
+        {/* Curved lines */}
+        <div className="absolute top-1/3 left-1/2 w-48 h-48 opacity-25 animate-spin-slow" style={{ animationDuration: '40s' }}>
+          <svg className="w-full h-full" viewBox="0 0 100 100">
+            <path d="M10,50 Q50,10 90,50 Q50,90 10,50" stroke="#F4C430" strokeWidth="2" fill="none" strokeDasharray="5,5" className="animate-pulse" />
+            <path d="M20,50 Q50,20 80,50 Q50,80 20,50" stroke="#3B82F6" strokeWidth="1.5" fill="none" strokeDasharray="3,3" className="animate-pulse" style={{ animationDelay: '0.5s' }} />
+          </svg>
+        </div>
         
         {/* Floating icons */}
-        <div className="absolute top-16 right-16 opacity-15 animate-float-gentle">
-          <Zap className="w-12 h-12 text-blue-500" />
+        <div className="absolute top-16 right-16 opacity-20 animate-float-gentle transform rotate-12">
+          <Zap className="w-16 h-16 text-blue-500 drop-shadow-lg" />
         </div>
-        <div className="absolute bottom-16 left-16 opacity-15 animate-float-gentle-delayed">
-          <Shield className="w-10 h-10 text-green-500" />
+        <div className="absolute bottom-16 left-16 opacity-20 animate-float-gentle-delayed transform -rotate-12">
+          <Monitor className="w-14 h-14 text-green-500 drop-shadow-lg" />
         </div>
-        <div className="absolute top-1/2 right-8 opacity-15 animate-bounce-slow">
-          <Clock className="w-8 h-8 text-purple-500" />
+        <div className="absolute top-1/2 right-8 opacity-20 animate-bounce-slow transform rotate-45">
+          <ShoppingCart className="w-12 h-12 text-purple-500 drop-shadow-lg" />
+        </div>
+        <div className="absolute top-1/4 left-8 opacity-18 animate-drift-right transform -rotate-30">
+          <Smartphone className="w-10 h-10 text-orange-500 drop-shadow-lg" />
+        </div>
+        <div className="absolute bottom-1/4 right-1/3 opacity-18 animate-float-gentle transform rotate-60">
+          <Search className="w-11 h-11 text-pink-500 drop-shadow-lg" />
+        </div>
+        <div className="absolute top-2/3 left-1/3 opacity-18 animate-bounce-slow transform -rotate-45">
+          <Palette className="w-13 h-13 text-cyan-500 drop-shadow-lg" />
         </div>
         
-        {/* Spiral pattern */}
-        <div className="absolute top-1/3 left-1/2 w-48 h-48 opacity-10 animate-spin-slow">
-          <div className="w-full h-full border-2 border-dashed border-blue-400 rounded-full"></div>
-          <div className="absolute top-4 left-4 right-4 bottom-4 border-2 border-dashed border-purple-400 rounded-full"></div>
-          <div className="absolute top-8 left-8 right-8 bottom-8 border-2 border-dashed border-cyan-400 rounded-full"></div>
+        {/* Enhanced spiral pattern */}
+        <div className="absolute top-1/3 left-1/2 w-64 h-64 opacity-15 animate-spin-slow" style={{ animationDuration: '50s' }}>
+          <div className="w-full h-full border-3 border-dashed border-blue-400 rounded-full shadow-lg"></div>
+          <div className="absolute top-4 left-4 right-4 bottom-4 border-2 border-dashed border-purple-400 rounded-full shadow-md"></div>
+          <div className="absolute top-8 left-8 right-8 bottom-8 border-2 border-dashed border-cyan-400 rounded-full shadow-sm"></div>
+          <div className="absolute top-12 left-12 right-12 bottom-12 border-1 border-dashed border-pink-400 rounded-full"></div>
+          <div className="absolute top-16 left-16 right-16 bottom-16 border-1 border-dotted border-orange-400 rounded-full"></div>
         </div>
         
-        {/* Constellation effect */}
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-60"></div>
-        <div className="absolute top-1/3 left-1/3 w-1.5 h-1.5 bg-purple-400 rounded-full animate-pulse opacity-50" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-cyan-400 rounded-full animate-pulse opacity-70" style={{ animationDelay: '1s' }}></div>
+        {/* Enhanced constellation effect */}
+        <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-pulse opacity-70 shadow-lg"></div>
+        <div className="absolute top-1/3 left-1/3 w-2.5 h-2.5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse opacity-60 shadow-md" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-full animate-pulse opacity-80 shadow-lg" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-2/3 left-2/3 w-3.5 h-3.5 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full animate-pulse opacity-65 shadow-xl" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-1/3 right-1/3 w-2.5 h-2.5 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full animate-pulse opacity-55 shadow-md" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/6 right-1/6 w-3 h-3 bg-gradient-to-r from-violet-400 to-purple-400 rounded-full animate-pulse opacity-60 shadow-lg" style={{ animationDelay: '2.5s' }}></div>
         
-        {/* Connect the dots with animated lines */}
-        <svg className="absolute top-1/4 left-1/4 w-64 h-64 opacity-20" viewBox="0 0 100 100">
-          <line x1="10" y1="10" x2="30" y2="30" stroke="#3B82F6" strokeWidth="0.5" strokeDasharray="2,2" className="animate-pulse" />
-          <line x1="30" y1="30" x2="50" y2="50" stroke="#8B5CF6" strokeWidth="0.5" strokeDasharray="2,2" className="animate-pulse" style={{ animationDelay: '0.5s' }} />
-          <line x1="50" y1="50" x2="70" y2="30" stroke="#06B6D4" strokeWidth="0.5" strokeDasharray="2,2" className="animate-pulse" style={{ animationDelay: '1s' }} />
+        {/* Enhanced constellation connections */}
+        <svg className="absolute top-1/4 left-1/4 w-80 h-80 opacity-30" viewBox="0 0 100 100">
+          <line x1="10" y1="10" x2="30" y2="30" stroke="#3B82F6" strokeWidth="1" strokeDasharray="3,3" className="animate-pulse drop-shadow-sm" />
+          <line x1="30" y1="30" x2="50" y2="50" stroke="#8B5CF6" strokeWidth="1" strokeDasharray="3,3" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '0.5s' }} />
+          <line x1="50" y1="50" x2="70" y2="30" stroke="#06B6D4" strokeWidth="1" strokeDasharray="3,3" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '1s' }} />
+          <line x1="70" y1="30" x2="80" y2="60" stroke="#F4C430" strokeWidth="1" strokeDasharray="3,3" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '1.5s' }} />
+          <line x1="80" y1="60" x2="60" y2="80" stroke="#10B981" strokeWidth="1" strokeDasharray="3,3" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '2s' }} />
+          <line x1="60" y1="80" x2="20" y2="70" stroke="#EC4899" strokeWidth="1" strokeDasharray="3,3" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '2.5s' }} />
+          
+          {/* Curved connections */}
+          <path d="M10,10 Q50,5 90,20" stroke="#8B5CF6" strokeWidth="1" fill="none" strokeDasharray="4,4" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '3s' }} />
+          <path d="M20,80 Q60,85 80,60" stroke="#F59E0B" strokeWidth="1" fill="none" strokeDasharray="4,4" className="animate-pulse drop-shadow-sm" style={{ animationDelay: '3.5s' }} />
         </svg>
+        
+        {/* Floating service icons */}
+        <div className="absolute top-12 left-12 opacity-12 animate-float-gentle transform rotate-15">
+          <div className="w-20 h-20 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-xl">
+            <Monitor className="w-10 h-10 text-blue-500" />
+          </div>
+        </div>
+        <div className="absolute top-12 right-12 opacity-12 animate-float-gentle-delayed transform -rotate-15">
+          <div className="w-20 h-20 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-xl">
+            <ShoppingCart className="w-10 h-10 text-green-500" />
+          </div>
+        </div>
+        <div className="absolute bottom-12 left-12 opacity-12 animate-drift-right transform rotate-30">
+          <div className="w-20 h-20 bg-gradient-to-br from-purple-500/20 to-indigo-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-xl">
+            <Smartphone className="w-10 h-10 text-purple-500" />
+          </div>
+        </div>
+        <div className="absolute bottom-12 right-12 opacity-12 animate-bounce-slow transform -rotate-30">
+          <div className="w-20 h-20 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-xl">
+            <Search className="w-10 h-10 text-orange-500" />
+          </div>
+        </div>
+        <div className="absolute top-1/3 left-1/6 opacity-12 animate-drift-left transform rotate-45">
+          <div className="w-20 h-20 bg-gradient-to-br from-pink-500/20 to-rose-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-xl">
+            <Palette className="w-10 h-10 text-pink-500" />
+          </div>
+        </div>
+        <div className="absolute bottom-1/3 right-1/6 opacity-12 animate-float-gentle transform -rotate-45">
+          <div className="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-amber-500/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-xl">
+            <Zap className="w-10 h-10 text-yellow-500" />
+          </div>
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-20">
