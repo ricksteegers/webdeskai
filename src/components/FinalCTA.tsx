@@ -24,7 +24,7 @@ const FinalCTA: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-blue-500 via-blue-300 to-blue-100 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-blue-300 via-blue-200 to-blue-50 relative overflow-hidden">
       {/* SVG flow transition from previous section */}
       <div className="absolute top-0 left-0 right-0 -mt-1 z-10">
         <svg className="w-full h-20 fill-current text-blue-50" viewBox="0 0 1200 120" preserveAspectRatio="none">
