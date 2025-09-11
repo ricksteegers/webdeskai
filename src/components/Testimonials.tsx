@@ -77,14 +77,14 @@ const Testimonials: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-[#F4C430] animate-pulse"></div>
+            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-500 animate-pulse"></div>
             <span className="text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
               GOOGLE REVIEWS
             </span>
-            <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] animate-pulse"></div>
+            <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-500 animate-pulse"></div>
           </div>
           <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-            Wat onze <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse">klanten</span> zeggen
+            Wat onze <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse">klanten</span> zeggen
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Ontdek waarom bedrijven kiezen voor Buck Design. Lees echte reviews van tevreden klanten 
@@ -148,14 +148,14 @@ const Testimonials: React.FC = () => {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-2">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-[#F4C430] fill-current group-hover:scale-110 transition-transform duration-300" style={{ animationDelay: `${i * 0.1}s` }} />
+                    <Star key={i} className="w-5 h-5 text-blue-500 fill-current group-hover:scale-110 transition-transform duration-300" style={{ animationDelay: `${i * 0.1}s` }} />
                   ))}
                 </div>
               </div>
 
               {/* Review content */}
               <div className="relative mb-6">
-                <Quote className="w-6 h-6 text-[#F4C430] mb-3 opacity-60" />
+                <Quote className="w-6 h-6 text-blue-500 mb-3 opacity-60" />
                 <p className="text-gray-600 leading-relaxed italic">
                   {testimonial.content}
                 </p>
@@ -177,21 +177,21 @@ const Testimonials: React.FC = () => {
 
               {/* Helpful section */}
               <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                <button className="flex items-center text-sm text-gray-500 hover:text-[#F4C430] transition-colors duration-300 group/btn">
+                <button className="flex items-center text-sm text-gray-500 hover:text-blue-500 transition-colors duration-300 group/btn">
                   <ThumbsUp className="w-4 h-4 mr-1 group-hover/btn:scale-110 transition-transform duration-300" />
                   Nuttig ({testimonial.helpful})
                 </button>
-                <button className="text-sm text-gray-500 hover:text-[#F4C430] transition-colors duration-300 group/btn">
+                <button className="text-sm text-gray-500 hover:text-blue-500 transition-colors duration-300 group/btn">
                   <ExternalLink className="w-4 h-4 group-hover/btn:scale-110 transition-transform duration-300" />
                 </button>
               </div>
 
               {/* Hover effect overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#F4C430]/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl pointer-events-none"></div>
 
               {/* Floating particles on hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                <div className="absolute top-4 right-4 w-2 h-2 bg-[#F4C430] rounded-full animate-ping"></div>
+                <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
                 <div className="absolute bottom-4 left-4 w-1.5 h-1.5 bg-orange-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
                 <div className="absolute top-1/2 left-4 w-1 h-1 bg-pink-400 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
               </div>
@@ -217,11 +217,11 @@ const Testimonials: React.FC = () => {
 
             <div className="relative z-10">
               <div className="flex items-center justify-center mb-6">
-                <Target className="w-8 h-8 text-[#F4C430] animate-spin-slow mr-3" />
+                <Target className="w-8 h-8 text-blue-500 animate-spin-slow mr-3" />
                 <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                  Klaar om de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500">volgende review</span> te worden?
+                  Klaar om de <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">volgende review</span> te worden?
                 </h3>
-                <TrendingUp className="w-8 h-8 text-[#F4C430] animate-bounce-slow ml-3" />
+                <TrendingUp className="w-8 h-8 text-blue-500 animate-bounce-slow ml-3" />
               </div>
               
               <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -232,9 +232,9 @@ const Testimonials: React.FC = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                 <a 
                   href="/contact"
-                  className="group bg-transparent border-2 border-[#F4C430] text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-medium text-sm sm:text-base hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
+                  className="group bg-transparent border-2 border-blue-500 text-gray-800 px-6 py-3 sm:px-10 sm:py-5 rounded-full font-medium text-sm sm:text-base hover:bg-blue-500 hover:text-white transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
                   <div className="relative z-10 flex items-center">
                     START JOUW PROJECT
@@ -246,7 +246,7 @@ const Testimonials: React.FC = () => {
               {/* Review highlights */}
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
                 <div className="flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-full px-4 py-2">
-                  <Star className="w-5 h-5 text-[#F4C430] mr-2" />
+                <Star className="w-5 h-5 text-blue-500 mr-2" />
                   <span className="text-sm font-medium text-gray-700">4.9/5 sterren</span>
                 </div>
                 <div className="flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-full px-4 py-2">
@@ -255,9 +255,9 @@ const Testimonials: React.FC = () => {
                 </div>
                 <div className="flex items-center justify-center bg-white/50 backdrop-blur-sm rounded-full px-4 py-2">
                   <TrendingUp className="w-5 h-5 text-[#F4C430] mr-2" />
-                  <span className="text-sm font-medium text-gray-700">100% aanbevolen</span>
+                <Clock className="w-5 h-5 text-blue-500 mr-2" />
                 </div>
-              </div>
+                <TrendingUp className="w-5 h-5 text-blue-500 mr-2" />
 
               {/* Google Reviews badge */}
             </div>

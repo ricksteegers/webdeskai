@@ -42,14 +42,14 @@ const ContactForm: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-[#F4C430] animate-pulse"></div>
+            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-500 animate-pulse"></div>
             <span className="text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
               CONTACT
             </span>
-            <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] animate-pulse"></div>
+            <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-500 animate-pulse"></div>
           </div>
           <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-            Laten we <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse">praten</span>
+            Laten we <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse">praten</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Klaar om je digitale transformatie te starten? Neem contact op voor een gratis adviesgesprek
@@ -61,7 +61,7 @@ const ContactForm: React.FC = () => {
           {/* Contact Form */}
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20 relative overflow-hidden">
             {/* Form header gradient */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#F4C430] to-orange-500 rounded-t-3xl"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-t-3xl"></div>
             
             <div className="relative z-10">
               <form 
@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
                         id="name"
                         name="name"
                         required
-                        className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
+                        className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
                         placeholder="Je volledige naam"
                       />
                     </div>
@@ -105,7 +105,7 @@ const ContactForm: React.FC = () => {
                         id="email"
                         name="email"
                         required
-                        className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
+                        className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
                         placeholder="je.email@bedrijf.nl"
                       />
                     </div>
@@ -124,7 +124,7 @@ const ContactForm: React.FC = () => {
                         type="text"
                         id="company"
                         name="company"
-                        className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
+                        className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
                         placeholder="Je bedrijfsnaam"
                       />
                     </div>
@@ -140,7 +140,7 @@ const ContactForm: React.FC = () => {
                         type="tel"
                         id="phone"
                         name="phone"
-                        className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
+                        className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm"
                         placeholder="+31 6 12345678"
                       />
                     </div>
@@ -158,7 +158,7 @@ const ContactForm: React.FC = () => {
                       id="service"
                       name="service"
                       required
-                      className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm appearance-none"
+                      className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm appearance-none"
                     >
                       <option value="">Selecteer een service</option>
                       {services.map((service, index) => (
@@ -179,7 +179,7 @@ const ContactForm: React.FC = () => {
                       id="message"
                       name="message"
                       rows={6}
-                      className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#F4C430] focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm resize-none"
+                      className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/80 backdrop-blur-sm resize-none"
                       placeholder="Vertel ons over je project, doelen en hoe we je kunnen helpen..."
                     />
                   </div>
@@ -188,12 +188,12 @@ const ContactForm: React.FC = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="group w-full bg-transparent border-2 border-[#F4C430] text-gray-800 px-8 py-5 rounded-full font-semibold text-lg hover:bg-[#F4C430] hover:text-black transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed backdrop-blur-sm relative overflow-hidden"
+                  className="group w-full bg-transparent border-2 border-blue-500 text-gray-800 px-8 py-5 rounded-full font-semibold text-lg hover:bg-blue-500 hover:text-white transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:-translate-y-3 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed backdrop-blur-sm relative overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
                   <div className="relative z-10 flex items-center justify-center">
-                    <Send className="w-6 h-6 mr-3 group-hover:translate-x-1 transition-transform duration-300 text-[#F4C430] group-hover:text-black" />
+                    <Send className="w-6 h-6 mr-3 group-hover:translate-x-1 transition-transform duration-300 text-blue-500 group-hover:text-white" />
                     Verstuur Bericht
                   </div>
                 </button>
@@ -283,11 +283,11 @@ const ContactForm: React.FC = () => {
             </div>
 
             {/* Quick Response Promise */}
-            <div className="bg-gradient-to-br from-[#F4C430]/10 to-orange-500/10 rounded-3xl p-8 border border-[#F4C430]/20 relative overflow-hidden">
-              <div className="absolute top-4 right-4 w-12 h-12 bg-[#F4C430]/20 rounded-full animate-pulse"></div>
+            <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-3xl p-8 border border-blue-500/20 relative overflow-hidden">
+              <div className="absolute top-4 right-4 w-12 h-12 bg-blue-500/20 rounded-full animate-pulse"></div>
               <div className="relative z-10">
                 <div className="flex items-center mb-4">
-                  <Sparkles className="w-8 h-8 text-[#F4C430] mr-3" />
+                  <Sparkles className="w-8 h-8 text-blue-500 mr-3" />
                   <h3 className="text-2xl font-bold text-gray-900">Snelle Reactie Gegarandeerd</h3>
                 </div>
                 <div className="space-y-3 text-gray-700">

@@ -47,15 +47,15 @@ const Footer: React.FC = () => {
             {/* Enhanced stats */}
             <div className="grid grid-cols-3 gap-4 mb-6 max-w-md">
               <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg p-3">
-                <div className="text-2xl font-bold text-[#F4C430] animate-pulse">50+</div>
+                <div className="text-2xl font-bold text-blue-400 animate-pulse">50+</div>
                 <div className="text-xs text-gray-400">Projecten</div>
               </div>
               <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg p-3">
-                <div className="text-2xl font-bold text-[#F4C430] animate-pulse">100%</div>
+                <div className="text-2xl font-bold text-blue-400 animate-pulse">100%</div>
                 <div className="text-xs text-gray-400">Tevreden</div>
               </div>
               <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg p-3">
-                <div className="text-2xl font-bold text-[#F4C430] animate-pulse">4.9</div>
+                <div className="text-2xl font-bold text-blue-400 animate-pulse">4.9</div>
                 <div className="text-xs text-gray-400">Rating</div>
               </div>
             </div>
@@ -67,17 +67,17 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">Snelle Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#pricing" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                <a href="#pricing" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                   Tarieven
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                <a href="#services" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                   Diensten
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                   Over Ons
                 </a>
               </li>
@@ -89,19 +89,19 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-center">
-                <Mail className="w-5 h-5 text-[#F4C430] mr-3 animate-pulse" />
-                <a href="mailto:hallo@webdeskai.com" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                <Mail className="w-5 h-5 text-blue-400 mr-3 animate-pulse" />
+                <a href="mailto:hallo@webdeskai.com" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                   hallo@webdeskai.com
                 </a>
               </li>
               <li className="flex items-center">
-                <Phone className="w-5 h-5 text-[#F4C430] mr-3 animate-pulse" />
-                <a href="tel:+31645830810" className="text-gray-400 hover:text-[#F4C430] transition-colors duration-200">
+                <Phone className="w-5 h-5 text-blue-400 mr-3 animate-pulse" />
+                <a href="tel:+31645830810" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                   +31 6 45830810
                 </a>
               </li>
               <li className="flex items-start">
-                <MapPin className="w-5 h-5 text-[#F4C430] mr-3 mt-1 animate-pulse" />
+                <MapPin className="w-5 h-5 text-blue-400 mr-3 mt-1 animate-pulse" />
                 <span className="text-gray-400">
                   Verdunplein 17<br />
                   5627 SZ Eindhoven
@@ -118,12 +118,13 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex items-center space-x-6">
               <a href="#" className="text-gray-400 hover:text-[#F4C430] text-sm transition-colors duration-200">
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors duration-200">
                 Privacybeleid
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#F4C430] text-sm transition-colors duration-200">
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors duration-200">
                 Algemene Voorwaarden
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#F4C430] text-sm transition-colors duration-200">
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors duration-200">
                 Cookiebeleid
               </a>
             </div>
@@ -133,11 +134,11 @@ const Footer: React.FC = () => {
           <div className="mt-8 pt-8 border-t border-gray-800/50">
             <div className="text-center">
               <div className="flex items-center justify-center space-x-4 mb-4">
-                <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-[#F4C430] animate-pulse"></div>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-400 animate-pulse"></div>
                 <span className="text-sm font-medium text-gray-500 tracking-wider uppercase">
                   AI-GEDREVEN WEBSITE ONTWIKKELING
                 </span>
-                <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] animate-pulse"></div>
+                <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-400 animate-pulse"></div>
               </div>
               <p className="text-gray-500 text-sm max-w-2xl mx-auto">
                 Gemaakt met ❤️ en AI-technologie in Nederland. 

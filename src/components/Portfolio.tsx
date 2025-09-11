@@ -109,34 +109,34 @@ const Portfolio: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-20 scroll-animate relative">
             <div className="flex items-center justify-center space-x-4 mb-8">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-[#F4C430] animate-pulse relative">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#F4C430] to-orange-500 animate-ping opacity-30"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-500 animate-pulse relative">
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 to-cyan-500 animate-ping opacity-30"></div>
               </div>
-              <span className="text-xs sm:text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-4 py-2 sm:px-6 sm:py-3 rounded-full shadow-xl border-2 border-[#F4C430]/20 hover:border-[#F4C430]/50 hover:scale-110 transition-all duration-300 cursor-pointer relative overflow-hidden group">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430]/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span className="text-xs sm:text-sm font-bold text-gray-600 tracking-wider uppercase bg-white/80 backdrop-blur-sm px-4 py-2 sm:px-6 sm:py-3 rounded-full shadow-xl border-2 border-blue-500/20 hover:border-blue-500/50 hover:scale-110 transition-all duration-300 cursor-pointer relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <span className="relative z-10 flex items-center">
-                  <span className="w-2 h-2 bg-[#F4C430] rounded-full mr-2 animate-pulse"></span>
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
                 ONS WERK
                 </span>
               </span>
-              <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-[#F4C430] animate-pulse relative">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-[#F4C430] to-orange-500 animate-ping opacity-30"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-500 animate-pulse relative">
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-blue-500 to-cyan-500 animate-ping opacity-30"></div>
               </div>
             </div>
             <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight relative">
               <span className="relative inline-block">
                 Deze bedrijven passen 
                 <span className="relative inline-block mx-4">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] via-orange-500 to-red-500 animate-pulse relative z-10">AI</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#F4C430] to-orange-500 blur-lg opacity-30 animate-pulse"></div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-[#F4C430] to-orange-500 rounded-full animate-ping opacity-60"></div>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 animate-pulse relative z-10">AI</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 blur-lg opacity-30 animate-pulse"></div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full animate-ping opacity-60"></div>
                   <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full animate-ping opacity-40" style={{ animationDelay: '0.5s' }}></div>
                 </span>
                 al toe
               </span>
               
               {/* Creative text decorations */}
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#F4C430] to-transparent animate-pulse"></div>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-pulse"></div>
               <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-0.5 bg-gradient-to-r from-transparent via-orange-500 to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed relative">
@@ -148,24 +148,24 @@ const Portfolio: React.FC = () => {
             <div className="flex items-center justify-center mt-12 space-x-8">
               <div className="text-center group cursor-pointer transform hover:scale-110 transition-all duration-300">
                 <div className="relative">
-                  <div className="text-2xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#F4C430] to-orange-500 animate-pulse group-hover:scale-125 transition-transform duration-300">50+</div>
-                  <div className="absolute inset-0 text-4xl font-bold text-[#F4C430] blur-sm opacity-30 animate-pulse"></div>
+                  <div className="text-2xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse group-hover:scale-125 transition-transform duration-300">50+</div>
+                  <div className="absolute inset-0 text-4xl font-bold text-blue-500 blur-sm opacity-30 animate-pulse"></div>
                   <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-ping opacity-60"></div>
                 </div>
-                <div className="text-xs sm:text-sm text-gray-600 font-medium mt-1 group-hover:text-[#F4C430] transition-colors duration-300">Projecten</div>
+                <div className="text-xs sm:text-sm text-gray-600 font-medium mt-1 group-hover:text-blue-500 transition-colors duration-300">Projecten</div>
               </div>
-              <div className="w-1 h-12 sm:h-16 bg-gradient-to-b from-transparent via-[#F4C430] to-transparent relative">
+              <div className="w-1 h-12 sm:h-16 bg-gradient-to-b from-transparent via-blue-500 to-transparent relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-orange-500 to-transparent animate-pulse opacity-50"></div>
               </div>
               <div className="text-center group cursor-pointer transform hover:scale-110 transition-all duration-300">
                 <div className="relative">
                   <div className="text-2xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-500 animate-pulse group-hover:scale-125 transition-transform duration-300">100%</div>
                   <div className="absolute inset-0 text-4xl font-bold text-green-500 blur-sm opacity-30 animate-pulse"></div>
-                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#F4C430] rounded-full animate-ping opacity-60"></div>
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full animate-ping opacity-60"></div>
                 </div>
                 <div className="text-xs sm:text-sm text-gray-600 font-medium mt-1 group-hover:text-green-500 transition-colors duration-300">Tevreden klanten</div>
               </div>
-              <div className="w-1 h-12 sm:h-16 bg-gradient-to-b from-transparent via-[#F4C430] to-transparent relative">
+              <div className="w-1 h-12 sm:h-16 bg-gradient-to-b from-transparent via-blue-500 to-transparent relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-orange-500 to-transparent animate-pulse opacity-50"></div>
               </div>
               <div className="text-center group cursor-pointer transform hover:scale-110 transition-all duration-300">
@@ -308,24 +308,24 @@ const Portfolio: React.FC = () => {
                       <div className="flex items-center justify-between mb-2 md:mb-4">
                         <div className="flex items-center relative z-10">
                           <div className="flex items-center bg-black/50 backdrop-blur-sm rounded-full px-3 py-1 border border-white/20">
-                            <Star className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 text-[#F4C430] mr-1 md:mr-2 animate-pulse" />
-                            <span className="text-sm md:text-base lg:text-lg font-bold text-[#F4C430]">{project.stats.rating}</span>
+                            <Star className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 text-blue-500 mr-1 md:mr-2 animate-pulse" />
+                            <span className="text-sm md:text-base lg:text-lg font-bold text-blue-500">{project.stats.rating}</span>
                             <div className="ml-2 flex space-x-0.5">
                               {[...Array(5)].map((_, i) => (
-                                <div key={i} className="w-1 h-1 bg-[#F4C430] rounded-full animate-ping opacity-60" style={{ animationDelay: `${i * 0.1}s` }}></div>
+                                <div key={i} className="w-1 h-1 bg-blue-500 rounded-full animate-ping opacity-60" style={{ animationDelay: `${i * 0.1}s` }}></div>
                               ))}
                             </div>
                           </div>
                         </div>
-                        <div className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 bg-white/25 backdrop-blur-md rounded-full flex items-center justify-center group-hover:bg-[#F4C430] group-hover:text-black transition-all duration-300 md:duration-500 cursor-pointer shadow-2xl border-2 border-white/30 group-hover:scale-150 group-hover:rotate-45 relative z-10 overflow-hidden">
+                        <div className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 bg-white/25 backdrop-blur-md rounded-full flex items-center justify-center group-hover:bg-blue-500 group-hover:text-white transition-all duration-300 md:duration-500 cursor-pointer shadow-2xl border-2 border-white/30 group-hover:scale-150 group-hover:rotate-45 relative z-10 overflow-hidden">
                           <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent rounded-full animate-pulse"></div>
                           <ExternalLink className="w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 group-hover:scale-110 transition-transform duration-300" />
-                          <div className="absolute inset-0 bg-[#F4C430]/20 rounded-full animate-ping opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+                          <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-ping opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                         </div>
                       </div>
-                      <h3 className="text-lg md:text-xl lg:text-3xl font-bold mb-2 md:mb-4 group-hover:text-[#F4C430] transition-all duration-300 leading-tight relative z-10 transform group-hover:scale-105">
+                      <h3 className="text-lg md:text-xl lg:text-3xl font-bold mb-2 md:mb-4 group-hover:text-blue-500 transition-all duration-300 leading-tight relative z-10 transform group-hover:scale-105">
                         {project.title}
-                        <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4C430] to-orange-500 group-hover:w-full transition-all duration-500"></div>
+                        <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 group-hover:w-full transition-all duration-500"></div>
                       </h3>
                       <p className="text-sm md:text-base lg:text-lg text-gray-200 leading-relaxed mb-3 md:mb-6 relative z-10">
                         {project.description}
@@ -353,7 +353,7 @@ const Portfolio: React.FC = () => {
                   {/* Enhanced floating particles */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 md:duration-700 pointer-events-none overflow-hidden">
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 md:duration-700 pointer-events-none overflow-hidden">
-                      <div className="absolute top-6 left-6 md:top-12 md:left-12 w-3 md:w-4 h-3 md:h-4 bg-[#F4C430] rounded-full animate-ping shadow-2xl border border-white/30"></div>
+                      <div className="absolute top-6 left-6 md:top-12 md:left-12 w-3 md:w-4 h-3 md:h-4 bg-blue-400 rounded-full animate-ping shadow-2xl border border-white/30"></div>
                       <div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-3 md:w-4 h-3 md:h-4 bg-orange-400 rounded-full animate-ping shadow-2xl border border-white/30" style={{ animationDelay: '0.5s' }}></div>
                       <div className="absolute top-1/2 right-4 md:right-8 w-2 md:w-3 h-2 md:h-3 bg-pink-400 rounded-full animate-ping shadow-2xl border border-white/30" style={{ animationDelay: '1s' }}></div>
                       <div className="absolute top-1/3 left-4 md:left-8 w-2 md:w-2.5 h-2 md:h-2.5 bg-purple-400 rounded-full animate-ping shadow-2xl border border-white/30" style={{ animationDelay: '1.5s' }}></div>
