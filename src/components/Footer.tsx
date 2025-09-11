@@ -118,6 +118,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex items-center space-x-6">
               <a href="#" className="text-gray-400 hover:text-[#F4C430] text-sm transition-colors duration-200">
+              </a>
               <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors duration-200">
                 Privacybeleid
               </a>
