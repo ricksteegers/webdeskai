@@ -393,14 +393,35 @@ const Services: React.FC = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                 <Link 
                   to="/contact"
-                  className="group bg-transparent border-2 border-cyan-400 text-white px-6 py-3 sm:px-10 sm:py-5 rounded-full font-medium text-sm sm:text-base hover:bg-cyan-400 hover:text-black transition-all duration-500 shadow-md hover:shadow-lg transform hover:-translate-y-2 backdrop-blur-sm relative overflow-hidden"
+                  className="group bg-gradient-to-r from-cyan-400/20 to-purple-400/20 border-2 border-cyan-400 text-white px-8 py-4 sm:px-12 sm:py-6 rounded-full font-bold text-sm sm:text-lg hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-400 hover:text-black transition-all duration-700 shadow-2xl hover:shadow-3xl transform hover:-translate-y-4 hover:scale-110 backdrop-blur-xl relative overflow-hidden animate-pulse"
                   onClick={() => window.scrollTo(0, 0)}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  {/* Animated background layers */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/30 to-purple-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-pink-500/20 animate-pulse"></div>
+                  
+                  {/* Floating particles */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="absolute top-2 left-2 w-2 h-2 bg-white rounded-full animate-ping"></div>
+                    <div className="absolute bottom-2 right-2 w-2 h-2 bg-white rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+                    <div className="absolute top-1/2 right-4 w-1.5 h-1.5 bg-white rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+                    <div className="absolute top-2 right-8 w-1 h-1 bg-cyan-300 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
+                  </div>
+                  
+                  {/* Glow effect */}
+                  <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full opacity-0 group-hover:opacity-30 blur-xl transition-all duration-700"></div>
                   
                   <div className="relative z-10 flex items-center">
-                    <span className="hidden sm:inline">ONTDEK ONZE SERVICES</span>
-                    <span className="sm:hidden">SERVICES</span>
+                    <span className="hidden sm:inline flex items-center">
+                      <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></span>
+                      ONTDEK ONZE SERVICES
+                      <span className="w-2 h-2 bg-purple-400 rounded-full ml-3 animate-pulse"></span>
+                    </span>
+                    <span className="sm:hidden flex items-center">
+                      <span className="w-2 h-2 bg-cyan-400 rounded-full mr-2 animate-pulse"></span>
+                      SERVICES
+                      <span className="w-2 h-2 bg-purple-400 rounded-full ml-2 animate-pulse"></span>
+                    </span>
                   </div>
                 </Link>
 
