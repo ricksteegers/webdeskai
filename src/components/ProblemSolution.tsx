@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { CheckCircle, Zap, Clock, TrendingUp, ArrowRight, Sparkles, Target, Users, Award, Shield, TrendingDown, AlertTriangle, Euro } from 'lucide-react';
 
 const ProblemSolution: React.FC = () => {
