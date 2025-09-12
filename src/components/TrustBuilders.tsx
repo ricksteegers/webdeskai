@@ -272,7 +272,7 @@ const TrustBuilders: React.FC = () => {
                 
                 <div className="flex items-center mb-6">
                   <img 
-                    src="/Before (1).png"
+                    src="/Bouwgarant new.PNG"
                     alt={caseStudy.client}
                     className="w-16 h-16 rounded-2xl object-cover mr-4"
                   />
