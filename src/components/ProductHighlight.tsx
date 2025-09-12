@@ -190,7 +190,7 @@ const ProductHighlight: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="/Before and after.png"
+                src="/Before copy.png"
                 alt="AI Website Design Showcase" 
                 className="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
               />
