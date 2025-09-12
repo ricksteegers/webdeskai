@@ -77,6 +77,9 @@ const Services: React.FC = () => {
       {/* White fade effect at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent z-40 pointer-events-none"></div>
       
+      {/* Additional bottom fade for smoother transition */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/50 to-transparent z-39 pointer-events-none"></div>
+      
       {/* ULTRA CREATIVE FLOATING AI UNIVERSE */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Massive Floating AI Orbs */}
