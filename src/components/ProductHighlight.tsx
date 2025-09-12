@@ -127,14 +127,6 @@ const ProductHighlight: React.FC = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-20 right-20 transform -rotate-8 animate-float-gentle-delayed z-20">
-          <div className="group bg-white/20 backdrop-blur-xl rounded-3xl shadow-2xl p-6 w-22 h-22 ring-4 ring-orange-400/30 hover:ring-orange-500/60 hover:scale-130 transition-all duration-750 cursor-pointer">
-            <div className="w-full h-full bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center">
-              <span className="text-white text-xs font-bold">API</span>
-            </div>
-          </div>
-        </div>
-
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
