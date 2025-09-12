@@ -6,13 +6,59 @@ const DesignIllustration: React.FC = () => {
       <img 
         src="/Before.png"
         alt="AI-gedreven website transformatie - Before & After" 
-        className="w-full h-auto object-cover rounded-[5%] transform transition-all duration-700 hover:scale-110 hover:rotate-1 hover:brightness-110 hover:contrast-110 hover:saturate-125 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(244,196,48,0.4)] relative z-10 animate-pulse max-w-none lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl"
+        className="w-full h-auto object-cover rounded-[5%] transform transition-all duration-700 hover:scale-110 hover:rotate-1 hover:brightness-110 hover:contrast-110 hover:saturate-125 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(244,196,48,0.4)] relative z-10 max-w-none lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl"
         style={{
           filter: 'drop-shadow(0 0 20px rgba(244, 196, 48, 0.3)) drop-shadow(0 0 40px rgba(244, 196, 48, 0.1))',
-          animation: 'pulse 3s ease-in-out infinite',
           borderRadius: '5%'
         }}
       />
+      
+      {/* Before/After Icon Overlay */}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none">
+        <div className="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border-2 border-blue-500/30 animate-bounce-slow">
+          <div className="flex items-center space-x-4">
+            {/* Before section */}
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mb-2 shadow-lg">
+                <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                  <polyline points="10,17 15,12 10,7"/>
+                  <line x1="15" y1="12" x2="3" y2="12"/>
+                </svg>
+              </div>
+              <span className="text-xs font-bold text-gray-700">BEFORE</span>
+            </div>
+            
+            {/* Transformation arrow */}
+            <div className="flex flex-col items-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center animate-pulse shadow-lg">
+                <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
+              <span className="text-xs font-bold text-blue-500 mt-1">AI</span>
+            </div>
+            
+            {/* After section */}
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-2 shadow-lg">
+                <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="9,11 12,14 22,4"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+              </div>
+              <span className="text-xs font-bold text-gray-700">AFTER</span>
+            </div>
+          </div>
+          
+          {/* Subtitle */}
+          <div className="text-center mt-3 pt-3 border-t border-gray-200">
+            <span className="text-xs font-semibold text-gray-600 bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
+              AI TRANSFORMATIE
+            </span>
+          </div>
+        </div>
+      </div>
       
       {/* Creative overlay effects */}
       <div className="absolute inset-0 rounded-[5%] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-700">
