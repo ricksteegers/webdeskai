@@ -194,54 +194,195 @@ const ProductHighlight: React.FC = () => {
                 alt="AI Website Design Showcase" 
                 className="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 rounded-3xl overflow-hidden">
-                {/* Multi-layer creative overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-purple-500/10 to-transparent"></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-500/10"></div>
+              <div className="absolute inset-0 rounded-3xl overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-blue-500/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/25 via-transparent to-cyan-500/25"></div>
+                <div className="absolute inset-0 bg-gradient-to-tl from-pink-500/20 via-transparent to-orange-500/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/15 via-transparent to-indigo-500/15"></div>
                 
-                {/* Animated scan lines */}
-                <div className="absolute inset-0 opacity-30">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse"></div>
-                  <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
+                {/* Enhanced animated scan lines */}
+                <div className="absolute inset-0 opacity-60">
+                  <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse shadow-lg"></div>
+                  <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse shadow-lg" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute top-1/4 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent animate-pulse shadow-md" style={{ animationDelay: '2s' }}></div>
+                  <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-pink-400 to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                {/* Enhanced floating particles */}
+                <div className="absolute inset-0">
+                  <div className="absolute top-8 left-8 w-6 h-6 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-ping opacity-80 shadow-2xl"></div>
+                  <div className="absolute top-12 right-12 w-5 h-5 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-full animate-ping opacity-70 shadow-xl" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute bottom-8 left-12 w-7 h-7 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-full animate-ping opacity-75 shadow-xl" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute bottom-12 right-8 w-8 h-8 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full animate-ping opacity-60 shadow-2xl" style={{ animationDelay: '1.5s' }}></div>
+                  <div className="absolute top-1/2 left-6 w-4 h-4 bg-gradient-to-r from-orange-400 to-red-400 rounded-full animate-ping opacity-85 shadow-lg" style={{ animationDelay: '2s' }}></div>
+                  <div className="absolute top-1/3 right-6 w-6 h-6 bg-gradient-to-r from-emerald-400 to-green-400 rounded-full animate-ping opacity-75 shadow-xl" style={{ animationDelay: '2.5s' }}></div>
+                  <div className="absolute top-2/3 left-1/4 w-3 h-3 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-ping opacity-70 shadow-md" style={{ animationDelay: '3s' }}></div>
+                  <div className="absolute bottom-1/3 right-1/4 w-5 h-5 bg-gradient-to-r from-violet-400 to-purple-400 rounded-full animate-ping opacity-65 shadow-lg" style={{ animationDelay: '3.5s' }}></div>
                 </div>
                 
-                {/* Floating particles */}
-                <div className="absolute inset-0 pointer-events-none">
-                  <div className="absolute top-8 left-8 w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-60"></div>
-                  <div className="absolute top-12 right-12 w-2 h-2 bg-cyan-400 rounded-full animate-ping opacity-40" style={{ animationDelay: '0.5s' }}></div>
-                  <div className="absolute bottom-8 left-12 w-2.5 h-2.5 bg-purple-400 rounded-full animate-ping opacity-50" style={{ animationDelay: '1s' }}></div>
-                  <div className="absolute bottom-12 right-8 w-4 h-4 bg-pink-400 rounded-full animate-ping opacity-30" style={{ animationDelay: '1.5s' }}></div>
-                </div>
+                {/* Enhanced corner accents with complex animations */}
+                <div className="absolute top-6 left-6 w-12 h-12 border-4 border-blue-400/70 rounded-full animate-spin-slow shadow-2xl bg-blue-400/10 backdrop-blur-sm"></div>
+                <div className="absolute top-6 right-6 w-10 h-10 border-3 border-cyan-400/70 rounded-full animate-spin-slow shadow-xl bg-cyan-400/10 backdrop-blur-sm" style={{ animationDirection: 'reverse' }}></div>
+                <div className="absolute bottom-6 left-6 w-14 h-14 border-4 border-purple-400/70 rounded-full animate-bounce-slow shadow-2xl bg-purple-400/10 backdrop-blur-sm"></div>
+                <div className="absolute bottom-6 right-6 w-11 h-11 border-3 border-pink-400/70 rounded-full animate-float-gentle shadow-xl bg-pink-400/10 backdrop-blur-sm"></div>
                 
-                {/* Corner accents */}
-                <div className="absolute top-4 left-4 w-8 h-8 border-2 border-blue-400/50 rounded-full animate-spin-slow"></div>
-                <div className="absolute top-4 right-4 w-6 h-6 border-2 border-cyan-400/50 rounded-full animate-spin-slow" style={{ animationDirection: 'reverse' }}></div>
-                <div className="absolute bottom-4 left-4 w-10 h-10 border-2 border-purple-400/50 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-4 right-4 w-7 h-7 border-2 border-pink-400/50 rounded-full animate-bounce"></div>
+                {/* Additional geometric shapes */}
+                <div className="absolute top-1/4 left-1/4 w-8 h-8 bg-gradient-to-br from-orange-400/30 to-red-400/30 transform rotate-45 animate-float-gentle shadow-lg"></div>
+                <div className="absolute top-3/4 right-1/4 w-6 h-6 bg-gradient-to-br from-emerald-400/30 to-green-400/30 rounded-full animate-bounce-slow shadow-md"></div>
+                <div className="absolute bottom-1/4 left-1/3 w-10 h-10 bg-gradient-to-br from-indigo-400/30 to-violet-400/30 transform rotate-12 animate-drift-left shadow-lg" style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}></div>
                 
-                {/* AI Badge */}
-                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-xl animate-pulse border-2 border-white/30">
-                  <span className="flex items-center">
-                    <Zap className="w-4 h-4 mr-2 animate-bounce" />
-                    AI-GEDREVEN
-                  </span>
-                </div>
-                
-                {/* Floating tech icons */}
-                <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-white/50 animate-float-gentle">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
-                      <span className="text-white text-xs font-bold">AI</span>
+                {/* Enhanced Before/After Icon */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
+                  <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border-2 border-blue-500/30 animate-bounce-slow">
+                    <div className="flex items-center space-x-6">
+                      {/* Before section */}
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mb-3 shadow-lg">
+                          <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="9" cy="9" r="2"/>
+                            <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                          </svg>
+                        </div>
+                        <span className="text-sm font-bold text-gray-700">BEFORE</span>
+                        <div className="text-xs text-red-600 font-medium">Verouderd</div>
+                      </div>
+                      
+                      {/* Transformation arrow */}
+                      <div className="flex flex-col items-center">
+                        <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center animate-pulse shadow-xl">
+                          <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                          </svg>
+                        </div>
+                        <span className="text-xs font-bold text-blue-500 mt-2 bg-blue-50 px-2 py-1 rounded-full">AI</span>
+                      </div>
+                      
+                      {/* After section */}
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-3 shadow-lg">
+                          <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                          </svg>
+                        </div>
+                        <span className="text-sm font-bold text-gray-700">AFTER</span>
+                        <div className="text-xs text-green-600 font-medium">Modern</div>
+                      </div>
                     </div>
-                    <span className="text-xs font-semibold text-gray-700">Powered</span>
+                    
+                    {/* Subtitle */}
+                    <div className="text-center mt-4 pt-4 border-t border-gray-200">
+                {/* Enhanced Before/After Labels */}
+                <div className="absolute top-1/4 left-8 bg-red-500/95 backdrop-blur-md text-white px-5 py-3 rounded-2xl font-bold text-lg shadow-2xl border-2 border-white/40">
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-white rounded-full mr-3 flex items-center justify-center">
+                      <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold">BEFORE</div>
+                      <div className="text-xs opacity-90">Verouderd design</div>
+                    </div>
+                  </div>
+                
+                {/* Enhanced AI Technology Badge */}
+                <div className="absolute bottom-1/4 right-8 bg-green-500/95 backdrop-blur-md text-white px-5 py-3 rounded-2xl font-bold text-lg shadow-2xl border-2 border-white/40">
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-white rounded-full mr-3 flex items-center justify-center">
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold">AFTER</div>
+                      <div className="text-xs opacity-90">AI-gedreven</div>
+                    </div>
                   </div>
                 </div>
                 
-                {/* Performance indicators */}
-                <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-white/50 animate-float-gentle-delayed">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-ping"></div>
+                {/* Enhanced floating tech icons */}
+                <div className="absolute bottom-8 left-8 bg-white/98 backdrop-blur-md rounded-2xl p-5 shadow-2xl border-2 border-white/70 animate-float-gentle">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-xl">
+                      <span className="text-white text-xs font-bold">AI</span>
+                    </div>
+                    <span className="text-xs font-semibold text-gray-700">Powered</span>
+                      <div className="text-sm font-bold text-gray-800">AI-Powered</div>
+                      <div className="text-xs text-blue-600 font-medium">Design Engine</div>
+                
+                {/* Enhanced performance indicators */}
+                <div className="absolute bottom-8 right-8 bg-white/98 backdrop-blur-md rounded-2xl p-5 shadow-2xl border-2 border-white/70 animate-float-gentle-delayed">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-4 h-4 bg-green-500 rounded-full shadow-lg flex items-center justify-center">
+                      <div className="text-sm font-bold text-gray-800">Live in 1 week</div>
+                      <div className="text-xs text-green-600 font-semibold">65% goedkoper</div>
                     <span className="text-xs font-semibold text-gray-700">Live in 1 week</span>
+                  </div>
+                </div>
+                
+                {/* Holographic grid effect */}
+                <div className="absolute inset-0 opacity-30" style={{
+                  backgroundImage: `
+                    linear-gradient(rgba(59, 130, 246, 0.4) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(59, 130, 246, 0.4) 1px, transparent 1px),
+                    linear-gradient(rgba(139, 92, 246, 0.3) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(139, 92, 246, 0.3) 1px, transparent 1px)
+                  `,
+                  backgroundSize: '40px 40px, 40px 40px, 80px 80px, 80px 80px',
+                  backgroundPosition: '0 0, 0 0, 20px 20px, 20px 20px'
+                }}>
+                </div>
+                
+                {/* Neural network connections */}
+                <svg className="absolute inset-0 w-full h-full opacity-40" viewBox="0 0 400 300">
+                  <defs>
+                    <linearGradient id="connectionGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#06B6D4" />
+                      <stop offset="100%" stopColor="#8B5CF6" />
+                    </linearGradient>
+                    <linearGradient id="connectionGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#F59E0B" />
+                      <stop offset="100%" stopColor="#EF4444" />
+                    </linearGradient>
+                  </defs>
+                  
+                  {/* Animated neural connections */}
+                  <line x1="50" y1="50" x2="150" y2="100" stroke="url(#connectionGradient1)" strokeWidth="2" strokeDasharray="8,4" className="animate-pulse">
+                    <animate attributeName="stroke-dashoffset" values="0;12;0" dur="3s" repeatCount="indefinite" />
+                  </line>
+                  <line x1="150" y1="100" x2="250" y2="75" stroke="url(#connectionGradient2)" strokeWidth="2" strokeDasharray="8,4" className="animate-pulse">
+                    <animate attributeName="stroke-dashoffset" values="0;12;0" dur="2s" repeatCount="indefinite" />
+                  </line>
+                  <line x1="250" y1="75" x2="350" y2="150" stroke="url(#connectionGradient1)" strokeWidth="2" strokeDasharray="8,4" className="animate-pulse">
+                    <animate attributeName="stroke-dashoffset" values="0;12;0" dur="4s" repeatCount="indefinite" />
+                  </line>
+                  
+                  {/* Neural nodes */}
+                  <circle cx="50" cy="50" r="6" fill="#06B6D4" className="animate-pulse">
+                    <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="150" cy="100" r="8" fill="#8B5CF6" className="animate-pulse">
+                    <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="250" cy="75" r="5" fill="#F59E0B" className="animate-pulse">
+                    <animate attributeName="r" values="5;9;5" dur="2.5s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="350" cy="150" r="7" fill="#10B981" className="animate-pulse">
+                    <animate attributeName="r" values="7;11;7" dur="3.5s" repeatCount="indefinite" />
+                  </circle>
+                </svg>
+                
+                {/* Data flow indicators */}
+                <div className="absolute top-4 left-4 bg-blue-500/20 backdrop-blur-sm rounded-lg p-2 border border-blue-400/30">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
+                    <span className="text-xs font-bold text-blue-700">DATA IN</span>
+                  </div>
+                </div>
+                
+                <div className="absolute bottom-4 right-4 bg-green-500/20 backdrop-blur-sm rounded-lg p-2 border border-green-400/30">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-green-400 rounded-full animate-ping"></div>
+                    <span className="text-xs font-bold text-green-700">RESULT OUT</span>
                   </div>
                 </div>
               </div>
