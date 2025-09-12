@@ -111,7 +111,7 @@ const ProductHighlight: React.FC = () => {
           </div>
         </div>
 
-        <div className="hidden lg:block absolute top-32 right-32 transform -rotate-15 animate-drift-right z-20">
+        <div className="hidden lg:block absolute top-16 right-32 transform -rotate-15 animate-drift-right z-20">
           <div className="group bg-white/20 backdrop-blur-xl rounded-3xl shadow-2xl p-6 w-28 h-28 ring-4 ring-purple-400/30 hover:ring-purple-500/60 hover:scale-140 transition-all duration-800 cursor-pointer">
             <div className="w-full h-full bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center">
               <span className="text-white text-xs font-bold">GPT</span>
