@@ -6,13 +6,91 @@ const DesignIllustration: React.FC = () => {
       <img 
         src="/Before copy.png"
         alt="AI-gedreven website transformatie - Before & After" 
-        className="w-full h-auto object-cover rounded-[5%] transform transition-all duration-700 hover:scale-110 hover:rotate-1 hover:brightness-110 hover:contrast-110 hover:saturate-125 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(244,196,48,0.4)] relative z-10 animate-pulse max-w-none lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl"
+        className="w-full h-auto object-cover rounded-[5%] transform transition-all duration-700 hover:scale-110 hover:rotate-1 hover:brightness-110 hover:contrast-110 hover:saturate-125 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(244,196,48,0.4)] relative z-10 max-w-none lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl"
         style={{
           filter: 'drop-shadow(0 0 20px rgba(244, 196, 48, 0.3)) drop-shadow(0 0 40px rgba(244, 196, 48, 0.1))',
-          animation: 'pulse 3s ease-in-out infinite',
           borderRadius: '5%'
         }}
       />
+      
+      {/* Before/After Overlay */}
+      <div className="absolute inset-0 rounded-[5%] overflow-hidden">
+        {/* Before/After Central Badge */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
+          <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border-2 border-blue-500/30">
+            <div className="flex items-center space-x-6">
+              {/* Before section */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mb-3 shadow-lg">
+                  <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <circle cx="9" cy="9" r="2"/>
+                    <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                  </svg>
+                </div>
+                <span className="text-sm font-bold text-gray-700">BEFORE</span>
+                <div className="text-xs text-red-600 font-medium">Verouderd</div>
+              </div>
+              
+              {/* Transformation arrow */}
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-xl">
+                  <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
+                <span className="text-xs font-bold text-blue-500 mt-2 bg-blue-50 px-2 py-1 rounded-full">AI</span>
+              </div>
+              
+              {/* After section */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-3 shadow-lg">
+                  <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14,2 14,8 20,8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10,9 9,9 8,9"/>
+                  </svg>
+                </div>
+                <span className="text-sm font-bold text-gray-700">AFTER</span>
+                <div className="text-xs text-green-600 font-medium">Modern</div>
+              </div>
+            </div>
+            
+            {/* Subtitle */}
+            <div className="text-center mt-4 pt-4 border-t border-gray-200">
+              <div className="text-sm font-bold text-gray-800">AI-Powered</div>
+              <div className="text-xs text-blue-600 font-medium">Design Engine</div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Before/After Labels */}
+        <div className="absolute top-1/4 left-8 bg-red-500/95 backdrop-blur-md text-white px-5 py-3 rounded-2xl font-bold text-lg shadow-2xl border-2 border-white/40">
+          <div className="flex items-center">
+            <div className="w-4 h-4 bg-white rounded-full mr-3 flex items-center justify-center">
+              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+            </div>
+            <div>
+              <div className="text-sm font-bold">BEFORE</div>
+              <div className="text-xs opacity-90">Verouderd design</div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="absolute bottom-1/4 right-8 bg-green-500/95 backdrop-blur-md text-white px-5 py-3 rounded-2xl font-bold text-lg shadow-2xl border-2 border-white/40">
+          <div className="flex items-center">
+            <div className="w-4 h-4 bg-white rounded-full mr-3 flex items-center justify-center">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+            </div>
+            <div>
+              <div className="text-sm font-bold">AFTER</div>
+              <div className="text-xs opacity-90">AI-gedreven</div>
+            </div>
+          </div>
+        </div>
+      </div>
       
       {/* Creative overlay effects */}
       <div className="absolute inset-0 rounded-[5%] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-700">
