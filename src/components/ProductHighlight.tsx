@@ -119,13 +119,6 @@ const ProductHighlight: React.FC = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-32 left-32 transform rotate-20 animate-bounce-slow z-20">
-          <div className="group bg-white/20 backdrop-blur-xl rounded-3xl shadow-2xl p-6 w-26 h-26 ring-4 ring-emerald-400/30 hover:ring-emerald-500/60 hover:scale-160 transition-all duration-900 cursor-pointer">
-            <div className="w-full h-full bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center">
-              <span className="text-white text-xs font-bold">ML</span>
-            </div>
-          </div>
-        </div>
 
       </div>
 
