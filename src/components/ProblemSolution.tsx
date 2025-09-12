@@ -156,18 +156,6 @@ const ProblemSolution: React.FC = () => {
 
         {/* Enhanced VS Section */}
         <div className="relative mb-20">
-          {/* VS Badge */}
-          <div className="flex justify-center mb-8 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:mb-0 z-20">
-            <div className="bg-gradient-to-r from-red-500 via-orange-500 to-blue-500 text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-bold text-lg sm:text-xl md:text-2xl shadow-2xl animate-pulse border-2 sm:border-4 border-white relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 animate-pulse opacity-50"></div>
-              <span className="relative z-10 flex items-center">
-                <Target className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-1 sm:mr-2 animate-spin-slow" />
-                VS
-                <Zap className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ml-1 sm:ml-2 animate-bounce" />
-              </span>
-            </div>
-          </div>
-
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Problems Side */}
             <div className="scroll-animate-left relative">
@@ -223,6 +211,18 @@ const ProblemSolution: React.FC = () => {
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+
+            {/* VS Badge - positioned between cards on mobile */}
+            <div className="flex justify-center my-8 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:my-0 z-20">
+              <div className="bg-gradient-to-r from-red-500 via-orange-500 to-blue-500 text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-bold text-lg sm:text-xl md:text-2xl shadow-2xl animate-pulse border-2 sm:border-4 border-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 animate-pulse opacity-50"></div>
+                <span className="relative z-10 flex items-center">
+                  <Target className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-1 sm:mr-2 animate-spin-slow" />
+                  VS
+                  <Zap className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ml-1 sm:ml-2 animate-bounce" />
+                </span>
               </div>
             </div>
 
