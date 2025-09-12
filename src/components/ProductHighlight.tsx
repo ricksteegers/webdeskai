@@ -263,7 +263,7 @@ const ProductHighlight: React.FC = () => {
         <div className="absolute bottom-24 right-1/3 transform -rotate-5 animate-float-gentle opacity-30 z-10">
           <div className="bg-black/60 backdrop-blur-xl rounded-xl p-3 shadow-xl border border-purple-500/30">
             <div className="text-purple-400 text-xs font-mono">
-              <AI/> DESIGN
+              AI DESIGN
             </div>
           </div>
         </div>
