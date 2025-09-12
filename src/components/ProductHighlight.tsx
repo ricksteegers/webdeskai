@@ -103,7 +103,7 @@ const ProductHighlight: React.FC = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-gradient-to-br from-orange-400 via-red-500 via-pink-500 to-purple-500 rounded-full blur-3xl opacity-30 animate-drift-left transform rotate-90"></div>
         
         {/* Floating AI Tool Icons */}
-        <div className="absolute top-20 left-20 transform rotate-12 animate-float-gentle z-20">
+        <div className="hidden lg:block absolute top-20 left-20 transform rotate-12 animate-float-gentle z-20">
           <div className="group bg-white/20 backdrop-blur-xl rounded-3xl shadow-2xl p-6 w-24 h-24 ring-4 ring-cyan-400/30 hover:ring-cyan-500/60 hover:scale-150 transition-all duration-700 cursor-pointer">
             <div className="w-full h-full bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center">
               <span className="text-white text-xs font-bold">AI</span>
@@ -111,7 +111,7 @@ const ProductHighlight: React.FC = () => {
           </div>
         </div>
 
-        <div className="absolute top-32 right-32 transform -rotate-15 animate-drift-right z-20">
+        <div className="hidden lg:block absolute top-32 right-32 transform -rotate-15 animate-drift-right z-20">
           <div className="group bg-white/20 backdrop-blur-xl rounded-3xl shadow-2xl p-6 w-28 h-28 ring-4 ring-purple-400/30 hover:ring-purple-500/60 hover:scale-140 transition-all duration-800 cursor-pointer">
             <div className="w-full h-full bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center">
               <span className="text-white text-xs font-bold">GPT</span>
