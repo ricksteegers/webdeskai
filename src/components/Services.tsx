@@ -71,6 +71,12 @@ const Services: React.FC = () => {
 
   return (
     <section id="services" className="py-20 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+      {/* White fade effect at top */}
+      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-white to-transparent z-40 pointer-events-none"></div>
+      
+      {/* White fade effect at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent z-40 pointer-events-none"></div>
+      
       {/* ULTRA CREATIVE FLOATING AI UNIVERSE */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Massive Floating AI Orbs */}
