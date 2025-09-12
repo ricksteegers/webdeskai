@@ -194,6 +194,58 @@ const ProductHighlight: React.FC = () => {
                 alt="AI Website Design Showcase" 
                 className="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
               />
+              
+              {/* Before/After Overlay */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
+                <div className="bg-white/95 backdrop-blur-md rounded-lg sm:rounded-xl p-2 sm:p-3 shadow-xl border border-blue-500/30">
+                  <div className="flex items-center space-x-2 sm:space-x-3">
+                    {/* Before section */}
+                    <div className="text-center">
+                      <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-gradient-to-br from-red-500 to-orange-500 rounded-md sm:rounded-lg flex items-center justify-center mb-1 sm:mb-2 shadow-lg">
+                        <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                          <circle cx="9" cy="9" r="2"/>
+                          <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                        </svg>
+                      </div>
+                      <span className="text-[8px] sm:text-[10px] md:text-xs font-bold text-gray-700">BEFORE</span>
+                      <div className="text-[6px] sm:text-[8px] md:text-[10px] text-red-600 font-medium">Verouderd</div>
+                    </div>
+                    
+                    {/* Transformation arrow */}
+                    <div className="flex flex-col items-center">
+                      <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg">
+                        <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                      <span className="text-[6px] sm:text-[8px] md:text-[10px] font-bold text-blue-500 mt-0.5 sm:mt-1 bg-blue-50 px-1 py-0.5 rounded-full">AI</span>
+                    </div>
+                    
+                    {/* After section */}
+                    <div className="text-center">
+                      <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-gradient-to-br from-green-500 to-emerald-500 rounded-md sm:rounded-lg flex items-center justify-center mb-1 sm:mb-2 shadow-lg">
+                        <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                          <polyline points="14,2 14,8 20,8"/>
+                          <line x1="16" y1="13" x2="8" y2="13"/>
+                          <line x1="16" y1="17" x2="8" y2="17"/>
+                          <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                      </div>
+                      <span className="text-[8px] sm:text-[10px] md:text-xs font-bold text-gray-700">AFTER</span>
+                      <div className="text-[6px] sm:text-[8px] md:text-[10px] text-green-600 font-medium">Modern</div>
+                    </div>
+                  </div>
+                  
+                  {/* Subtitle */}
+                  <div className="text-center mt-1 sm:mt-2 pt-1 sm:pt-2 border-t border-gray-200">
+                    <div className="text-[8px] sm:text-[10px] md:text-xs font-bold text-gray-800">AI-Powered</div>
+                    <div className="text-[6px] sm:text-[8px] md:text-[10px] text-blue-600 font-medium">Design Engine</div>
+                  </div>
+                </div>
+              </div>
+              
               <div className="absolute inset-0 rounded-3xl overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-blue-500/30 to-transparent"></div>
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/25 via-transparent to-cyan-500/25"></div>
