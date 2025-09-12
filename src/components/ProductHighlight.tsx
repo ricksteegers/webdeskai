@@ -389,6 +389,7 @@ const ProductHighlight: React.FC = () => {
             </div>
           </div>
         </div>
+        </div>
 
         {/* Pricing Packages */}
         <div className="scroll-animate">
