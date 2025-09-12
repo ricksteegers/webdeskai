@@ -17,35 +17,35 @@ const DesignIllustration: React.FC = () => {
       <div className="absolute inset-0 rounded-[5%] overflow-hidden">
         {/* Before/After Central Badge */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border-2 border-blue-500/30">
-            <div className="flex items-center space-x-6">
+          <div className="bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-xl border border-blue-500/30">
+            <div className="flex items-center space-x-3">
               {/* Before section */}
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mb-3 shadow-lg">
-                  <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-orange-500 rounded-lg flex items-center justify-center mb-2 shadow-lg">
+                  <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
                     <circle cx="9" cy="9" r="2"/>
                     <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
                   </svg>
                 </div>
-                <span className="text-sm font-bold text-gray-700">BEFORE</span>
-                <div className="text-xs text-red-600 font-medium">Verouderd</div>
+                <span className="text-xs font-bold text-gray-700">BEFORE</span>
+                <div className="text-[10px] text-red-600 font-medium">Verouderd</div>
               </div>
               
               {/* Transformation arrow */}
               <div className="flex flex-col items-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-xl">
-                  <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg">
+                  <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
-                <span className="text-xs font-bold text-blue-500 mt-2 bg-blue-50 px-2 py-1 rounded-full">AI</span>
+                <span className="text-[10px] font-bold text-blue-500 mt-1 bg-blue-50 px-1 py-0.5 rounded-full">AI</span>
               </div>
               
               {/* After section */}
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-3 shadow-lg">
-                  <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-2 shadow-lg">
+                  <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                     <polyline points="14,2 14,8 20,8"/>
                     <line x1="16" y1="13" x2="8" y2="13"/>
@@ -53,15 +53,15 @@ const DesignIllustration: React.FC = () => {
                     <polyline points="10,9 9,9 8,9"/>
                   </svg>
                 </div>
-                <span className="text-sm font-bold text-gray-700">AFTER</span>
-                <div className="text-xs text-green-600 font-medium">Modern</div>
+                <span className="text-xs font-bold text-gray-700">AFTER</span>
+                <div className="text-[10px] text-green-600 font-medium">Modern</div>
               </div>
             </div>
             
             {/* Subtitle */}
-            <div className="text-center mt-4 pt-4 border-t border-gray-200">
-              <div className="text-sm font-bold text-gray-800">AI-Powered</div>
-              <div className="text-xs text-blue-600 font-medium">Design Engine</div>
+            <div className="text-center mt-2 pt-2 border-t border-gray-200">
+              <div className="text-xs font-bold text-gray-800">AI-Powered</div>
+              <div className="text-[10px] text-blue-600 font-medium">Design Engine</div>
             </div>
           </div>
         </div>
