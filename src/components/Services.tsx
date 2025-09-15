@@ -477,17 +477,17 @@ const Services: React.FC = () => {
           <div className="flex items-center justify-center mt-8 space-x-4 sm:space-x-8">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-cyan-400 animate-pulse">6</div>
-              <div className="text-xs sm:text-sm text-cyan-200">AI-Services</div>
+              <div className="text-xs sm:text-sm text-cyan-200">Geautomatiseerde services</div>
             </div>
             <div className="w-1 h-12 bg-gradient-to-b from-transparent via-cyan-400 to-transparent"></div>
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-cyan-400 animate-pulse">100%</div>
-              <div className="text-xs sm:text-sm text-cyan-200">AI-Gedreven</div>
+              <div className="text-xs sm:text-sm text-cyan-200">Automatisering</div>
             </div>
             <div className="w-1 h-12 bg-gradient-to-b from-transparent via-cyan-400 to-transparent"></div>
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-cyan-400 animate-pulse">1 week</div>
-              <div className="text-xs sm:text-sm text-cyan-200">Live</div>
+              <div className="text-xs sm:text-sm text-cyan-200">Auto-deploy</div>
             </div>
           </div>
         </div>

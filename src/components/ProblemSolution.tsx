@@ -246,7 +246,7 @@ const ProblemSolution: React.FC = () => {
                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">WebDesk AI</h3>
                     <p className="text-green-600 font-semibold flex items-center">
                       <span className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full mr-2 animate-ping"></span>
-                      <span className="text-sm sm:text-base">Volledig geautomatiseerd</span>
+                      <span className="text-sm sm:text-base">Slim, snel & betaalbaar</span>
                     </p>
                   </div>
                 </div>
@@ -361,7 +361,7 @@ const ProblemSolution: React.FC = () => {
                 
                 <div className="flex items-center space-x-2 text-white/80">
                   <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span className="text-sm sm:text-base">100% Tevredenheidsgarantie</span>
+                  <span className="text-sm sm:text-base">AI-kwaliteit gegarandeerd</span>
                 </div>
               </div>
             </div>
