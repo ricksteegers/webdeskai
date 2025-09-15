@@ -146,7 +146,7 @@ const Hero: React.FC = () => {
             <div className="flex items-center space-x-4 group justify-center lg:justify-start mx-auto lg:mx-0 max-w-fit">
               <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-400 group-hover:from-blue-400 transition-all duration-500 animate-pulse"></div>
               <span className="text-sm font-bold text-blue-600 tracking-wider uppercase bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300 text-center border border-blue-100">
-                Jouw AI partner voor de toekomst
+                AI automatiseert webdesign
               </span>
               <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-400 group-hover:from-blue-400 transition-all duration-500 animate-pulse"></div>
             </div>
@@ -155,11 +155,11 @@ const Hero: React.FC = () => {
             <div className="relative">
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 <span className="text-black">
-                  AI-Gedreven
+                  Automatische
                 </span>
                 <br />
                 <span className="relative">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">Websites</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">Website Creatie</span>
                   {/* Decorative underline */}
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full opacity-40 animate-pulse"></div>
                 </span>
@@ -169,25 +169,25 @@ const Hero: React.FC = () => {
             {/* Enhanced Description */}
             <div className="space-y-4 text-lg text-gray-700 max-w-lg">
               <p className="font-semibold text-lg sm:text-xl text-gray-800">
-                Hoogwaardige websites gemaakt door AI-experts.
+                AI automatiseert het volledige webdesign proces.
               </p>
               <p className="leading-relaxed">
-                Onze AI-expertise maakt premium website ontwikkeling mogelijk tegen
-                <span className="font-bold text-blue-600"> aanzienlijk lagere prijzen</span> dan traditionele bureaus.
+                Onze AI-automatisering elimineert handmatig werk en maakt premium websites mogelijk tegen
+                <span className="font-bold text-blue-600"> 70% lagere kosten</span> dan traditionele methoden.
               </p>
               <div className="flex items-center space-x-6 text-base">
                 <div className="flex items-center text-sm sm:text-base">
                   <Clock className="w-5 h-5 text-blue-500 mr-2" />
-                  <span className="font-semibold">In 1 week live</span>
+                  <span className="font-semibold">Automatisch in 1 week</span>
                 </div>
                 <div className="flex items-center text-sm sm:text-base">
                   <Target className="w-5 h-5 text-blue-500 mr-2" />
-                  <span className="font-semibold">Geen hoge kosten</span>
+                  <span className="font-semibold">AI elimineert kosten</span>
                 </div>
               </div>
               <p className="font-semibold text-gray-800">
                 <TrendingUp className="w-5 h-5 text-blue-500 inline mr-2" />
-                Geen compromissen op kwaliteit.
+                AI garandeert premium kwaliteit.
               </p>
             </div>
 
@@ -202,7 +202,7 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 <div className="relative z-10 flex items-center">
-                Plan een gesprek
+                Ontdek AI-automatisering
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
                 </div>
               </Link>
@@ -225,23 +225,23 @@ const Hero: React.FC = () => {
                   </div>
                   <div className="text-right">
                     <div className="text-xs md:text-sm text-blue-500 italic font-medium">dankzij AI</div>
-                    <div className="text-sm md:text-lg font-bold text-green-600">65% besparing</div>
+                    <div className="text-sm md:text-lg font-bold text-green-600">70% automatisering</div>
                   </div>
                 </div>
                 
                 {/* Value indicators */}
                 <div className="mt-3 md:mt-4 grid grid-cols-3 gap-1 md:gap-2 text-xs">
                   <div className="text-center bg-green-50 rounded-lg py-1 md:py-2">
-                    <div className="font-bold text-green-600">Binnen 1 week</div>
-                    <div className="text-gray-600 text-[10px] md:text-xs">live</div>
+                    <div className="font-bold text-green-600">Auto-deploy</div>
+                    <div className="text-gray-600 text-[10px] md:text-xs">1 week</div>
                   </div>
                   <div className="text-center bg-blue-50 rounded-lg py-1 md:py-2">
-                    <div className="font-bold text-blue-500">100%</div>
-                    <div className="text-gray-600 text-[10px] md:text-xs">AI-gedreven</div>
+                    <div className="font-bold text-blue-500">Volledig</div>
+                    <div className="text-gray-600 text-[10px] md:text-xs">geautomatiseerd</div>
                   </div>
                   <div className="text-center bg-purple-50 rounded-lg py-1 md:py-2">
-                    <div className="font-bold text-blue-500">Premium</div>
-                    <div className="text-gray-600 text-[10px] md:text-xs">kwaliteit</div>
+                    <div className="font-bold text-blue-500">AI-kwaliteit</div>
+                    <div className="text-gray-600 text-[10px] md:text-xs">gegarandeerd</div>
                   </div>
                 </div>
               </div>
@@ -250,11 +250,11 @@ const Hero: React.FC = () => {
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
                 <div className="flex items-center bg-white/70 backdrop-blur-sm rounded-full px-3 py-1">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                  <span>Geen vooruitbetaling</span>
+                  <span>AI werkt op resultaat</span>
                 </div>
                 <div className="flex items-center bg-white/70 backdrop-blur-sm rounded-full px-3 py-1">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                  <span>100% tevredenheidsgarantie</span>
+                  <span>AI-perfectie gegarandeerd</span>
                 </div>
               </div>
             </div>
@@ -288,13 +288,13 @@ const Hero: React.FC = () => {
               <div className="flex items-center justify-center mb-4">
                 <Sparkles className="w-6 h-6 text-blue-500 animate-spin-slow mr-2" />
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-900">
-                  Klaar voor de <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">AI-revolutie</span>?
+                  Ervaar de kracht van <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">AI-automatisering</span>
                 </h3>
                 <Sparkles className="w-6 h-6 text-blue-500 animate-spin-slow ml-2" />
               </div>
               
               <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-                Laat ons bewijzen waarom steeds meer bedrijven kiezen voor onze AI-gedreven aanpak.
+                Ontdek hoe AI-automatisering het webdesign proces volledig transformeert en kosten drastisch verlaagt.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -310,11 +310,11 @@ const Hero: React.FC = () => {
                 <div className="flex items-center space-x-4 text-gray-600">
                   <div className="flex items-center">
                     <Clock className="w-4 h-4 text-blue-500 mr-2" />
-                    <span className="font-semibold text-sm">In 1 week live</span>
+                    <span className="font-semibold text-sm">Auto-deploy 1 week</span>
                   </div>
                   <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-blue-500 text-sm">65% goedkoper</span>
+                    <span className="font-semibold text-blue-500 text-sm">70% AI-besparing</span>
                   </div>
                 </div>
               </div>
