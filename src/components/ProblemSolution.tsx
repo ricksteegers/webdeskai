@@ -73,8 +73,8 @@ const ProblemSolution: React.FC = () => {
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "Eenvoudig proces",
-      description: "Duidelijke stappen, snelle communicatie, geen gedoe",
+      title: "AI-gestuurde communicatie",
+      description: "Automatische updates, real-time voortgang, minimale meetings nodig",
       color: "from-purple-500 to-indigo-500",
       bgColor: "from-purple-50 to-indigo-50",
       delay: 400
@@ -134,14 +134,14 @@ const ProblemSolution: React.FC = () => {
           
           <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight relative">
             <span className="relative inline-block">
-              Hoe AI-automatisering 
+              Waarom kiezen voor 
               <span className="relative inline-block mx-4">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 animate-pulse relative z-10">webdesign</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 animate-pulse relative z-10">AI-gedreven</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 blur-lg opacity-30 animate-pulse"></div>
                 <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full animate-ping opacity-60"></div>
                 <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full animate-ping opacity-40" style={{ animationDelay: '0.5s' }}></div>
               </span>
-              revolutioneert
+              websites?
             </span>
             
             {/* Creative text decorations */}
