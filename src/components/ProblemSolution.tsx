@@ -361,7 +361,7 @@ const ProblemSolution: React.FC = () => {
                 
                 <div className="flex items-center space-x-2 text-white/80">
                   <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span className="text-sm sm:text-base">AI-kwaliteit gegarandeerd</span>
+                  <span className="text-sm sm:text-base">100% Tevredenheidsgarantie</span>
                 </div>
               </div>
             </div>

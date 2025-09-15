@@ -146,7 +146,7 @@ const Hero: React.FC = () => {
             <div className="flex items-center space-x-4 group justify-center lg:justify-start mx-auto lg:mx-0 max-w-fit">
               <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-400 group-hover:from-blue-400 transition-all duration-500 animate-pulse"></div>
               <span className="text-sm font-bold text-blue-600 tracking-wider uppercase bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300 text-center border border-blue-100">
-                AI automatiseert webdesign
+                Jouw AI partner voor de toekomst
               </span>
               <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-blue-400 group-hover:from-blue-400 transition-all duration-500 animate-pulse"></div>
             </div>
@@ -155,11 +155,11 @@ const Hero: React.FC = () => {
             <div className="relative">
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 <span className="text-black">
-                  Automatische
+                  AI-Gedreven
                 </span>
                 <br />
                 <span className="relative">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">Website Creatie</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">Websites</span>
                   {/* Decorative underline */}
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full opacity-40 animate-pulse"></div>
                 </span>
@@ -169,25 +169,25 @@ const Hero: React.FC = () => {
             {/* Enhanced Description */}
             <div className="space-y-4 text-lg text-gray-700 max-w-lg">
               <p className="font-semibold text-lg sm:text-xl text-gray-800">
-                AI automatiseert het volledige webdesign proces.
+                Hoogwaardige websites gemaakt door AI-experts.
               </p>
               <p className="leading-relaxed">
-                Onze AI-automatisering elimineert handmatig werk en maakt premium websites mogelijk tegen
-                <span className="font-bold text-blue-600"> 70% lagere kosten</span> dan traditionele methoden.
+                Onze AI-expertise maakt premium website ontwikkeling mogelijk tegen
+                <span className="font-bold text-blue-600"> aanzienlijk lagere prijzen</span> dan traditionele bureaus.
               </p>
               <div className="flex items-center space-x-6 text-base">
                 <div className="flex items-center text-sm sm:text-base">
                   <Clock className="w-5 h-5 text-blue-500 mr-2" />
-                  <span className="font-semibold">Automatisch in 1 week</span>
+                  <span className="font-semibold">In 1 week live</span>
                 </div>
                 <div className="flex items-center text-sm sm:text-base">
                   <Target className="w-5 h-5 text-blue-500 mr-2" />
-                  <span className="font-semibold">AI elimineert kosten</span>
+                  <span className="font-semibold">Geen hoge kosten</span>
                 </div>
               </div>
               <p className="font-semibold text-gray-800">
                 <TrendingUp className="w-5 h-5 text-blue-500 inline mr-2" />
-                AI garandeert premium kwaliteit.
+                Geen compromissen op kwaliteit.
               </p>
             </div>
 
@@ -202,57 +202,46 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 <div className="relative z-10 flex items-center">
-                Ontdek AI-automatisering
+                Plan een gesprek
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
                 </div>
               </Link>
 
-              {/* AI Process Showcase */}
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-blue-100 max-w-md">
-                <div className="text-center mb-4">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">AI Automatisering Proces</h3>
-                  <p className="text-sm text-gray-600">Van concept tot live website</p>
+              {/* Enhanced Pricing Display */}
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 md:p-6 shadow-soft border border-blue-100 max-w-xs md:max-w-md ml-auto md:ml-0 lg:mr-auto lg:ml-0">
+                <div className="flex items-center justify-between text-sm md:text-base">
+                  <div className="flex items-center space-x-4">
+                    <div className="relative">
+                      <span className="text-lg md:text-2xl font-bold text-gray-400 line-through">€2.000</span>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-full h-0.5 bg-red-500 transform rotate-12"></div>
+                        <div className="absolute w-full h-0.5 bg-red-500 transform -rotate-12"></div>
+                      </div>
+                    </div>
+                    <ArrowRight className="w-4 h-4 md:w-6 md:h-6 text-gray-400" />
+                    <div className="text-4xl font-bold text-black">
+                      <span className="text-2xl md:text-4xl text-blue-600">€695</span>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-xs md:text-sm text-blue-500 italic font-medium">dankzij AI</div>
+                    <div className="text-sm md:text-lg font-bold text-green-600">65% besparing</div>
+                  </div>
                 </div>
                 
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
-                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs font-bold">1</span>
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900">AI Analyseert</div>
-                      <div className="text-xs text-gray-600">Bedrijf & doelgroep</div>
-                    </div>
+                {/* Value indicators */}
+                <div className="mt-3 md:mt-4 grid grid-cols-3 gap-1 md:gap-2 text-xs">
+                  <div className="text-center bg-green-50 rounded-lg py-1 md:py-2">
+                    <div className="font-bold text-green-600">Binnen 1 week</div>
+                    <div className="text-gray-600 text-[10px] md:text-xs">live</div>
                   </div>
-                  
-                  <div className="flex items-center space-x-3 p-3 bg-purple-50 rounded-lg">
-                    <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs font-bold">2</span>
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900">AI Ontwerpt</div>
-                      <div className="text-xs text-gray-600">Uniek design</div>
-                    </div>
+                  <div className="text-center bg-blue-50 rounded-lg py-1 md:py-2">
+                    <div className="font-bold text-blue-500">100%</div>
+                    <div className="text-gray-600 text-[10px] md:text-xs">AI-gedreven</div>
                   </div>
-                  
-                  <div className="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs font-bold">3</span>
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900">AI Bouwt</div>
-                      <div className="text-xs text-gray-600">Volledig gecodeerd</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3 p-3 bg-cyan-50 rounded-lg">
-                    <div className="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs font-bold">4</span>
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900">Auto-Deploy</div>
-                      <div className="text-xs text-gray-600">Live in 1 week</div>
-                    </div>
+                  <div className="text-center bg-purple-50 rounded-lg py-1 md:py-2">
+                    <div className="font-bold text-blue-500">Premium</div>
+                    <div className="text-gray-600 text-[10px] md:text-xs">kwaliteit</div>
                   </div>
                 </div>
               </div>
@@ -261,11 +250,11 @@ const Hero: React.FC = () => {
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
                 <div className="flex items-center bg-white/70 backdrop-blur-sm rounded-full px-3 py-1">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                  <span>AI werkt op resultaat</span>
+                  <span>Geen vooruitbetaling</span>
                 </div>
                 <div className="flex items-center bg-white/70 backdrop-blur-sm rounded-full px-3 py-1">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                  <span>AI-perfectie gegarandeerd</span>
+                  <span>100% tevredenheidsgarantie</span>
                 </div>
               </div>
             </div>
@@ -273,80 +262,8 @@ const Hero: React.FC = () => {
 
           {/* Right Content - Enhanced Design Illustration */}
           <div className="relative scroll-animate-right">
-            <div className="relative z-10">
-              {/* Creative AI Visualization */}
-              <div className="relative bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 rounded-3xl p-8 shadow-2xl overflow-hidden">
-                {/* Animated background */}
-                <div className="absolute inset-0 opacity-30">
-                  <div className="absolute top-10 left-10 w-32 h-32 bg-cyan-400 rounded-full blur-2xl animate-float-gentle"></div>
-                  <div className="absolute bottom-10 right-10 w-40 h-40 bg-purple-400 rounded-full blur-2xl animate-float-gentle-delayed"></div>
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-pink-400 rounded-full blur-3xl animate-drift-left"></div>
-                </div>
-                
-                {/* Grid pattern */}
-                <div className="absolute inset-0 opacity-20" style={{
-                  backgroundImage: `radial-gradient(circle at 1px 1px, #06B6D4 1px, transparent 0)`,
-                  backgroundSize: '30px 30px'
-                }}></div>
-                
-                {/* AI Process Visualization */}
-                <div className="relative z-10 space-y-6">
-                  {/* Header */}
-                  <div className="text-center mb-8">
-                    <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
-                      <Sparkles className="w-5 h-5 text-cyan-400 mr-2 animate-spin-slow" />
-                      <span className="text-cyan-300 font-semibold text-sm">AI AUTOMATION ENGINE</span>
-                    </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">Volledig Geautomatiseerd</h3>
-                    <p className="text-cyan-200 text-sm">Van idee tot live website</p>
-                  </div>
-                  
-                  {/* AI Steps */}
-                  <div className="space-y-4">
-                    {[
-                      { step: "01", title: "AI Analyseert", desc: "Bedrijf & concurrentie", color: "from-blue-400 to-cyan-400", icon: "🔍" },
-                      { step: "02", title: "AI Ontwerpt", desc: "Uniek design concept", color: "from-purple-400 to-pink-400", icon: "🎨" },
-                      { step: "03", title: "AI Codeert", desc: "Volledig responsive", color: "from-green-400 to-emerald-400", icon: "⚡" },
-                      { step: "04", title: "Auto-Deploy", desc: "Live in 1 week", color: "from-orange-400 to-red-400", icon: "🚀" }
-                    ].map((item, index) => (
-                      <div key={index} className="flex items-center space-x-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all duration-300 group">
-                        <div className={`w-12 h-12 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                          <span className="text-xl">{item.icon}</span>
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex items-center space-x-2 mb-1">
-                            <span className="text-xs font-bold text-cyan-400">{item.step}</span>
-                            <h4 className="text-white font-semibold">{item.title}</h4>
-                          </div>
-                          <p className="text-cyan-200 text-sm">{item.desc}</p>
-                        </div>
-                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  {/* AI Stats */}
-                  <div className="grid grid-cols-3 gap-4 mt-8">
-                    <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                      <div className="text-2xl font-bold text-cyan-400 animate-pulse">70%</div>
-                      <div className="text-xs text-cyan-200">Automatisering</div>
-                    </div>
-                    <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                      <div className="text-2xl font-bold text-purple-400 animate-pulse">1</div>
-                      <div className="text-xs text-purple-200">Week Live</div>
-                    </div>
-                    <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                      <div className="text-2xl font-bold text-green-400 animate-pulse">100%</div>
-                      <div className="text-xs text-green-200">AI-Gedreven</div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Floating AI elements */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-cyan-400/20 rounded-full animate-ping"></div>
-                <div className="absolute bottom-4 left-4 w-6 h-6 bg-purple-400/20 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute top-1/2 right-8 w-4 h-4 bg-pink-400/20 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
-              </div>
+            <div className="relative z-10 transform hover:scale-105 transition-transform duration-500">
+              <DesignIllustration />
             </div>
             
             {/* Additional floating elements around illustration */}
@@ -371,13 +288,13 @@ const Hero: React.FC = () => {
               <div className="flex items-center justify-center mb-4">
                 <Sparkles className="w-6 h-6 text-blue-500 animate-spin-slow mr-2" />
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-900">
-                  Ervaar de kracht van <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">AI-automatisering</span>
+                  Klaar voor de <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">AI-revolutie</span>?
                 </h3>
                 <Sparkles className="w-6 h-6 text-blue-500 animate-spin-slow ml-2" />
               </div>
               
               <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-                Ontdek hoe AI-automatisering het webdesign proces volledig transformeert en kosten drastisch verlaagt.
+                Laat ons bewijzen waarom steeds meer bedrijven kiezen voor onze AI-gedreven aanpak.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -393,11 +310,11 @@ const Hero: React.FC = () => {
                 <div className="flex items-center space-x-4 text-gray-600">
                   <div className="flex items-center">
                     <Clock className="w-4 h-4 text-blue-500 mr-2" />
-                    <span className="font-semibold text-sm">Auto-deploy 1 week</span>
+                    <span className="font-semibold text-sm">In 1 week live</span>
                   </div>
                   <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-blue-500 text-sm">70% AI-besparing</span>
+                    <span className="font-semibold text-blue-500 text-sm">65% goedkoper</span>
                   </div>
                 </div>
               </div>

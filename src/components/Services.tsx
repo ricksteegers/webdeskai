@@ -603,15 +603,15 @@ const Services: React.FC = () => {
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
                 <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
                   <Monitor className="w-5 h-5 text-cyan-400 mr-2" />
-                  <span className="text-sm font-medium text-white">Auto-websites & webshops</span>
+                  <span className="text-sm font-medium text-white">Websites & Webshops</span>
                 </div>
                 <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
                   <Palette className="w-5 h-5 text-purple-400 mr-2" />
-                  <span className="text-sm font-medium text-white">Automatisch design</span>
+                  <span className="text-sm font-medium text-white">AI Design</span>
                 </div>
                 <div className="flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
                   <Zap className="w-5 h-5 text-yellow-400 mr-2" />
-                  <span className="text-sm font-medium text-white">Volledige automatisering</span>
+                  <span className="text-sm font-medium text-white">Automatisering</span>
                 </div>
               </div>
             </div>
