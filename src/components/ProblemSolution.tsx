@@ -73,8 +73,8 @@ const ProblemSolution: React.FC = () => {
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "AI-gestuurde communicatie",
-      description: "Automatische updates, real-time voortgang, minimale meetings nodig",
+      title: "Eenvoudig proces",
+      description: "Duidelijke stappen, snelle communicatie, geen gedoe",
       color: "from-purple-500 to-indigo-500",
       bgColor: "from-purple-50 to-indigo-50",
       delay: 400
@@ -246,7 +246,7 @@ const ProblemSolution: React.FC = () => {
                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">WebDesk AI</h3>
                     <p className="text-green-600 font-semibold flex items-center">
                       <span className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full mr-2 animate-ping"></span>
-                      <span className="text-sm sm:text-base">Slim, snel & betaalbaar</span>
+                      <span className="text-sm sm:text-base">Volledig geautomatiseerd</span>
                     </p>
                   </div>
                 </div>
